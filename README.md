@@ -135,7 +135,7 @@ See [docs/roadmap.md](docs/roadmap.md).
 
 ## Author
 
-**Angel López Morales** — [angel.lopez@voicepowered.ai](mailto:angel.lopez@voicepowered.ai)
+**Angel López Morales** — [github.com/angelopezvpb](https://github.com/angelopezvpb)
 
 ## Citation
 

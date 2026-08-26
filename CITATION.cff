@@ -7,7 +7,6 @@ type: software
 authors:
   - family-names: "López Morales"
     given-names: "Angel"
-    email: "angel.lopez@voicepowered.ai"
 url: "https://github.com/angelopezvpb/aquascan-open-science"
 repository-code: "https://github.com/angelopezvpb/aquascan-open-science"
 version: 0.1.0
