@@ -1,8 +1,8 @@
-# AquaScan Open Science
-
 <p align="center">
   <img src="docs/assets/aquascan-banner.png" alt="AquaScan Open Science" width="100%">
 </p>
+
+# AquaScan Open Science
 
 Open-source research framework for investigating whether **multimodal
 hydrogeophysical measurements (ERT + P-wave seismic + GNSS RTK) combined with
