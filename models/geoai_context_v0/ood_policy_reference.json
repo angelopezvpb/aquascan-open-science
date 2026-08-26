@@ -1,0 +1,42 @@
+{
+  "version": "v2",
+  "description": "Pre-prediction domain-support assessment. Used to inform abstention/confidence. NEVER uses target errors of the new sample. Computed on the depth-to-water modeling population (GT A/B, Phase 0 firewall intact).",
+  "classes": {
+    "IN_DISTRIBUTION": ">= 30 training records in the same domain",
+    "WEAK_SUPPORT": "1-29 training records in the same domain",
+    "OUT_OF_DISTRIBUTION": "0 training records in the domain, or tiny total population"
+  },
+  "thresholds": {
+    "n_min_in_domain": 30,
+    "n_min_total": 100
+  },
+  "per_domain": {
+    "Migjorn": {
+      "n_training_records": 164,
+      "support": "IN_DISTRIBUTION",
+      "note": "Support computed from training-domain feature counts only (no target outcomes of the new sample)."
+    },
+    "Región de los arenales": {
+      "n_training_records": 306,
+      "support": "IN_DISTRIBUTION",
+      "note": "Support computed from training-domain feature counts only (no target outcomes of the new sample)."
+    },
+    "San Antonio": {
+      "n_training_records": 34,
+      "support": "IN_DISTRIBUTION",
+      "note": "Support computed from training-domain feature counts only (no target outcomes of the new sample)."
+    },
+    "San Carlos": {
+      "n_training_records": 16,
+      "support": "WEAK_SUPPORT",
+      "note": "Support computed from training-domain feature counts only (no target outcomes of the new sample)."
+    },
+    "Santa Eulalia": {
+      "n_training_records": 43,
+      "support": "IN_DISTRIBUTION",
+      "note": "Support computed from training-domain feature counts only (no target outcomes of the new sample)."
+    }
+  },
+  "known_ood_domain": "Región de los arenales",
+  "important_distinction": "Domain feature support and generalization failure are different concepts. Región de los arenales is well represented by feature counts (IN_DISTRIBUTION support) yet is a documented KNOWN_OOD_DOMAIN because its depth-to-water distribution is fundamentally different (median ~7.8 m vs ~36-48 m in other domains), so the baseline fails there despite ample support. Both flags are retained: support informs confidence/abstention; the known-OOD flag documents the validated generalization failure."
+}

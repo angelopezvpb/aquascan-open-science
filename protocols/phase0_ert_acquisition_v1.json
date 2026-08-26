@@ -1,0 +1,54 @@
+{
+  "protocol": "ERT Acquisition Design v1",
+  "version": "v1",
+  "created_at": "2026-08-24T18:32:04.984927+00:00",
+  "status": "DESIGN",
+  "configuration": {
+    "electrode_count": 48,
+    "nominal_electrode_spacing_m": 5.0,
+    "profile_length_m": 235,
+    "expected_investigation_depth_m": "25–45 (dependent on resistivity structure)",
+    "electrode_type": "Stainless steel stakes",
+    "cable_type": "Multi-core takeout cable",
+    "contact_resistance_requirement_kOhm": "< 5.0 (per electrode; PROVISIONAL_THRESHOLD)"
+  },
+  "arrays": {
+    "wenner_schlumberger": {
+      "rationale": "Good vertical resolution and signal-to-noise for layered subsurface. Preferred for depth-to-water and lithological interface detection.",
+      "a_spacing_m": [
+        5,
+        10,
+        15,
+        20,
+        25,
+        30
+      ],
+      "n_levels": 6
+    },
+    "dipole_dipole": {
+      "rationale": "Good horizontal sensitivity for lateral heterogeneity detection. Secondary array for structural mapping.",
+      "a_spacing_m": 5,
+      "n_levels": 8
+    }
+  },
+  "acquisition_parameters": {
+    "current_injection": "Square wave, bipolar",
+    "max_voltage_V": 400,
+    "max_current_mA": 500,
+    "stacking": "3–6 cycles per quadrupole",
+    "reciprocal_measurements": "Every 5th quadrupole",
+    "topography_recording": "GNSS RTK per electrode position",
+    "estimated_acquisition_time_min": "25–40 per array"
+  },
+  "qc_thresholds": {
+    "contact_resistance_green": "< 3 kOhm",
+    "contact_resistance_yellow": "3–5 kOhm (PROVISIONAL_THRESHOLD)",
+    "contact_resistance_red": "> 5 kOhm — re-stake or wet electrode",
+    "reciprocal_error_green": "< 2%",
+    "reciprocal_error_yellow": "2–5% (PROVISIONAL_THRESHOLD)",
+    "reciprocal_error_red": "> 5% — flag measurement",
+    "current_stability": "< 1% variation",
+    "voltage_saturation": "MUST NOT saturate — reduce current if needed"
+  },
+  "raw_immutability": "ERT_RAW contains raw voltage/current measurements. Never overwritten. SHA-256 computed at acquisition closure per site."
+}

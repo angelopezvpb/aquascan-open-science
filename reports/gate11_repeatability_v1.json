@@ -1,0 +1,11 @@
+{
+  "acceptance": "REPEATABILITY_ACCEPTANCE",
+  "status": "NOT_TESTED",
+  "reason": "No AQ-TEST-001 field acquisition performed.",
+  "r1_immediate_repeat": "NOT_TESTED",
+  "r2_redeployment_repeat": "NOT_TESTED",
+  "metrics_defined": [
+    "ERT: current, voltage, apparent resistivity, reciprocity, derived model",
+    "Seismic: waveforms, picks, travel times, velocity model"
+  ]
+}

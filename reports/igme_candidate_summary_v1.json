@@ -1,0 +1,60 @@
+{
+  "scoring_version": "1.0.0",
+  "timestamp": "2026-08-23T18:12:57.116583+00:00",
+  "input_path": "data/interim/igme_national_20260823T171204Z_v2.parquet",
+  "input_checksum": "2819fcc37ba68ad9757b22ba515d4fe211c30a6df227af0d8036dc60e717b1ac",
+  "total_scored": 139697,
+  "score_min": 25.0,
+  "score_max": 100.0,
+  "score_mean": 84.17634594873189,
+  "score_median": 92.0,
+  "score_std": 14.748042039472901,
+  "score_p10": 60.0,
+  "score_p25": 72.0,
+  "score_p50": 92.0,
+  "score_p75": 94.0,
+  "score_p90": 97.0,
+  "score_p95": 97.0,
+  "score_p99": 97.0,
+  "tier_thresholds": {
+    "P1": 97.0,
+    "P2": 94.0,
+    "P3": 92.0
+  },
+  "tier_counts": {
+    "P1": 20799,
+    "P2": 21271,
+    "P3": 38779,
+    "P4": 58848
+  },
+  "qa_counts_by_tier": {
+    "P1": {
+      "qa_suspicious_construction_date": 20796,
+      "qa_flag_count": 20796
+    },
+    "P2": {
+      "qa_elevation_outlier": 10,
+      "qa_duplicate_coordinate": 2037,
+      "qa_suspicious_construction_date": 10796,
+      "qa_flag_count": 12843
+    },
+    "P3": {
+      "qa_elevation_outlier": 11,
+      "qa_duplicate_coordinate": 204,
+      "qa_invalid_construction_date": 901,
+      "qa_suspicious_construction_date": 4664,
+      "qa_flag_count": 5780
+    },
+    "P4": {
+      "qa_coordinate_outlier": 1,
+      "qa_elevation_outlier": 11,
+      "qa_depth_outlier": 45,
+      "qa_negative_reference_flow": 1,
+      "qa_duplicate_coordinate": 4168,
+      "qa_missing_hydrogeological_unit": 1283,
+      "qa_invalid_construction_date": 715,
+      "qa_suspicious_construction_date": 4371,
+      "qa_flag_count": 10595
+    }
+  }
+}

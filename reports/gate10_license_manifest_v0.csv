@@ -1,0 +1,7 @@
+package,version,license,usage,redistribution
+numpy,2.5.2,BSD-3-Clause,array math for all pipelines,Permissive; compatible with Apache-2.0.
+scipy,1.18.1,BSD-3-Clause,"filtering, interpolation, regression",Permissive; compatible with Apache-2.0.
+pydantic,2.13.4,MIT,canonical observation models / schema export,Permissive.
+pyGIMLi (optional),not installed,Apache-2.0,ERT inversion backend (when installed),Permissive; compatible.
+SimPEG (optional),not installed,MIT,ERT inversion backend (when installed),Permissive.
+obspy (optional),not installed,LGPL-3.0,seismic I/O and processing (when installed),Copyleft (LGPL); verify before bundling in a closed distribution.

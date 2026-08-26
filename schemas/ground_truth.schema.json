@@ -1,0 +1,79 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://aquascan-research.github.io/aquascan-open-science/schemas/ground_truth.schema.json",
+  "title": "AquaScan Ground Truth Schema",
+  "description": "Schema for ground truth data used to validate water prospecting predictions.",
+  "type": "object",
+  "properties": {
+    "well_id": {
+      "type": "string",
+      "description": "Unique well/borehole identifier."
+    },
+    "latitude": {
+      "type": "number",
+      "minimum": -90.0,
+      "maximum": 90.0,
+      "description": "Latitude in decimal degrees (WGS84)."
+    },
+    "longitude": {
+      "type": "number",
+      "minimum": -180.0,
+      "maximum": 180.0,
+      "description": "Longitude in decimal degrees (WGS84)."
+    },
+    "total_depth_m": {
+      "type": ["number", "null"],
+      "description": "Total drilled depth in meters."
+    },
+    "static_water_level_m": {
+      "type": ["number", "null"],
+      "description": "Static water level in meters below surface."
+    },
+    "pump_test_flow_ls": {
+      "type": ["number", "null"],
+      "description": "Flow rate from pump test in L/s."
+    },
+    "pump_test_duration_h": {
+      "type": ["number", "null"],
+      "description": "Pump test duration in hours."
+    },
+    "water_electrical_conductivity_us_cm": {
+      "type": ["number", "null"],
+      "description": "Water electrical conductivity in microS/cm."
+    },
+    "water_tds_mg_l": {
+      "type": ["number", "null"],
+      "description": "Total Dissolved Solids in mg/L."
+    },
+    "lithology_log_available": {
+      "type": "boolean",
+      "description": "Whether a lithology log is available."
+    },
+    "water_entries_documented": {
+      "type": "boolean",
+      "description": "Whether water entry depths are documented."
+    },
+    "documentation_identifiable": {
+      "type": "boolean",
+      "description": "Whether documentation can be traced to a specific source."
+    },
+    "ground_truth_score": {
+      "type": "number",
+      "minimum": 0.0,
+      "maximum": 1.0,
+      "description": "Overall ground truth quality score."
+    },
+    "ground_truth_class": {
+      "type": "string",
+      "enum": ["A", "B", "C", "D"],
+      "description": "Ground truth quality class."
+    },
+    "scoring_reasons": {
+      "type": "array",
+      "items": {"type": "string"},
+      "description": "Reasons for the assigned score."
+    }
+  },
+  "required": ["well_id", "latitude", "longitude", "ground_truth_score", "ground_truth_class"],
+  "additionalProperties": true
+}

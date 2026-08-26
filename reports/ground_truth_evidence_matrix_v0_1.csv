@@ -1,0 +1,25 @@
+category,label,records_with_data,pct,classification,automation_feasibility
+lithological_log,Lithological log,14,70.0,STRUCTURED,A
+stratigraphy,Stratigraphy (geological age),14,70.0,SEMI_STRUCTURED,B
+total_depth,Total depth,14,70.0,STRUCTURED,A
+water_entry_depths,Water-entry depths,14,70.0,SEMI_STRUCTURED,A
+static_water_level,Static water level,14,70.0,STRUCTURED,A
+dynamic_water_level,Dynamic water level / drawdown,9,45.0,STRUCTURED,A
+pump_test_flow,Pumping-test flow rate,9,45.0,STRUCTURED,A
+pump_test_duration,Pumping-test duration,9,45.0,STRUCTURED,A
+transmissivity,Transmissivity,9,45.0,STRUCTURED,A
+specific_capacity,Specific capacity,9,45.0,SEMI_STRUCTURED,B
+aquifer_identification,Aquifer identification,14,70.0,FREE_TEXT,B
+drilling_method,Drilling method,20,100.0,STRUCTURED,A
+screen_filter_intervals,Screen / filter intervals,0,0.0,NOT_AVAILABLE,E
+casing,Casing information,0,0.0,NOT_AVAILABLE,E
+hydrochemistry,Hydrochemistry,6,30.0,STRUCTURED,B
+electrical_conductivity,Electrical conductivity,6,30.0,STRUCTURED,B
+tds,Total dissolved solids,6,30.0,SEMI_STRUCTURED,B
+sampling_dates,Sampling / measurement dates,14,70.0,STRUCTURED,A
+historical_measurements,Historical measurement series,0,0.0,STRUCTURED,A
+downloadable_reports,Downloadable reports / drilling logs,0,0.0,NOT_AVAILABLE,E
+borehole_construction,Borehole construction details,0,0.0,NOT_AVAILABLE,E
+recovery_test,Recovery test data,9,45.0,NOT_AVAILABLE,E
+maps,Maps / spatial data,14,70.0,STRUCTURED,A
+reference_flow_l_s,Reference flow (IGME source field Caudal_Referencia_L_s),20,100.0,STRUCTURED,A

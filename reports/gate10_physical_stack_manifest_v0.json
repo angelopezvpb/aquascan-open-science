@@ -1,0 +1,145 @@
+{
+  "experiment": "AquaScan Physical Encoder Stack v0",
+  "gate": "Gate 10",
+  "version": "0.1.0",
+  "warning": "SYNTHETIC_ENGINEERING_FIXTURE — software test only. NOT Ground Truth for AquaScan groundwater performance.",
+  "modules": [
+    "aquascan.physical",
+    "aquascan.physical.common",
+    "aquascan.physical.models",
+    "aquascan.physical.ert.backends",
+    "aquascan.physical.ert.pipeline",
+    "aquascan.physical.ert.encoders",
+    "aquascan.physical.seismic.backends",
+    "aquascan.physical.seismic.pipeline",
+    "aquascan.physical.seismic.encoders",
+    "aquascan.physical.fusion.contract",
+    "aquascan.physical.fusion.registration",
+    "aquascan.physical.synthetic.fixtures",
+    "aquascan.physical.coords"
+  ],
+  "schemas": [
+    "schemas/ert_observation_v0.json",
+    "schemas/seismic_observation_v0.json",
+    "schemas/physical_representation_v0.json"
+  ],
+  "reports": [
+    "reports/gate10_synthetic_validation_v0.json",
+    "reports/gate10_backend_compatibility_v0.csv",
+    "reports/gate10_license_manifest_v0.csv"
+  ],
+  "synthetic_validation": {
+    "warning": "SYNTHETIC_ENGINEERING_FIXTURE — software test only. NOT Ground Truth for AquaScan groundwater performance.",
+    "note": "Engineering consistency only. NOT groundwater performance.",
+    "checks": [
+      {
+        "fixture": "ErtHalfspaceFixture",
+        "label": "SYNTHETIC_ENGINEERING_FIXTURE",
+        "expected_rho": 250.0,
+        "max_abs_error": 0.0,
+        "consistent": true,
+        "recovery_ok": true
+      },
+      {
+        "fixture": "ErtTwoLayerFixture",
+        "label": "SYNTHETIC_ENGINEERING_FIXTURE",
+        "true": {
+          "rho1": 100.0,
+          "rho2": 1000.0,
+          "h1": 10.0
+        },
+        "recovered": {
+          "rho1": 100.0,
+          "rho2": 1000.0,
+          "h1": 10.0
+        },
+        "recovery_ok": true
+      },
+      {
+        "fixture": "SeismicConstantVelocityFixture",
+        "label": "SYNTHETIC_ENGINEERING_FIXTURE",
+        "true_vp": 1200.0,
+        "recovered_vp": 1199.9999999999998,
+        "recovery_ok": true
+      },
+      {
+        "fixture": "SeismicTwoLayerFixture",
+        "label": "SYNTHETIC_ENGINEERING_FIXTURE",
+        "true": {
+          "v1": 800.0,
+          "v2": 2500.0,
+          "h1": 15.0
+        },
+        "recovered": {
+          "v2": 2499.9999999999995,
+          "h1": 14.999999999999993
+        },
+        "recovery_ok": true
+      }
+    ]
+  },
+  "ert_pipeline_stages": [
+    "raw",
+    "calibrated",
+    "qc",
+    "apparent",
+    "inversion_input",
+    "inverted",
+    "features"
+  ],
+  "seismic_pipeline_stages": [
+    "raw",
+    "calibrated",
+    "qc",
+    "filtered",
+    "picks",
+    "travel_times",
+    "velocity",
+    "features"
+  ],
+  "ert_backends": [
+    {
+      "name": "pyGIMLi",
+      "available": false
+    },
+    {
+      "name": "SimPEG",
+      "available": false
+    },
+    {
+      "name": "AquaScanAnalytic1D",
+      "available": true
+    }
+  ],
+  "seismic_backends": [
+    {
+      "name": "obspy",
+      "available": false
+    },
+    {
+      "name": "pyGIMLi_refraction",
+      "available": false
+    },
+    {
+      "name": "AquaScanInterceptTime1D",
+      "available": true
+    }
+  ],
+  "fusion_arms": [
+    "ARM_CONTEXT",
+    "ARM_E",
+    "ARM_S",
+    "ARM_ES",
+    "ARM_CONTEXT_ES"
+  ],
+  "coordinate_system": {
+    "frame": "GNSS(WGS84) -> local ENU -> profile distance/lateral",
+    "elevation_types": [
+      "ELLIPSOIDAL",
+      "ORTHOMETRIC",
+      "LOCAL_Z"
+    ],
+    "rule": "Elevation frames are never silently mixed."
+  },
+  "note": "Software architecture only. No groundwater detection claims. Synthetic fixtures are SYNTHETIC_ENGINEERING_FIXTURE."
+}

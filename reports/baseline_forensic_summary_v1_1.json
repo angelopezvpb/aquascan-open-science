@@ -1,0 +1,37 @@
+{
+  "gate": "8.1 Forensic Audit",
+  "target_leak_corrected": true,
+  "target_leak_description": "Gate 8 permitted _target_* columns as input features. Gate 8.1 excludes all _target_* columns from permitted features. Without fix: RF MAE ~0.21 m (near-perfect copy). With fix: 10.00 m.",
+  "experiment_count_reconciliation": {
+    "gate8_reported": 180,
+    "gate8_formula": "3 targets × 4 models (Ridge dropped) × 3 regimes × 5 folds = 180",
+    "gate8_1_formula": "3 targets × 5 models × 2 regimes × 5 folds + 3 × 5 × 5 cross-domain = 160 rows",
+    "total_forensic_rows": 160
+  },
+  "eligibility_reconciliation": {
+    "depth_gt_a": 363,
+    "depth_gt_b": 210,
+    "depth_a_plus_b": 573,
+    "phase0_excluded": 10,
+    "depth_final_modeling": 563,
+    "reconciliation": "A+B - firewalled = final (573 - 10 = 563, confirmed)"
+  },
+  "fixed_key_metrics": {
+    "target": "TARGET_DEPTH_TO_WATER",
+    "in_domain_median_mae": 10.003696991862533,
+    "in_domain_dummy_mae": 21.52310717797443,
+    "spatial_block_median_mae": 9.44846929275648,
+    "cross_domain_median_mae": 18.286954898492862,
+    "cross_domain_dummy_mae": 26.56424024241076,
+    "cross_domain_improvement": 8.2772853439179
+  },
+  "spatial_prior_comparison": {
+    "coords_only": "see baseline_spatial_prior_audit_v1_1.csv",
+    "nn_diagnostic": "see baseline_spatial_prior_audit_v1_1.csv"
+  },
+  "baseline_classification": "MIXED_SIGNAL",
+  "feature_arms_tested": 8,
+  "total_ablations": 140,
+  "nn_models_tested": 8,
+  "target_distribution_domains": 5
+}

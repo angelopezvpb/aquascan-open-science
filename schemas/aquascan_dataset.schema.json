@@ -1,0 +1,123 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://aquascan-research.github.io/aquascan-open-science/schemas/aquascan_dataset.schema.json",
+  "title": "AquaScan Dataset Schema",
+  "description": "Canonical schema for AquaScan campaign records. All fields use explicit types, documented units, and nullable semantics. null != 0.",
+  "type": "object",
+  "properties": {
+    "campaign_id": {
+      "type": "string",
+      "description": "Unique identifier for the geophysical campaign."
+    },
+    "site_id": {
+      "type": "string",
+      "description": "Site identifier. Multiple campaigns may share a site."
+    },
+    "well_id": {
+      "type": ["string", "null"],
+      "description": "Well/borehole identifier, if a well is associated."
+    },
+    "schema_version": {
+      "type": "string",
+      "description": "Version of the AquaScan schema this record conforms to."
+    },
+    "timestamp": {
+      "type": ["string", "null"],
+      "format": "date-time",
+      "description": "Date and time of the geophysical survey (UTC)."
+    },
+    "latitude": {
+      "type": ["number", "null"],
+      "minimum": -90.0,
+      "maximum": 90.0,
+      "description": "Latitude in decimal degrees (WGS84)."
+    },
+    "longitude": {
+      "type": ["number", "null"],
+      "minimum": -180.0,
+      "maximum": 180.0,
+      "description": "Longitude in decimal degrees (WGS84)."
+    },
+    "elevation": {
+      "type": ["number", "null"],
+      "description": "Surface elevation in meters above sea level."
+    },
+    "geology_domain": {
+      "type": ["string", "null"],
+      "description": "Geological domain or formation name."
+    },
+    "hydrogeological_unit": {
+      "type": ["string", "null"],
+      "description": "Hydrogeological unit name or aquifer code."
+    },
+    "ert_raw_uri": {
+      "type": ["string", "null"],
+      "description": "URI to the raw ERT data file (L0)."
+    },
+    "seismic_raw_uri": {
+      "type": ["string", "null"],
+      "description": "URI to the raw seismic data file (L0)."
+    },
+    "ert_quality": {
+      "type": ["number", "null"],
+      "minimum": 0.0,
+      "maximum": 1.0,
+      "description": "ERT quality score (0-1)."
+    },
+    "seismic_quality": {
+      "type": ["number", "null"],
+      "minimum": 0.0,
+      "maximum": 1.0,
+      "description": "Seismic quality score (0-1)."
+    },
+    "water_depth_min": {
+      "type": ["number", "null"],
+      "description": "Minimum estimated depth to water table (m)."
+    },
+    "water_depth_max": {
+      "type": ["number", "null"],
+      "description": "Maximum estimated depth to water table (m)."
+    },
+    "static_water_level": {
+      "type": ["number", "null"],
+      "description": "Measured static water level depth (m below surface)."
+    },
+    "total_depth": {
+      "type": ["number", "null"],
+      "description": "Total drilled depth (m)."
+    },
+    "pump_test_flow": {
+      "type": ["number", "null"],
+      "description": "Flow rate from pump test (L/s)."
+    },
+    "pump_test_duration": {
+      "type": ["number", "null"],
+      "description": "Duration of pump test (hours)."
+    },
+    "water_electrical_conductivity": {
+      "type": ["number", "null"],
+      "description": "Water electrical conductivity (microS/cm)."
+    },
+    "water_tds": {
+      "type": ["number", "null"],
+      "description": "Total Dissolved Solids (mg/L)."
+    },
+    "ground_truth_score": {
+      "type": ["number", "null"],
+      "minimum": 0.0,
+      "maximum": 1.0,
+      "description": "Ground Truth quality score (0-1, continuous)."
+    },
+    "ground_truth_class": {
+      "type": ["string", "null"],
+      "enum": ["A", "B", "C", "D"],
+      "description": "Ground Truth quality class: A (strong), B (good), C (weak), D (unsuitable)."
+    },
+    "ground_truth_source": {
+      "type": ["string", "null"],
+      "description": "Source of ground truth data."
+    }
+  },
+  "required": ["campaign_id", "site_id", "schema_version"],
+  "additionalProperties": true
+}

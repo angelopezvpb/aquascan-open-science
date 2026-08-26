@@ -1,0 +1,23 @@
+{
+  "protocol": "Phase 0 Ground Truth Reveal Protocol v1",
+  "version": "v1",
+  "created_at": "2026-08-24T18:32:04.984945+00:00",
+  "reveal_operation": {
+    "preconditions": [
+      "ARM_E prediction artifact frozen (SHA-256 logged)",
+      "ARM_S prediction artifact frozen (SHA-256 logged)",
+      "ARM_ES prediction artifact frozen (SHA-256 logged)"
+    ],
+    "steps": [
+      "1. Verify all three prediction SHA-256 values against freeze log.",
+      "2. Open sealed site mapping for this blinded_site_id.",
+      "3. Load Ground Truth from immutable GT artifacts.",
+      "4. Compute SHA-256 of Ground Truth record.",
+      "5. Log: prediction_hash, reveal_timestamp, sealed_mapping_hash, gt_hash.",
+      "6. Compare prediction vs. Ground Truth using predefined metrics.",
+      "7. Record results. Do NOT modify predictions."
+    ]
+  },
+  "immutability": "Ground Truth data is immutable. If discrepancies are suspected, flag them as GT_DATA_ISSUE — do NOT modify the Ground Truth.",
+  "post_reveal_analysis_rule": "Any analysis performed AFTER Ground Truth reveal must be labeled POST_REVEAL_ANALYSIS. It must never overwrite or replace the blind prediction. Both analyses coexist."
+}

@@ -1,0 +1,36 @@
+{
+  "experiment": "AquaScan GeoAI Context v0",
+  "gate": "Gate 9",
+  "created_at": "2026-08-26T08:52:43+00:00",
+  "software": {
+    "python": "3.12.3",
+    "sklearn": "1.9.0",
+    "pandas": "3.0.5",
+    "numpy": "2.5.2"
+  },
+  "random_seed": 42,
+  "source_hashes": {
+    "aquascan_validation_dataset_v1.parquet": "bd3c7a0993709c7cc7158720151425a8813cd510907d3058a4286dfa4ca4f7bd",
+    "ground_truth_cohort5000_v0_4.parquet": "464dd0c901f6d3c1e3d76d329f2d038bee2eb364a99f8598806b0aba93b9b6d8",
+    "phase0_cohort_A_v1.csv": "482d7b4f2221fe402cf3b9d1edf6c2224bbc2d618f4a3929e564b78471d1bf90",
+    "baseline_v2_feature_policy.json": "70c328251adc06043fbd2922ee72dbc84fdc5423e2306569894a6b0b9d24d2dc",
+    "baseline_v2_ood_policy.json": "e409e0ef53265e6ea208f6130dd52077a36633543b48ff7e89d077dcbb93381f",
+    "baseline_v2_phase0_comparator.json": "8bd737dde566d8859320a345da8cc4a2978b2b591c2db745d040015427c362d0",
+    "baseline_v2_selection.json": "70a833b87715b819a4f94a931254288ccd3b59e969a6c7a00ae52c39ee2673d9"
+  },
+  "feature_policy_hash": "0f69fb0fd2ac82ad8d7ac484209ab46e570a4dfaa58a3ab5e0aeb392f08deb86",
+  "phase0_firewall": {
+    "n_records": 10,
+    "status": "intact"
+  },
+  "model_artifacts": {
+    "confidence_policy.json": "a9fe1af58193879db8c201b4481045c07780a5adafcf198b0ad5d88635895aa1",
+    "feature_manifest.json": "76463a4d71bc7238833ef291344e7ba2fbcf8b90f8c3bb1a0809006afc5e41d1",
+    "geoai_context_v0_model.joblib": "230f6a7b13185cd47a8ee770e4cf5106df6deb300e8f73be0120cda6a2ebb9cb",
+    "geoai_context_v0_preprocessor.joblib": "5f945feb8f30718a9d0007e04b36b9e5eb9a3cfda856a6bf17450d8ff981f3a2",
+    "ood_policy_reference.json": "e409e0ef53265e6ea208f6130dd52077a36633543b48ff7e89d077dcbb93381f",
+    "uncertainty_calibrator.json": "f36d68e62c0259331e9e9b4d9596b741b96a27e7462a6e07112b2e994db9edf9"
+  },
+  "selected_model": "RandomForest",
+  "serialization_note": "Model + preprocessor frozen locally with joblib; no external network."
+}

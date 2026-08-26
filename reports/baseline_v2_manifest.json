@@ -1,0 +1,43 @@
+{
+  "version": "v2",
+  "experiment": "AquaScan Open-Source Context Baseline v2",
+  "created_at": "2026-08-25T20:27:35+00:00",
+  "software": {
+    "python": "3.12.3",
+    "sklearn": "1.9.0",
+    "pandas": "3.0.5",
+    "numpy": "2.5.2"
+  },
+  "random_seed": 42,
+  "source_hashes": {
+    "aquascan_validation_dataset_v1.parquet": "bd3c7a0993709c7cc7158720151425a8813cd510907d3058a4286dfa4ca4f7bd",
+    "ground_truth_cohort5000_v0_4.parquet": "464dd0c901f6d3c1e3d76d329f2d038bee2eb364a99f8598806b0aba93b9b6d8",
+    "phase0_cohort_A_v1.csv": "482d7b4f2221fe402cf3b9d1edf6c2224bbc2d618f4a3929e564b78471d1bf90",
+    "baseline_forensic_results_v1_1.csv": "c982be767cc4a50bce8c0078a99e9d568b9a2d4883e0ea89cd20d030309d724a",
+    "baseline_cross_domain_v1_1.csv": "886ec3d45b51cf0cecfb986be258e70b5940f2c4a8d6475220768d47834a6098",
+    "baseline_feature_source_audit_v1_1.csv": "fde6f94b3695e07c63fa797c47907c4acf3475114e64bdc28d9e5b07a0bbace6",
+    "baseline_spatial_prior_audit_v1_1.csv": "210deeb136b5444834120029abd25b9c493fae7fd7318f53cc6eeb463fa2e352",
+    "baseline_uncertainty_audit_v1_1.csv": "d044714c89919c4321b2c574134a80a937472dedc1cad0be33f76b2281b53dcc",
+    "baseline_forensic_summary_v1_1.json": "c71d4de165db0519d1a8177dae3fb90e0d9f17749e2c8c04203641076521b458",
+    "baseline_forensic_eligibility_v1_1.csv": "114f83a8922ca60756207cdb17905d3387a5a65327cd39d840fe34109129b041"
+  },
+  "feature_policy_hash": "0f69fb0fd2ac82ad8d7ac484209ab46e570a4dfaa58a3ab5e0aeb392f08deb86",
+  "phase0_firewall": {
+    "n_records": 10,
+    "status": "intact",
+    "source": "reports/phase0_cohort_A_v1.csv"
+  },
+  "source_gate81_artifacts": [
+    "baseline_forensic_results_v1_1.csv",
+    "baseline_cross_domain_v1_1.csv",
+    "baseline_feature_source_audit_v1_1.csv",
+    "baseline_spatial_prior_audit_v1_1.csv",
+    "baseline_uncertainty_audit_v1_1.csv",
+    "baseline_forensic_summary_v1_1.json",
+    "baseline_forensic_eligibility_v1_1.csv"
+  ],
+  "supersedes": {
+    "gate8_v1": "INVALID_FOR_SCIENTIFIC_COMPARISON (TARGET_LEAKAGE)",
+    "note": "Gate 8 v1 artifacts preserved immutable for provenance."
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "protocol": "Seismic P-Wave Acquisition Design v1",
+  "version": "v1",
+  "created_at": "2026-08-24T18:32:04.984931+00:00",
+  "status": "DESIGN",
+  "configuration": {
+    "channels": 24,
+    "geophone_type": "14 Hz vertical component",
+    "geophone_spacing_m": 2.0,
+    "profile_length_m": 46,
+    "source": "8 kg sledgehammer on metal plate",
+    "source_positions": "End shots + every 3rd geophone (8 shot positions total). Mid-spread geometry.",
+    "shot_repetition": "5 stacks per shot position",
+    "trigger": "Hammer-switch closure + geophone at hammer plate",
+    "sample_rate_Hz": 1000,
+    "record_length_ms": 500,
+    "estimated_investigation_depth_m": "10–40 (dependent on velocity structure)"
+  },
+  "qc_thresholds": {
+    "dead_channel": "RMS < 5% of median channel (PROVISIONAL_THRESHOLD)",
+    "noisy_channel": "RMS > 300% of median (PROVISIONAL_THRESHOLD)",
+    "trigger_validity": "Timing break must be detectable within ±1 ms",
+    "snr_first_arrival": "> 3:1 for near-offset traces",
+    "stack_convergence": "Stack RMS < 1.2 × single-shot RMS"
+  },
+  "raw_immutability": "SEISMIC_RAW contains raw trace data per shot. Never overwritten. SHA-256 per shot gather.",
+  "estimated_acquisition_time_min": "30–45 per site"
+}

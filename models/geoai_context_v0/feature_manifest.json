@@ -1,0 +1,27 @@
+{
+  "features": [
+    "aquifer_system",
+    "construction_date",
+    "drilling_method",
+    "elevation_m",
+    "group_aquifer",
+    "group_domain",
+    "group_proximity_500m",
+    "group_spatial_cell",
+    "group_watershed",
+    "latitude",
+    "longitude",
+    "municipality",
+    "point_nature",
+    "province",
+    "pump_type",
+    "qa_coordinate_outlier",
+    "qa_depth_outlier",
+    "qa_duplicate_coordinate",
+    "qa_elevation_outlier",
+    "qa_flag_count",
+    "total_depth_m",
+    "water_use",
+    "watershed"
+  ]
+}

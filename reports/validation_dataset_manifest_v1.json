@@ -1,0 +1,48 @@
+{
+  "dataset_name": "AquaScan Validation Dataset v1",
+  "version": "v1",
+  "created_at": "2026-08-24T17:15:03.701575+00:00",
+  "source": {
+    "input_parquet": "data/processed/ground_truth_cohort5000_v0_4.parquet",
+    "input_sha256": "464dd0c901f6d3c1e3d76d329f2d038bee2eb364a99f8598806b0aba93b9b6d8",
+    "candidate_parquet": "data/processed/igme_candidates_v1.parquet",
+    "candidate_sha256": "8a8d8b66a6c31d743d9f38854f6e5e9bdc51b1aa379708550a045e5a84c622fd"
+  },
+  "records": 4744,
+  "columns": 97,
+  "targets": [
+    "TARGET_WATER_PRESENCE",
+    "TARGET_DEPTH_TO_WATER",
+    "TARGET_HYDRAULIC_HEAD_ELEVATION",
+    "TARGET_PRODUCTIVITY",
+    "TARGET_LITHOLOGY",
+    "TARGET_AQUIFER_INTERVAL"
+  ],
+  "leakage_policy_version": "v1",
+  "spatial_grouping_type": [
+    "group_domain (hydrogeological unit)",
+    "group_aquifer (aquifer system)",
+    "group_watershed",
+    "group_spatial_cell (~1km grid)",
+    "group_proximity_500m (<500m proximity clusters)"
+  ],
+  "temporal_classification": [
+    "RECENT — observations from 2015+",
+    "MULTI_DECADE_SERIES — >30yr span",
+    "HISTORICAL — pre-2015, shorter span",
+    "DATE_UNKNOWN — dates missing",
+    "NO_OBSERVATIONS — no water-level data"
+  ],
+  "gt_quality_classes": [
+    "A — strong GT for validation",
+    "B — usable GT for validation",
+    "C — limited GT, supplemental only",
+    "D — insufficient GT"
+  ],
+  "warnings": [
+    "reference_flow_l_s is always 0 in this cohort; do not use",
+    "reliable negative/dry examples are scarce; absence of evidence ≠ absence of water",
+    "historical water levels must not be presented as contemporaneous",
+    "TARGET_AQUIFER_INTERVAL has maximum class B (no class A records)"
+  ]
+}

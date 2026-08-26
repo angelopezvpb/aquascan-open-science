@@ -1,0 +1,55 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://aquascan-research.github.io/aquascan-open-science/schemas/prediction.schema.json",
+  "title": "AquaScan Prediction Schema",
+  "description": "Schema for water prospecting predictions output by AquaScan models.",
+  "type": "object",
+  "properties": {
+    "campaign_id": {
+      "type": "string",
+      "description": "Campaign this prediction applies to."
+    },
+    "water_score": {
+      "type": "number",
+      "minimum": 0.0,
+      "maximum": 1.0,
+      "description": "Probability/score that a favorable hydrogeological target exists (0-1)."
+    },
+    "evidence_score": {
+      "type": "number",
+      "minimum": 0.0,
+      "maximum": 1.0,
+      "description": "Quality of the evidence backing the prediction (0-1)."
+    },
+    "abstain": {
+      "type": "boolean",
+      "description": "If true, the prediction is NO CONCLUYENTE."
+    },
+    "confidence": {
+      "type": "number",
+      "minimum": 0.0,
+      "maximum": 1.0,
+      "description": "Model confidence in the prediction (0-1)."
+    },
+    "model_version": {
+      "type": "string",
+      "description": "Version of the model that produced this prediction."
+    },
+    "timestamp": {
+      "type": "string",
+      "format": "date-time",
+      "description": "When this prediction was generated."
+    },
+    "features_used": {
+      "type": "array",
+      "items": {"type": "string"},
+      "description": "List of feature names used for this prediction."
+    },
+    "water_depth_estimate_m": {
+      "type": ["number", "null"],
+      "description": "Estimated depth to water table in meters, if applicable."
+    }
+  },
+  "required": ["campaign_id", "water_score", "evidence_score", "abstain"],
+  "additionalProperties": true
+}

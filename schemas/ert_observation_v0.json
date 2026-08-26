@@ -1,0 +1,292 @@
+{
+  "$defs": {
+    "ERTQuadrupoleMeasurement": {
+      "description": "One ERT quadrupole measurement (electrodes A B M N).",
+      "properties": {
+        "survey_id": {
+          "title": "Survey Id",
+          "type": "string"
+        },
+        "blinded_site_id": {
+          "title": "Blinded Site Id",
+          "type": "string"
+        },
+        "acquisition_id": {
+          "title": "Acquisition Id",
+          "type": "string"
+        },
+        "timestamp": {
+          "format": "date-time",
+          "title": "Timestamp",
+          "type": "string"
+        },
+        "electrode_a": {
+          "description": "Electrode A position along profile (m)",
+          "title": "Electrode A",
+          "type": "number"
+        },
+        "electrode_b": {
+          "description": "Electrode B position along profile (m)",
+          "title": "Electrode B",
+          "type": "number"
+        },
+        "electrode_m": {
+          "description": "Electrode M position along profile (m)",
+          "title": "Electrode M",
+          "type": "number"
+        },
+        "electrode_n": {
+          "description": "Electrode N position along profile (m)",
+          "title": "Electrode N",
+          "type": "number"
+        },
+        "electrode_coordinates": {
+          "description": "Optional electrode coordinates [{x_m, y_m, z_m}, ...] A,B,M,N",
+          "items": {
+            "additionalProperties": {
+              "type": "number"
+            },
+            "type": "object"
+          },
+          "title": "Electrode Coordinates",
+          "type": "array"
+        },
+        "electrode_elevations": {
+          "anyOf": [
+            {
+              "items": {
+                "type": "number"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Optional electrode elevations (m), same order A,B,M,N",
+          "title": "Electrode Elevations"
+        },
+        "injected_current_a": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Injected current (A). Never overwrite RAW.",
+          "title": "Injected Current A"
+        },
+        "measured_voltage_v": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Measured voltage (V). Never overwrite RAW.",
+          "title": "Measured Voltage V"
+        },
+        "apparent_resistance_ohm": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Apparent resistance R = V/I (ohms).",
+          "title": "Apparent Resistance Ohm"
+        },
+        "geometric_factor": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Geometric factor K (m).",
+          "title": "Geometric Factor"
+        },
+        "apparent_resistivity_ohm_m": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Apparent resistivity rho_a = K * R (ohm·m).",
+          "title": "Apparent Resistivity Ohm M"
+        },
+        "stack_count": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Number of stacks.",
+          "title": "Stack Count"
+        },
+        "reciprocal_pair_id": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "ID of the reciprocal measurement, if any.",
+          "title": "Reciprocal Pair Id"
+        },
+        "contact_resistance_ohm": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Contact Resistance Ohm"
+        },
+        "instrument_channel": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Instrument Channel"
+        },
+        "qc_flags": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Qc Flags",
+          "type": "array"
+        },
+        "autocal_version": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Autocal Version"
+        },
+        "raw_hash": {
+          "description": "SHA-256 of the RAW record.",
+          "title": "Raw Hash",
+          "type": "string"
+        },
+        "processing_provenance": {
+          "additionalProperties": {
+            "type": "string"
+          },
+          "description": "processing_step / processing_version / parent_artifact / timestamp.",
+          "title": "Processing Provenance",
+          "type": "object"
+        }
+      },
+      "required": [
+        "survey_id",
+        "blinded_site_id",
+        "acquisition_id",
+        "electrode_a",
+        "electrode_b",
+        "electrode_m",
+        "electrode_n",
+        "raw_hash"
+      ],
+      "title": "ERTQuadrupoleMeasurement",
+      "type": "object"
+    }
+  },
+  "description": "A full ERT survey observation (list of quadrupoles + survey metadata). Canonical AquaScan physical schema (Gate 10 v0). RAW values preserved; null != 0.",
+  "properties": {
+    "survey_id": {
+      "title": "Survey Id",
+      "type": "string"
+    },
+    "blinded_site_id": {
+      "title": "Blinded Site Id",
+      "type": "string"
+    },
+    "acquisition_id": {
+      "title": "Acquisition Id",
+      "type": "string"
+    },
+    "timestamp": {
+      "format": "date-time",
+      "title": "Timestamp",
+      "type": "string"
+    },
+    "quadrupoles": {
+      "items": {
+        "$ref": "#/$defs/ERTQuadrupoleMeasurement"
+      },
+      "title": "Quadrupoles",
+      "type": "array"
+    },
+    "autocal_version": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Autocal Version"
+    },
+    "raw_hash": {
+      "description": "SHA-256 of the RAW observation payload.",
+      "title": "Raw Hash",
+      "type": "string"
+    },
+    "processing_provenance": {
+      "additionalProperties": {
+        "type": "string"
+      },
+      "title": "Processing Provenance",
+      "type": "object"
+    }
+  },
+  "required": [
+    "survey_id",
+    "blinded_site_id",
+    "acquisition_id",
+    "raw_hash"
+  ],
+  "title": "ERTObservation",
+  "type": "object",
+  "$schema": "https://json-schema.org/draft/2020-12/schema"
+}

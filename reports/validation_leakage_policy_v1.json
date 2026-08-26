@@ -1,0 +1,160 @@
+{
+  "version": "v1",
+  "description": "Leakage policy for AquaScan Validation Dataset v1. Defines which fields may be used as input features for each prediction target. Fields marked FORBIDDEN_LEAKAGE must never appear in training inputs for ANY target. TARGET_DERIVED fields are derived from other fields that may be targets and must be excluded per-target.",
+  "field_classifications": {
+    "igme_id": {
+      "role": "METADATA_ONLY",
+      "rationale": "IGME identifier"
+    },
+    "domain": {
+      "role": "METADATA_ONLY",
+      "rationale": "hydrogeological unit"
+    },
+    "candidate_tier": {
+      "role": "METADATA_ONLY",
+      "rationale": "operational priority (not GT)"
+    },
+    "candidate_priority_score": {
+      "role": "METADATA_ONLY",
+      "rationale": "operational priority (not GT)"
+    },
+    "detail_url": {
+      "role": "PROVENANCE_ONLY",
+      "rationale": "IGME URL"
+    },
+    "point_nature": {
+      "role": "METADATA_ONLY",
+      "rationale": "point type"
+    },
+    "total_depth_m": {
+      "role": "INPUT_CANDIDATE",
+      "rationale": "borehole depth"
+    },
+    "construction_date": {
+      "role": "INPUT_CANDIDATE",
+      "rationale": "age context"
+    },
+    "latitude": {
+      "role": "INPUT_CANDIDATE",
+      "rationale": "spatial context"
+    },
+    "longitude": {
+      "role": "INPUT_CANDIDATE",
+      "rationale": "spatial context"
+    },
+    "elevation_m": {
+      "role": "INPUT_CANDIDATE",
+      "rationale": "topographic context"
+    },
+    "watershed": {
+      "role": "INPUT_CANDIDATE",
+      "rationale": "hydrological context"
+    },
+    "aquifer_system": {
+      "role": "INPUT_CANDIDATE",
+      "rationale": "hydrogeological context"
+    },
+    "province": {
+      "role": "INPUT_CANDIDATE",
+      "rationale": "administrative context"
+    },
+    "municipality": {
+      "role": "INPUT_CANDIDATE",
+      "rationale": "administrative context"
+    },
+    "drilling_method": {
+      "role": "INPUT_CANDIDATE",
+      "rationale": "construction method"
+    },
+    "pump_type": {
+      "role": "INPUT_CANDIDATE",
+      "rationale": "equipment"
+    },
+    "water_use": {
+      "role": "INPUT_CANDIDATE",
+      "rationale": "usage context"
+    },
+    "organization": {
+      "role": "METADATA_ONLY",
+      "rationale": "custodian"
+    },
+    "qa_coordinate_outlier": {
+      "role": "METADATA_ONLY",
+      "rationale": "QA flag"
+    },
+    "qa_elevation_outlier": {
+      "role": "METADATA_ONLY",
+      "rationale": "QA flag"
+    },
+    "qa_depth_outlier": {
+      "role": "METADATA_ONLY",
+      "rationale": "QA flag"
+    },
+    "qa_duplicate_coordinate": {
+      "role": "METADATA_ONLY",
+      "rationale": "QA flag"
+    },
+    "qa_flag_count": {
+      "role": "METADATA_ONLY",
+      "rationale": "QA summary"
+    },
+    "reference_flow_l_s": {
+      "role": "FORBIDDEN_LEAKAGE",
+      "rationale": "Always 0 in this cohort; not a reliable productivity signal. May correlate with TARGET_PRODUCTIVITY in other cohorts — must NEVER be used as input for productivity prediction."
+    },
+    "geological_evidence_count": {
+      "role": "TARGET_DERIVED",
+      "rationale": "derived from lithology evidence"
+    },
+    "water_level_evidence_count": {
+      "role": "TARGET_DERIVED",
+      "rationale": "derived from piezometry evidence"
+    },
+    "hydraulic_evidence_count": {
+      "role": "TARGET_DERIVED",
+      "rationale": "derived from pumping-test evidence"
+    },
+    "water_quality_evidence_count": {
+      "role": "TARGET_DERIVED",
+      "rationale": "derived from chemistry evidence"
+    },
+    "hydrometry_evidence_count": {
+      "role": "TARGET_DERIVED",
+      "rationale": "derived from hydrometry evidence"
+    },
+    "documentary_confidence": {
+      "role": "TARGET_DERIVED",
+      "rationale": "derived from evidence richness"
+    },
+    "water_presence_status": {
+      "role": "TARGET_DERIVED",
+      "rationale": "derived from hydrogeological evidence"
+    },
+    "water_presence_basis": {
+      "role": "TARGET_DERIVED",
+      "rationale": "derived from evidence sources"
+    }
+  },
+  "target_specific_forbidden": {
+    "TARGET_WATER_PRESENCE": [
+      "water_presence_basis",
+      "water_presence_status"
+    ],
+    "TARGET_DEPTH_TO_WATER": [
+      "water_level_evidence_count"
+    ],
+    "TARGET_HYDRAULIC_HEAD_ELEVATION": [
+      "water_level_evidence_count"
+    ],
+    "TARGET_PRODUCTIVITY": [
+      "hydraulic_evidence_count",
+      "reference_flow_l_s"
+    ],
+    "TARGET_LITHOLOGY": [
+      "geological_evidence_count"
+    ],
+    "TARGET_AQUIFER_INTERVAL": [
+      "geological_evidence_count"
+    ]
+  }
+}

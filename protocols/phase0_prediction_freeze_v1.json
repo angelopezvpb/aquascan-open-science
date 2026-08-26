@@ -1,0 +1,27 @@
+{
+  "protocol": "Phase 0 Prediction Freeze Protocol v1",
+  "version": "v1",
+  "created_at": "2026-08-24T18:32:04.984942+00:00",
+  "freeze_artifact_template": {
+    "blinded_site_id": "AQ-P0-NNN",
+    "analysis_arm": "ARM_E|ARM_S|ARM_ES",
+    "raw_ert_sha256": "sha256 or N/A for ARM_S",
+    "raw_seismic_sha256": "sha256 or N/A for ARM_E",
+    "autocal_version": "string",
+    "processing_version": "string",
+    "processing_config_sha256": "hash of inversion/picking/interpretation config",
+    "predicted_target": "TARGET_DEPTH_TO_WATER|TARGET_LITHOLOGY|TARGET_PRODUCTIVITY",
+    "point_estimate": "float|null",
+    "interval_estimate_min": "float|null",
+    "interval_estimate_max": "float|null",
+    "uncertainty": "string",
+    "confidence_gate": "GREEN|YELLOW|RED",
+    "interpreter_notes": "structured JSON — no free-text hiding data",
+    "view_used": "STRICT_BLIND|CONTEXT_AWARE",
+    "prediction_timestamp_utc": "ISO8601",
+    "prediction_artifact_sha256": "sha256 of this entire artifact"
+  },
+  "freeze_rule": "1. Select blinded site.\n2. Select analysis arm (E, S, or ES).\n3. Load RAW data hash.\n4. Run deterministic processing pipeline.\n5. Record prediction + confidence.\n6. Compute SHA-256 of full artifact.\n7. Log SHA-256 to immutable freeze log.\n8. ONLY THEN is Ground Truth revealed for this site+arm.\n9. After reveal, do NOT modify predictions.\n10. Post-reveal analysis saved as POST_REVEAL_ANALYSIS, clearly separated from blind prediction.\n",
+  "per_site_requirement": "For each of the 10 sites, ARM_E, ARM_S, and ARM_ES must ALL be frozen before Ground Truth for that site is revealed.",
+  "no_backdating": "Prediction timestamps are immutable. Prediction SHA-256 cannot be recomputed after reveal."
+}

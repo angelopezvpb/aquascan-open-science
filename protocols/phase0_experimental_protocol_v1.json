@@ -1,0 +1,47 @@
+{
+  "protocol": "AquaScan Phase 0 Experimental Protocol v1",
+  "version": "v1",
+  "created_at": "2026-08-24T18:32:04.984912+00:00",
+  "cohort": "Cohort A — 10 sites, San Antonio domain",
+  "status": "DESIGN — no field data acquired",
+  "scientific_objective": "Determine whether the AquaScan measurement stack (ERT + P-wave seismic + GNSS RTK + AutoCal) produces repeatable measurements, physically interpretable subsurface structure, and predictions corresponding to independently sealed Ground Truth.",
+  "scientific_questions": {
+    "Q1_REPEATABILITY": "Can AquaScan acquire substantially similar ERT and seismic observations when the same site is measured repeatedly under controlled conditions?",
+    "Q2_PHYSICAL_SENSITIVITY": "Do ERT and P-wave seismic produce coherent subsurface contrasts at these sites?",
+    "Q3_GT_CORRESPONDENCE": "Without seeing sealed Ground Truth, can observations identify or constrain depth-to-water related structure, hydraulic/geological interfaces, lithological structure, and aquifer-related intervals where documentary evidence permits?",
+    "Q4_MULTIMODAL": "Does ERT + seismic provide more useful evidence than either modality alone?",
+    "Q5_CONFIDENCE": "Can AquaScan distinguish confident prediction, uncertain prediction, and insufficient-evidence/abstention before Ground Truth is revealed?"
+  },
+  "target_prioritization": {
+    "PRIMARY": {
+      "TARGET_DEPTH_TO_WATER": "Sealed documentary piezometric Ground Truth available for all 10 Cohort A sites (9x class A, 1x class B). Primary validation endpoint."
+    },
+    "SECONDARY": {
+      "TARGET_LITHOLOGY": "Structure and lithology validation.",
+      "TARGET_PRODUCTIVITY": "Pumping-test based validation. Note: all Cohort A sites have class B productivity (single pumping test each)."
+    },
+    "EXPLORATORY": {
+      "TARGET_HYDRAULIC_HEAD_ELEVATION": "Secondary piezometric target.",
+      "TARGET_AQUIFER_INTERVAL": "NOT promoted to primary — class A = 0 nationally. Documentary Ground Truth insufficient."
+    },
+    "OUT_OF_SCOPE": {
+      "TARGET_WATER_PRESENCE_DRY_WELL_DISCRIMINATION": "CONFIRMED_NEGATIVE = 0, STRONG_NEGATIVE = 0 in the IGME cohort. Dry-well detection cannot be validated with these sites. TARGET_WATER_PRESENCE evaluated descriptively for positive evidence only."
+    }
+  },
+  "blinding_levels": {
+    "STRICT_BLIND_INTERPRETER_VIEW": "blinded_site_id + instrument metadata + ERT/seismic data + AutoCal/QC data. NO coordinates, NO domain, NO aquifer system, NO candidate tier, NO Ground Truth.",
+    "CONTEXT_AWARE_INTERPRETER_VIEW": "Same as strict + hydrogeological unit, aquifer system, candidate tier. Used ONLY for secondary analysis. Never replaces the strict-blind prediction."
+  },
+  "analysis_arms": {
+    "ARM_E": "ERT only — independent blind interpretation.",
+    "ARM_S": "Seismic only — independent blind interpretation.",
+    "ARM_ES": "ERT + Seismic — multimodal fusion interpretation.",
+    "cross_contamination_rule": "ARM_E must not see seismic data. ARM_S must not see ERT data. After both are frozen, ARM_ES may see both."
+  },
+  "out_of_scope_explicitly": [
+    "Dry-well detection (no confirmed negatives in cohort).",
+    "Commercial groundwater discovery.",
+    "GeoAI model training.",
+    "Prospective blind drilling."
+  ]
+}

@@ -1,0 +1,6 @@
+domain,n,candidate_suitability,ground_truth_richness,phase0_v2_score,p1_count,p2_count,p3_count,with_lithology,with_piezometry,with_pumping_tests,with_chemistry,with_hydrometry,avg_evidence_families
+Migjorn,537,0.6676,0.5996,0.6268,321,75,72,419,464,217,213,297,2.998
+San Antonio,173,0.6734,0.5884,0.6224,99,35,26,103,152,101,90,63,2.942
+Santa Eulalia,271,0.7952,0.4982,0.617,193,45,9,124,224,168,83,76,2.491
+San Carlos,204,0.7794,0.4265,0.5676,138,42,4,93,126,124,36,56,2.132
+Región de los arenales,3559,0.5872,0.3216,0.4278,1757,666,746,2525,1947,247,160,843,1.608

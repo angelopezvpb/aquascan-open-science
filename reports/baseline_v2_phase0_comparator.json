@@ -1,0 +1,29 @@
+{
+  "phase0_domain": "San Antonio",
+  "firewall": {
+    "n_firewalled_records": 10,
+    "firewall_source": "reports/phase0_cohort_A_v1.csv",
+    "note": "10 Phase 0 sites excluded from training/tuning/selection."
+  },
+  "comparator_source": "baseline_cross_domain_v1_1.csv (held-out San Antonio)",
+  "comparator": {
+    "model": "RandomForest",
+    "n_train": 529,
+    "n_test": 34,
+    "MAE_m": 14.950846653244628,
+    "dummy_MAE_m": 26.56424024241076,
+    "improvement_over_dummy_m": 11.613393589166131,
+    "R2": 0.6724164236357391,
+    "bias_m": 8.509778258345001
+  },
+  "future_arms": {
+    "ARM_CONTEXT": "BASELINE_DEPTH_V2 (this artifact)",
+    "ARM_E": "ERT-only physical prediction (future)",
+    "ARM_S": "Seismic-only physical prediction (future)",
+    "ARM_ES": "ERT+Seismic physical prediction (future)",
+    "ARM_CONTEXT_PLUS_PHYSICS": "Context + ERT + Seismic (future)"
+  },
+  "comparison_concept": "CONTEXT vs ERT vs SEISMIC vs ERT+SEISMIC vs CONTEXT+ERT+SEISMIC",
+  "note": "Future physical arms must be compared against the appropriate evaluation-context baseline (in-domain / spatial-holdout / cross-domain). For Phase 0 San Antonio, the held-out San Antonio cross-domain comparator above is the primary reference.",
+  "created_at": "2026-08-25T20:27:35+00:00"
+}

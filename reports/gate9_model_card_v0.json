@@ -1,0 +1,50 @@
+{
+  "MODEL": "AquaScan GeoAI Context v0",
+  "version": "v0",
+  "INTENDED_USE": "Hydrogeological contextual prior (open-source baseline).",
+  "NOT_INTENDED_FOR": [
+    "Standalone claim of groundwater discovery",
+    "Dry-well discrimination (no confirmed negative GT exists)",
+    "Substituting AquaScan physical measurements"
+  ],
+  "SUPPORTED_TARGET": "TARGET_DEPTH_TO_WATER (documentary prediction)",
+  "EXPLORATORY_TARGETS": [
+    "TARGET_HYDRAULIC_HEAD_ELEVATION",
+    "TARGET_PRODUCTIVITY"
+  ],
+  "KNOWN_LIMITATIONS": [
+    "Historical GT (median of dated observations; not current water level)",
+    "Domain dependency (MIXED_SIGNAL in Gate 8.1)",
+    "No confirmed dry-well GT",
+    "No physical AquaScan inputs",
+    "KNOWN_OOD_DOMAIN = Región de los arenales"
+  ],
+  "TRAINING_POPULATION": {
+    "TARGET_DEPTH_TO_WATER": 563,
+    "domains": [
+      "Migjorn",
+      "Región de los arenales",
+      "San Antonio",
+      "San Carlos",
+      "Santa Eulalia"
+    ],
+    "note": "GT-A + GT-B only, Phase 0 firewall intact."
+  },
+  "EVALUATION": [
+    "grouped (REGIME_A)",
+    "spatial block (REGIME_B)",
+    "cross-domain (REGIME_C)"
+  ],
+  "PHASE_0_FIREWALL": "ACTIVE (10 San Antonio sites excluded)",
+  "SELECTED_MODEL": "RandomForest",
+  "SELECTED_ARM": "G9_CONTEXT_FULL",
+  "CROSS_DOMAIN_MAE_M": 15.386765098985213,
+  "IN_DOMAIN_MAE_M": 9.939555518566577,
+  "BASELINE_DEPTH_V2_REFERENCE_M": {
+    "IN_DOMAIN": 10.003696991862531,
+    "SPATIAL_HOLDOUT": 9.44846929275648,
+    "CROSS_DOMAIN": 15.672796311396866
+  },
+  "LICENSE": "Open-source models only (scikit-learn BSD-3). No proprietary libraries used.",
+  "created_at": "2026-08-26T08:52:43+00:00"
+}

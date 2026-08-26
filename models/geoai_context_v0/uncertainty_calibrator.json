@@ -1,0 +1,6 @@
+{
+  "method": "split_conformal_absolute_residual",
+  "alpha": 0.1,
+  "calibration_quantile_abs_residual_m": 8.176541907805797,
+  "interval_width_m": 16.353083815611594
+}

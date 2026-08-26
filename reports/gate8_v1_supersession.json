@@ -1,0 +1,36 @@
+{
+  "artifact": "gate8_v1_supersession.json",
+  "superseded": {
+    "gate": "Gate 8",
+    "version": "v1",
+    "status": "INVALID_FOR_SCIENTIFIC_COMPARISON",
+    "reason": "TARGET_LEAKAGE",
+    "details": "Gate 8 permitted `_target_*` columns as input features. With the leak, RF depth-to-water MAE was ~0.21 m (near-perfect target copy). Gate 8.1 proved this and corrected it (honest in-domain MAE ~10 m).",
+    "evidence": {
+      "forensic_summary": "baseline_forensic_summary_v1_1.json",
+      "target_leak_corrected": true,
+      "leaked_mae_m": 0.21,
+      "corrected_mae_m": 10.0
+    }
+  },
+  "superseded_by": {
+    "gate": "Gate 8.1 corrected forensic benchmark / Baseline v2",
+    "artifacts": [
+      "reports/baseline_forensic_results_v1_1.csv",
+      "reports/baseline_forensic_summary_v1_1.json",
+      "reports/baseline_v2_results.csv",
+      "reports/baseline_v2_manifest.json"
+    ]
+  },
+  "preservation": {
+    "note": "Original Gate 8 artifacts are preserved immutable for provenance.",
+    "original_artifacts": [
+      "reports/baseline_results_v1.csv",
+      "reports/baseline_summary_v1.json",
+      "reports/baseline_feature_manifest_v1.json",
+      "reports/baseline_split_manifest_v1.json",
+      "reports/baseline_sanity_controls_v1.json"
+    ]
+  },
+  "created_at": "2026-08-25T20:27:35+00:00"
+}

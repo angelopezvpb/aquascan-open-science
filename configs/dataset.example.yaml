@@ -1,0 +1,33 @@
+# AquaScan Dataset Configuration Example
+# Copy to dataset.yaml and customize for your data
+
+dataset:
+  name: "aquascan-igme-v1"
+  version: "0.1.0"
+  schema_version: "1.0.0"
+  description: "IGME water points inventory normalized to AquaScan schema"
+
+sources:
+  - name: igme
+    type: arcgis_rest
+    url: "https://services.arcgis.com/nGt4H4H4TpS4n8X7/arcgis/rest/services/IGME_Inventario_Puntos_Agua/FeatureServer/0/query"
+    output_dir: "data/raw/igme"
+
+processing:
+  normalize:
+    input: "data/raw/igme"
+    output: "data/interim/igme.parquet"
+
+  candidates:
+    input: "data/interim/igme.parquet"
+    output: "data/processed/candidates.parquet"
+    min_candidate_score: 0.3
+
+quality:
+  min_ert_score: 0.5
+  min_seismic_score: 0.5
+  require_coordinates: true
+
+ground_truth:
+  min_class_for_training: "C"  # Only A, B, C used for primary training
+  exclude_class: ["D"]

@@ -1,0 +1,188 @@
+{
+  "description": "Fusion-ready shared physical grid.\n\nChannels (depth x lateral) with modality masks. No target labels.\nInterpolation is a derived representation; native models are preserved\nseparately. Canonical AquaScan physical schema (Gate 10 v0). RAW values preserved; null != 0.",
+  "properties": {
+    "blinded_site_id": {
+      "title": "Blinded Site Id",
+      "type": "string"
+    },
+    "depth_bins_m": {
+      "description": "Depth bin edges (m).",
+      "items": {
+        "type": "number"
+      },
+      "title": "Depth Bins M",
+      "type": "array"
+    },
+    "lateral_bins_m": {
+      "description": "Lateral bin edges (m).",
+      "items": {
+        "type": "number"
+      },
+      "title": "Lateral Bins M",
+      "type": "array"
+    },
+    "ert_resistivity": {
+      "anyOf": [
+        {
+          "items": {
+            "items": {
+              "type": "number"
+            },
+            "type": "array"
+          },
+          "type": "array"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "ERT resistivity channel (n_depth x n_lateral).",
+      "title": "Ert Resistivity"
+    },
+    "ert_uncertainty": {
+      "anyOf": [
+        {
+          "items": {
+            "items": {
+              "type": "number"
+            },
+            "type": "array"
+          },
+          "type": "array"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Ert Uncertainty"
+    },
+    "ert_sensitivity": {
+      "anyOf": [
+        {
+          "items": {
+            "items": {
+              "type": "number"
+            },
+            "type": "array"
+          },
+          "type": "array"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Ert Sensitivity"
+    },
+    "seismic_vp": {
+      "anyOf": [
+        {
+          "items": {
+            "items": {
+              "type": "number"
+            },
+            "type": "array"
+          },
+          "type": "array"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "P-wave velocity channel (n_depth x n_lateral).",
+      "title": "Seismic Vp"
+    },
+    "seismic_uncertainty": {
+      "anyOf": [
+        {
+          "items": {
+            "items": {
+              "type": "number"
+            },
+            "type": "array"
+          },
+          "type": "array"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Seismic Uncertainty"
+    },
+    "seismic_coverage": {
+      "anyOf": [
+        {
+          "items": {
+            "items": {
+              "type": "number"
+            },
+            "type": "array"
+          },
+          "type": "array"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Seismic Coverage"
+    },
+    "topography": {
+      "anyOf": [
+        {
+          "items": {
+            "type": "number"
+          },
+          "type": "array"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Topography along lateral bins (m).",
+      "title": "Topography"
+    },
+    "modality_masks": {
+      "additionalProperties": {
+        "items": {
+          "items": {
+            "type": "boolean"
+          },
+          "type": "array"
+        },
+        "type": "array"
+      },
+      "description": "Per-modality validity mask (True where the modality has support).",
+      "title": "Modality Masks",
+      "type": "object"
+    },
+    "parent_artifacts": {
+      "additionalProperties": {
+        "type": "string"
+      },
+      "description": "Hash lineage: {'ert': ..., 'seismic': ...}.",
+      "title": "Parent Artifacts",
+      "type": "object"
+    },
+    "processing_provenance": {
+      "additionalProperties": {
+        "type": "string"
+      },
+      "title": "Processing Provenance",
+      "type": "object"
+    }
+  },
+  "required": [
+    "blinded_site_id",
+    "depth_bins_m",
+    "lateral_bins_m"
+  ],
+  "title": "PhysicalRepresentation",
+  "type": "object",
+  "$schema": "https://json-schema.org/draft/2020-12/schema"
+}

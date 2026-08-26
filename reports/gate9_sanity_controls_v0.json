@@ -1,0 +1,39 @@
+[
+  {
+    "test": "GROUP_LEAK_CONTROL",
+    "value": "PASS",
+    "n_train_groups": 309,
+    "note": "Group overlap prevented by regime builders (GroupKFold raises on overlap).",
+    "target": "TARGET_DEPTH_TO_WATER",
+    "arm": "G9_CONTEXT_FULL",
+    "regime": "REGIME_A_GROUPED"
+  },
+  {
+    "test": "TARGET_SHUFFLE",
+    "mae_real": 9.939555518566577,
+    "mae_shuffled": 26.56948179074394,
+    "collapsed": true,
+    "target": "TARGET_DEPTH_TO_WATER",
+    "arm": "G9_CONTEXT_FULL",
+    "regime": "REGIME_A_GROUPED"
+  },
+  {
+    "test": "WITHIN_DOMAIN_TARGET_SHUFFLE",
+    "mae_real": 9.939555518566577,
+    "mae_shuffled_within": 19.54274247010738,
+    "collapsed": true,
+    "target": "TARGET_DEPTH_TO_WATER",
+    "arm": "G9_CONTEXT_FULL",
+    "regime": "REGIME_A_GROUPED"
+  },
+  {
+    "test": "RANDOM_FEATURE_CONTROL",
+    "n_noise_features": 5,
+    "mae_real": 9.939555518566577,
+    "mae_with_noise": 10.461395627807788,
+    "no_improvement": true,
+    "target": "TARGET_DEPTH_TO_WATER",
+    "arm": "G9_CONTEXT_FULL",
+    "regime": "REGIME_A_GROUPED"
+  }
+]

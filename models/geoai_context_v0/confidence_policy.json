@@ -1,0 +1,9 @@
+{
+  "method": "ensemble_dispersion + OOD support",
+  "gate": {
+    "GREEN": "unc <= p75 and support IN_DISTRIBUTION",
+    "YELLOW": "unc <= p90 or support WEAK_SUPPORT",
+    "RED": "unc > p90 or support OUT_OF_DISTRIBUTION (ABSTAIN)"
+  },
+  "note": "Thresholds fit on validation folds only; never on final test outcomes."
+}

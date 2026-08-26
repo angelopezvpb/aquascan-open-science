@@ -1,0 +1,7 @@
+modality,backend,available,version,license,note
+ERT,pyGIMLi,False,,Apache-2.0,Preferred open-source ERT inversion backend when installed.
+ERT,SimPEG,False,,MIT,Open-source geophysical simulation/inversion framework.
+ERT,AquaScanAnalytic1D,True,0.1.0,Apache-2.0,Public-domain deterministic 1D layered-slab analytic backend for software-contract validation ONLY.
+Seismic,obspy,False,,LGPL-3.0,"Open-source seismology toolbox (SEG-2/SEG-Y I/O, filtering)."
+Seismic,pyGIMLi_refraction,False,,Apache-2.0,Open-source refraction tomography backend when installed.
+Seismic,AquaScanInterceptTime1D,True,0.1.0,Apache-2.0,Public-domain deterministic intercept-time 1D refraction backend for software-contract validation ONLY.

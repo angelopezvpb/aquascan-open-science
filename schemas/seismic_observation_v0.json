@@ -1,0 +1,278 @@
+{
+  "$defs": {
+    "SeismicShot": {
+      "description": "One seismic shot (all receiver traces for one source position).",
+      "properties": {
+        "survey_id": {
+          "title": "Survey Id",
+          "type": "string"
+        },
+        "blinded_site_id": {
+          "title": "Blinded Site Id",
+          "type": "string"
+        },
+        "acquisition_id": {
+          "title": "Acquisition Id",
+          "type": "string"
+        },
+        "shot_id": {
+          "title": "Shot Id",
+          "type": "string"
+        },
+        "shot_x": {
+          "title": "Shot X",
+          "type": "number"
+        },
+        "shot_y": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Shot Y"
+        },
+        "shot_elevation_m": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Shot Elevation M"
+        },
+        "trigger_timestamp": {
+          "anyOf": [
+            {
+              "format": "date-time",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Trigger Timestamp"
+        },
+        "receiver_ids": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Receiver Ids",
+          "type": "array"
+        },
+        "receiver_x": {
+          "items": {
+            "type": "number"
+          },
+          "title": "Receiver X",
+          "type": "array"
+        },
+        "receiver_y": {
+          "anyOf": [
+            {
+              "items": {
+                "type": "number"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Receiver Y"
+        },
+        "receiver_elevation_m": {
+          "anyOf": [
+            {
+              "items": {
+                "type": "number"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Receiver Elevation M"
+        },
+        "sample_rate_hz": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Sample Rate Hz"
+        },
+        "record_length_s": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Record Length S"
+        },
+        "raw_waveforms": {
+          "description": "RAW waveform per receiver (trace index aligned with receiver_ids).",
+          "items": {
+            "items": {
+              "type": "number"
+            },
+            "type": "array"
+          },
+          "title": "Raw Waveforms",
+          "type": "array"
+        },
+        "stack_index": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Stack Index"
+        },
+        "channel_numbers": {
+          "anyOf": [
+            {
+              "items": {
+                "type": "integer"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Channel Numbers"
+        },
+        "geophone_metadata": {
+          "additionalProperties": true,
+          "title": "Geophone Metadata",
+          "type": "object"
+        },
+        "qc_flags": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Qc Flags",
+          "type": "array"
+        },
+        "autocal_version": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Autocal Version"
+        },
+        "raw_hash": {
+          "description": "SHA-256 of the RAW shot payload.",
+          "title": "Raw Hash",
+          "type": "string"
+        },
+        "processing_provenance": {
+          "additionalProperties": {
+            "type": "string"
+          },
+          "title": "Processing Provenance",
+          "type": "object"
+        }
+      },
+      "required": [
+        "survey_id",
+        "blinded_site_id",
+        "acquisition_id",
+        "shot_id",
+        "shot_x",
+        "raw_hash"
+      ],
+      "title": "SeismicShot",
+      "type": "object"
+    }
+  },
+  "description": "A full seismic survey observation (list of shots). Canonical AquaScan physical schema (Gate 10 v0). RAW values preserved; null != 0.",
+  "properties": {
+    "survey_id": {
+      "title": "Survey Id",
+      "type": "string"
+    },
+    "blinded_site_id": {
+      "title": "Blinded Site Id",
+      "type": "string"
+    },
+    "acquisition_id": {
+      "title": "Acquisition Id",
+      "type": "string"
+    },
+    "timestamp": {
+      "format": "date-time",
+      "title": "Timestamp",
+      "type": "string"
+    },
+    "shots": {
+      "items": {
+        "$ref": "#/$defs/SeismicShot"
+      },
+      "title": "Shots",
+      "type": "array"
+    },
+    "autocal_version": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Autocal Version"
+    },
+    "raw_hash": {
+      "description": "SHA-256 of the RAW observation payload.",
+      "title": "Raw Hash",
+      "type": "string"
+    },
+    "processing_provenance": {
+      "additionalProperties": {
+        "type": "string"
+      },
+      "title": "Processing Provenance",
+      "type": "object"
+    }
+  },
+  "required": [
+    "survey_id",
+    "blinded_site_id",
+    "acquisition_id",
+    "raw_hash"
+  ],
+  "title": "SeismicObservation",
+  "type": "object",
+  "$schema": "https://json-schema.org/draft/2020-12/schema"
+}

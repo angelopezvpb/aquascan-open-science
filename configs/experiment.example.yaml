@@ -1,0 +1,42 @@
+# AquaScan Experiment Configuration Example
+# Copy to experiment.yaml and customize
+
+experiment:
+  id: "baseline-igme-001"
+  dataset_version: "aquascan-igme-v1"
+  schema_version: "1.0.0"
+
+model:
+  name: "logistic_regression"
+  type: "baseline"
+  params:
+    C: 1.0
+    class_weight: "balanced"
+    max_iter: 1000
+
+splits:
+  type: "geographic_holdout"
+  test_fraction: 0.3
+  random_seed: 42
+
+evaluation:
+  metrics:
+    - precision
+    - recall
+    - f1
+    - roc_auc
+    - pr_auc
+    - brier_score
+    - expected_calibration_error
+
+  abstention:
+    enabled: true
+    evidence_thresholds: [0.0, 0.2, 0.4, 0.6, 0.8]
+
+target:
+  column: "ground_truth_score"
+  binarize_threshold: 0.5
+
+reproducibility:
+  random_seed: 42
+  track_git_commit: true

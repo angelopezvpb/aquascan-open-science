@@ -1,0 +1,980 @@
+{
+  "gate": "5",
+  "version": "v0.4",
+  "created_at": "2026-08-24T12:33:38.237952+00:00",
+  "cohort_size": 4744,
+  "norm_errors": 0,
+  "domains": [
+    "San Antonio",
+    "Santa Eulalia",
+    "Migjorn",
+    "San Carlos",
+    "Región de los arenales"
+  ],
+  "coverage": {
+    "national": {
+      "any_enrichment": {
+        "count": 4541,
+        "proportion": 0.9572,
+        "ci95": [
+          0.9511,
+          0.9626
+        ]
+      },
+      "has_lithology": {
+        "count": 3264,
+        "proportion": 0.688,
+        "ci95": [
+          0.6747,
+          0.7011
+        ]
+      },
+      "has_piezometry": {
+        "count": 2913,
+        "proportion": 0.614,
+        "ci95": [
+          0.6001,
+          0.6278
+        ]
+      },
+      "has_pumping_tests": {
+        "count": 857,
+        "proportion": 0.1806,
+        "ci95": [
+          0.17,
+          0.1919
+        ]
+      },
+      "has_chemistry": {
+        "count": 582,
+        "proportion": 0.1227,
+        "ci95": [
+          0.1136,
+          0.1323
+        ]
+      },
+      "has_hydrometry": {
+        "count": 1335,
+        "proportion": 0.2814,
+        "ci95": [
+          0.2688,
+          0.2944
+        ]
+      },
+      "ge_2_families": 2645,
+      "ge_3_families": 1190,
+      "geo_plus_water": 1813,
+      "geo_plus_hydraulic": 591,
+      "geo_plus_water_plus_hydraulic": 540
+    },
+    "per_domain": {
+      "San Antonio": {
+        "n": 173,
+        "any_enrichment": {
+          "count": 162,
+          "proportion": 0.9364,
+          "ci95": [
+            0.8897,
+            0.9641
+          ]
+        },
+        "has_lithology": {
+          "count": 103,
+          "proportion": 0.5954,
+          "ci95": [
+            0.5209,
+            0.6657
+          ]
+        },
+        "has_piezometry": {
+          "count": 152,
+          "proportion": 0.8786,
+          "ci95": [
+            0.8216,
+            0.9192
+          ]
+        },
+        "has_pumping_tests": {
+          "count": 101,
+          "proportion": 0.5838,
+          "ci95": [
+            0.5093,
+            0.6547
+          ]
+        },
+        "has_chemistry": {
+          "count": 90,
+          "proportion": 0.5202,
+          "ci95": [
+            0.4462,
+            0.5934
+          ]
+        },
+        "has_hydrometry": {
+          "count": 63,
+          "proportion": 0.3642,
+          "ci95": [
+            0.2961,
+            0.4381
+          ]
+        },
+        "ge_2_families": 144,
+        "ge_3_families": 118
+      },
+      "Santa Eulalia": {
+        "n": 271,
+        "any_enrichment": {
+          "count": 256,
+          "proportion": 0.9446,
+          "ci95": [
+            0.9107,
+            0.9662
+          ]
+        },
+        "has_lithology": {
+          "count": 124,
+          "proportion": 0.4576,
+          "ci95": [
+            0.3993,
+            0.5171
+          ]
+        },
+        "has_piezometry": {
+          "count": 224,
+          "proportion": 0.8266,
+          "ci95": [
+            0.777,
+            0.867
+          ]
+        },
+        "has_pumping_tests": {
+          "count": 168,
+          "proportion": 0.6199,
+          "ci95": [
+            0.5608,
+            0.6757
+          ]
+        },
+        "has_chemistry": {
+          "count": 83,
+          "proportion": 0.3063,
+          "ci95": [
+            0.2544,
+            0.3635
+          ]
+        },
+        "has_hydrometry": {
+          "count": 76,
+          "proportion": 0.2804,
+          "ci95": [
+            0.2303,
+            0.3367
+          ]
+        },
+        "ge_2_families": 219,
+        "ge_3_families": 113
+      },
+      "Migjorn": {
+        "n": 537,
+        "any_enrichment": {
+          "count": 531,
+          "proportion": 0.9888,
+          "ci95": [
+            0.9758,
+            0.9949
+          ]
+        },
+        "has_lithology": {
+          "count": 419,
+          "proportion": 0.7803,
+          "ci95": [
+            0.7433,
+            0.8132
+          ]
+        },
+        "has_piezometry": {
+          "count": 464,
+          "proportion": 0.8641,
+          "ci95": [
+            0.8325,
+            0.8905
+          ]
+        },
+        "has_pumping_tests": {
+          "count": 217,
+          "proportion": 0.4041,
+          "ci95": [
+            0.3634,
+            0.4461
+          ]
+        },
+        "has_chemistry": {
+          "count": 213,
+          "proportion": 0.3966,
+          "ci95": [
+            0.3561,
+            0.4386
+          ]
+        },
+        "has_hydrometry": {
+          "count": 297,
+          "proportion": 0.5531,
+          "ci95": [
+            0.5108,
+            0.5946
+          ]
+        },
+        "ge_2_families": 429,
+        "ge_3_families": 344
+      },
+      "San Carlos": {
+        "n": 204,
+        "any_enrichment": {
+          "count": 194,
+          "proportion": 0.951,
+          "ci95": [
+            0.9121,
+            0.9732
+          ]
+        },
+        "has_lithology": {
+          "count": 93,
+          "proportion": 0.4559,
+          "ci95": [
+            0.389,
+            0.5244
+          ]
+        },
+        "has_piezometry": {
+          "count": 126,
+          "proportion": 0.6176,
+          "ci95": [
+            0.5494,
+            0.6816
+          ]
+        },
+        "has_pumping_tests": {
+          "count": 124,
+          "proportion": 0.6078,
+          "ci95": [
+            0.5394,
+            0.6723
+          ]
+        },
+        "has_chemistry": {
+          "count": 36,
+          "proportion": 0.1765,
+          "ci95": [
+            0.1303,
+            0.2346
+          ]
+        },
+        "has_hydrometry": {
+          "count": 56,
+          "proportion": 0.2745,
+          "ci95": [
+            0.2179,
+            0.3395
+          ]
+        },
+        "ge_2_families": 136,
+        "ge_3_families": 58
+      },
+      "Región de los arenales": {
+        "n": 3559,
+        "any_enrichment": {
+          "count": 3398,
+          "proportion": 0.9548,
+          "ci95": [
+            0.9474,
+            0.9611
+          ]
+        },
+        "has_lithology": {
+          "count": 2525,
+          "proportion": 0.7095,
+          "ci95": [
+            0.6943,
+            0.7242
+          ]
+        },
+        "has_piezometry": {
+          "count": 1947,
+          "proportion": 0.5471,
+          "ci95": [
+            0.5307,
+            0.5634
+          ]
+        },
+        "has_pumping_tests": {
+          "count": 247,
+          "proportion": 0.0694,
+          "ci95": [
+            0.0615,
+            0.0782
+          ]
+        },
+        "has_chemistry": {
+          "count": 160,
+          "proportion": 0.045,
+          "ci95": [
+            0.0386,
+            0.0523
+          ]
+        },
+        "has_hydrometry": {
+          "count": 843,
+          "proportion": 0.2369,
+          "ci95": [
+            0.2232,
+            0.2511
+          ]
+        },
+        "ge_2_families": 1717,
+        "ge_3_families": 557
+      }
+    }
+  },
+  "target_readiness": [
+    {
+      "target": "TARGET_WATER_PRESENCE",
+      "n": 4744,
+      "ready": 1591,
+      "partial": 1621,
+      "not_ready": 1532,
+      "ready_pct": 33.5,
+      "partial_pct": 34.2,
+      "not_ready_pct": 32.3
+    },
+    {
+      "target": "TARGET_DEPTH_TO_WATER",
+      "n": 4744,
+      "ready": 452,
+      "partial": 2461,
+      "not_ready": 1831,
+      "ready_pct": 9.5,
+      "partial_pct": 51.9,
+      "not_ready_pct": 38.6
+    },
+    {
+      "target": "TARGET_HYDRAULIC_HEAD_ELEVATION",
+      "n": 4744,
+      "ready": 452,
+      "partial": 2461,
+      "not_ready": 1831,
+      "ready_pct": 9.5,
+      "partial_pct": 51.9,
+      "not_ready_pct": 38.6
+    },
+    {
+      "target": "TARGET_AQUIFER_INTERVAL",
+      "n": 4744,
+      "ready": 0,
+      "partial": 3264,
+      "not_ready": 1480,
+      "ready_pct": 0.0,
+      "partial_pct": 68.8,
+      "not_ready_pct": 31.2
+    },
+    {
+      "target": "TARGET_PRODUCTIVITY",
+      "n": 4744,
+      "ready": 835,
+      "partial": 9,
+      "not_ready": 3900,
+      "ready_pct": 17.6,
+      "partial_pct": 0.2,
+      "not_ready_pct": 82.2
+    },
+    {
+      "target": "TARGET_LITHOLOGY",
+      "n": 4744,
+      "ready": 864,
+      "partial": 2400,
+      "not_ready": 1480,
+      "ready_pct": 18.2,
+      "partial_pct": 50.6,
+      "not_ready_pct": 31.2
+    }
+  ],
+  "readiness_by_domain": {
+    "San Antonio": [
+      {
+        "target": "TARGET_WATER_PRESENCE",
+        "n": 173,
+        "ready": 130,
+        "partial": 29,
+        "not_ready": 14,
+        "ready_pct": 75.1,
+        "partial_pct": 16.8,
+        "not_ready_pct": 8.1
+      },
+      {
+        "target": "TARGET_DEPTH_TO_WATER",
+        "n": 173,
+        "ready": 44,
+        "partial": 108,
+        "not_ready": 21,
+        "ready_pct": 25.4,
+        "partial_pct": 62.4,
+        "not_ready_pct": 12.1
+      },
+      {
+        "target": "TARGET_HYDRAULIC_HEAD_ELEVATION",
+        "n": 173,
+        "ready": 44,
+        "partial": 108,
+        "not_ready": 21,
+        "ready_pct": 25.4,
+        "partial_pct": 62.4,
+        "not_ready_pct": 12.1
+      },
+      {
+        "target": "TARGET_AQUIFER_INTERVAL",
+        "n": 173,
+        "ready": 0,
+        "partial": 103,
+        "not_ready": 70,
+        "ready_pct": 0.0,
+        "partial_pct": 59.5,
+        "not_ready_pct": 40.5
+      },
+      {
+        "target": "TARGET_PRODUCTIVITY",
+        "n": 173,
+        "ready": 101,
+        "partial": 0,
+        "not_ready": 72,
+        "ready_pct": 58.4,
+        "partial_pct": 0.0,
+        "not_ready_pct": 41.6
+      },
+      {
+        "target": "TARGET_LITHOLOGY",
+        "n": 173,
+        "ready": 3,
+        "partial": 100,
+        "not_ready": 70,
+        "ready_pct": 1.7,
+        "partial_pct": 57.8,
+        "not_ready_pct": 40.5
+      }
+    ],
+    "Santa Eulalia": [
+      {
+        "target": "TARGET_WATER_PRESENCE",
+        "n": 271,
+        "ready": 178,
+        "partial": 68,
+        "not_ready": 25,
+        "ready_pct": 65.7,
+        "partial_pct": 25.1,
+        "not_ready_pct": 9.2
+      },
+      {
+        "target": "TARGET_DEPTH_TO_WATER",
+        "n": 271,
+        "ready": 42,
+        "partial": 182,
+        "not_ready": 47,
+        "ready_pct": 15.5,
+        "partial_pct": 67.2,
+        "not_ready_pct": 17.3
+      },
+      {
+        "target": "TARGET_HYDRAULIC_HEAD_ELEVATION",
+        "n": 271,
+        "ready": 42,
+        "partial": 182,
+        "not_ready": 47,
+        "ready_pct": 15.5,
+        "partial_pct": 67.2,
+        "not_ready_pct": 17.3
+      },
+      {
+        "target": "TARGET_AQUIFER_INTERVAL",
+        "n": 271,
+        "ready": 0,
+        "partial": 124,
+        "not_ready": 147,
+        "ready_pct": 0.0,
+        "partial_pct": 45.8,
+        "not_ready_pct": 54.2
+      },
+      {
+        "target": "TARGET_PRODUCTIVITY",
+        "n": 271,
+        "ready": 166,
+        "partial": 2,
+        "not_ready": 103,
+        "ready_pct": 61.3,
+        "partial_pct": 0.7,
+        "not_ready_pct": 38.0
+      },
+      {
+        "target": "TARGET_LITHOLOGY",
+        "n": 271,
+        "ready": 20,
+        "partial": 104,
+        "not_ready": 147,
+        "ready_pct": 7.4,
+        "partial_pct": 38.4,
+        "not_ready_pct": 54.2
+      }
+    ],
+    "Migjorn": [
+      {
+        "target": "TARGET_WATER_PRESENCE",
+        "n": 537,
+        "ready": 318,
+        "partial": 166,
+        "not_ready": 53,
+        "ready_pct": 59.2,
+        "partial_pct": 30.9,
+        "not_ready_pct": 9.9
+      },
+      {
+        "target": "TARGET_DEPTH_TO_WATER",
+        "n": 537,
+        "ready": 88,
+        "partial": 376,
+        "not_ready": 73,
+        "ready_pct": 16.4,
+        "partial_pct": 70.0,
+        "not_ready_pct": 13.6
+      },
+      {
+        "target": "TARGET_HYDRAULIC_HEAD_ELEVATION",
+        "n": 537,
+        "ready": 88,
+        "partial": 376,
+        "not_ready": 73,
+        "ready_pct": 16.4,
+        "partial_pct": 70.0,
+        "not_ready_pct": 13.6
+      },
+      {
+        "target": "TARGET_AQUIFER_INTERVAL",
+        "n": 537,
+        "ready": 0,
+        "partial": 419,
+        "not_ready": 118,
+        "ready_pct": 0.0,
+        "partial_pct": 78.0,
+        "not_ready_pct": 22.0
+      },
+      {
+        "target": "TARGET_PRODUCTIVITY",
+        "n": 537,
+        "ready": 216,
+        "partial": 1,
+        "not_ready": 320,
+        "ready_pct": 40.2,
+        "partial_pct": 0.2,
+        "not_ready_pct": 59.6
+      },
+      {
+        "target": "TARGET_LITHOLOGY",
+        "n": 537,
+        "ready": 211,
+        "partial": 208,
+        "not_ready": 118,
+        "ready_pct": 39.3,
+        "partial_pct": 38.7,
+        "not_ready_pct": 22.0
+      }
+    ],
+    "San Carlos": [
+      {
+        "target": "TARGET_WATER_PRESENCE",
+        "n": 204,
+        "ready": 105,
+        "partial": 56,
+        "not_ready": 43,
+        "ready_pct": 51.5,
+        "partial_pct": 27.5,
+        "not_ready_pct": 21.1
+      },
+      {
+        "target": "TARGET_DEPTH_TO_WATER",
+        "n": 204,
+        "ready": 16,
+        "partial": 110,
+        "not_ready": 78,
+        "ready_pct": 7.8,
+        "partial_pct": 53.9,
+        "not_ready_pct": 38.2
+      },
+      {
+        "target": "TARGET_HYDRAULIC_HEAD_ELEVATION",
+        "n": 204,
+        "ready": 16,
+        "partial": 110,
+        "not_ready": 78,
+        "ready_pct": 7.8,
+        "partial_pct": 53.9,
+        "not_ready_pct": 38.2
+      },
+      {
+        "target": "TARGET_AQUIFER_INTERVAL",
+        "n": 204,
+        "ready": 0,
+        "partial": 93,
+        "not_ready": 111,
+        "ready_pct": 0.0,
+        "partial_pct": 45.6,
+        "not_ready_pct": 54.4
+      },
+      {
+        "target": "TARGET_PRODUCTIVITY",
+        "n": 204,
+        "ready": 119,
+        "partial": 5,
+        "not_ready": 80,
+        "ready_pct": 58.3,
+        "partial_pct": 2.5,
+        "not_ready_pct": 39.2
+      },
+      {
+        "target": "TARGET_LITHOLOGY",
+        "n": 204,
+        "ready": 20,
+        "partial": 73,
+        "not_ready": 111,
+        "ready_pct": 9.8,
+        "partial_pct": 35.8,
+        "not_ready_pct": 54.4
+      }
+    ],
+    "Región de los arenales": [
+      {
+        "target": "TARGET_WATER_PRESENCE",
+        "n": 3559,
+        "ready": 860,
+        "partial": 1302,
+        "not_ready": 1397,
+        "ready_pct": 24.2,
+        "partial_pct": 36.6,
+        "not_ready_pct": 39.3
+      },
+      {
+        "target": "TARGET_DEPTH_TO_WATER",
+        "n": 3559,
+        "ready": 262,
+        "partial": 1685,
+        "not_ready": 1612,
+        "ready_pct": 7.4,
+        "partial_pct": 47.3,
+        "not_ready_pct": 45.3
+      },
+      {
+        "target": "TARGET_HYDRAULIC_HEAD_ELEVATION",
+        "n": 3559,
+        "ready": 262,
+        "partial": 1685,
+        "not_ready": 1612,
+        "ready_pct": 7.4,
+        "partial_pct": 47.3,
+        "not_ready_pct": 45.3
+      },
+      {
+        "target": "TARGET_AQUIFER_INTERVAL",
+        "n": 3559,
+        "ready": 0,
+        "partial": 2525,
+        "not_ready": 1034,
+        "ready_pct": 0.0,
+        "partial_pct": 70.9,
+        "not_ready_pct": 29.1
+      },
+      {
+        "target": "TARGET_PRODUCTIVITY",
+        "n": 3559,
+        "ready": 233,
+        "partial": 1,
+        "not_ready": 3325,
+        "ready_pct": 6.5,
+        "partial_pct": 0.0,
+        "not_ready_pct": 93.4
+      },
+      {
+        "target": "TARGET_LITHOLOGY",
+        "n": 3559,
+        "ready": 610,
+        "partial": 1915,
+        "not_ready": 1034,
+        "ready_pct": 17.1,
+        "partial_pct": 53.8,
+        "not_ready_pct": 29.1
+      }
+    ]
+  },
+  "temporal_statistics": {
+    "records_with_dated_measurements": 2913,
+    "total_measurements": 21782,
+    "median_measurements_per_record": 1,
+    "median_temporal_span_years": 0.0,
+    "temporal_relevance_distribution": {
+      "NO_DATA": 1831,
+      "HISTORICAL": 2730,
+      "MULTI_DECADE_SERIES": 183
+    }
+  },
+  "phase0_v2": [
+    {
+      "domain": "Migjorn",
+      "n": 537,
+      "candidate_suitability": 0.6676,
+      "ground_truth_richness": 0.5996,
+      "phase0_v2_score": 0.6268,
+      "p1_count": 321,
+      "p2_count": 75,
+      "p3_count": 72,
+      "with_lithology": 419,
+      "with_piezometry": 464,
+      "with_pumping_tests": 217,
+      "with_chemistry": 213,
+      "with_hydrometry": 297,
+      "avg_evidence_families": 2.998
+    },
+    {
+      "domain": "San Antonio",
+      "n": 173,
+      "candidate_suitability": 0.6734,
+      "ground_truth_richness": 0.5884,
+      "phase0_v2_score": 0.6224,
+      "p1_count": 99,
+      "p2_count": 35,
+      "p3_count": 26,
+      "with_lithology": 103,
+      "with_piezometry": 152,
+      "with_pumping_tests": 101,
+      "with_chemistry": 90,
+      "with_hydrometry": 63,
+      "avg_evidence_families": 2.942
+    },
+    {
+      "domain": "Santa Eulalia",
+      "n": 271,
+      "candidate_suitability": 0.7952,
+      "ground_truth_richness": 0.4982,
+      "phase0_v2_score": 0.617,
+      "p1_count": 193,
+      "p2_count": 45,
+      "p3_count": 9,
+      "with_lithology": 124,
+      "with_piezometry": 224,
+      "with_pumping_tests": 168,
+      "with_chemistry": 83,
+      "with_hydrometry": 76,
+      "avg_evidence_families": 2.491
+    },
+    {
+      "domain": "San Carlos",
+      "n": 204,
+      "candidate_suitability": 0.7794,
+      "ground_truth_richness": 0.4265,
+      "phase0_v2_score": 0.5676,
+      "p1_count": 138,
+      "p2_count": 42,
+      "p3_count": 4,
+      "with_lithology": 93,
+      "with_piezometry": 126,
+      "with_pumping_tests": 124,
+      "with_chemistry": 36,
+      "with_hydrometry": 56,
+      "avg_evidence_families": 2.132
+    },
+    {
+      "domain": "Región de los arenales",
+      "n": 3559,
+      "candidate_suitability": 0.5872,
+      "ground_truth_richness": 0.3216,
+      "phase0_v2_score": 0.4278,
+      "p1_count": 1757,
+      "p2_count": 666,
+      "p3_count": 746,
+      "with_lithology": 2525,
+      "with_piezometry": 1947,
+      "with_pumping_tests": 247,
+      "with_chemistry": 160,
+      "with_hydrometry": 843,
+      "avg_evidence_families": 1.608
+    }
+  ],
+  "sensitivity_analysis": {
+    "A_50_50": {
+      "weights": {
+        "suitability": 0.5,
+        "richness": 0.5
+      },
+      "ranking": [
+        {
+          "domain": "Santa Eulalia",
+          "score": 0.6467
+        },
+        {
+          "domain": "Migjorn",
+          "score": 0.6336
+        },
+        {
+          "domain": "San Antonio",
+          "score": 0.6309
+        },
+        {
+          "domain": "San Carlos",
+          "score": 0.6029
+        },
+        {
+          "domain": "Región de los arenales",
+          "score": 0.4544
+        }
+      ]
+    },
+    "B_40_60": {
+      "weights": {
+        "suitability": 0.4,
+        "richness": 0.6
+      },
+      "ranking": [
+        {
+          "domain": "Migjorn",
+          "score": 0.6268
+        },
+        {
+          "domain": "San Antonio",
+          "score": 0.6224
+        },
+        {
+          "domain": "Santa Eulalia",
+          "score": 0.617
+        },
+        {
+          "domain": "San Carlos",
+          "score": 0.5677
+        },
+        {
+          "domain": "Región de los arenales",
+          "score": 0.4278
+        }
+      ]
+    },
+    "C_30_70": {
+      "weights": {
+        "suitability": 0.3,
+        "richness": 0.7
+      },
+      "ranking": [
+        {
+          "domain": "Migjorn",
+          "score": 0.62
+        },
+        {
+          "domain": "San Antonio",
+          "score": 0.6139
+        },
+        {
+          "domain": "Santa Eulalia",
+          "score": 0.5873
+        },
+        {
+          "domain": "San Carlos",
+          "score": 0.5324
+        },
+        {
+          "domain": "Región de los arenales",
+          "score": 0.4013
+        }
+      ]
+    },
+    "D_60_40": {
+      "weights": {
+        "suitability": 0.6,
+        "richness": 0.4
+      },
+      "ranking": [
+        {
+          "domain": "Santa Eulalia",
+          "score": 0.6764
+        },
+        {
+          "domain": "Migjorn",
+          "score": 0.6404
+        },
+        {
+          "domain": "San Antonio",
+          "score": 0.6394
+        },
+        {
+          "domain": "San Carlos",
+          "score": 0.6382
+        },
+        {
+          "domain": "Región de los arenales",
+          "score": 0.481
+        }
+      ]
+    },
+    "stable_top3": {
+      "Santa Eulalia": 4,
+      "Migjorn": 4,
+      "San Antonio": 4
+    }
+  },
+  "manual_audit": {
+    "audited": 50,
+    "discrepancies": 0,
+    "semantic_corruptions": 0,
+    "target": "0 silent semantic corruptions"
+  },
+  "api_metrics": {
+    "total_requests": 29666,
+    "successful_requests": 29666,
+    "failed_requests": 0,
+    "retries": 0,
+    "cache_hits": 0,
+    "mean_latency_ms": 255.3894117446832,
+    "median_latency_ms": 255.45878000048106,
+    "p95_latency_ms": 406.49938999922597,
+    "total_elapsed_ms": 7576382.288817772,
+    "response_bytes": 35239771,
+    "endpoint_failure_rates": {
+      "piezometry": {
+        "total": 4238,
+        "failed": 0,
+        "failure_rate": 0.0
+      },
+      "lithology": {
+        "total": 4238,
+        "failed": 0,
+        "failure_rate": 0.0
+      },
+      "pumping_tests": {
+        "total": 4238,
+        "failed": 0,
+        "failure_rate": 0.0
+      },
+      "hydrometry": {
+        "total": 4238,
+        "failed": 0,
+        "failure_rate": 0.0
+      },
+      "chemistry": {
+        "total": 4238,
+        "failed": 0,
+        "failure_rate": 0.0
+      },
+      "technical": {
+        "total": 4238,
+        "failed": 0,
+        "failure_rate": 0.0
+      },
+      "documents": {
+        "total": 4238,
+        "failed": 0,
+        "failure_rate": 0.0
+      }
+    }
+  },
+  "final_verdict": "PASS — Ground Truth pipeline validated at expanded scale"
+}

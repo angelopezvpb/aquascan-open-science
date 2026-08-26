@@ -1,0 +1,44 @@
+{
+  "protocol": "Phase 0 Prediction Schema v1",
+  "version": "v1",
+  "created_at": "2026-08-24T18:32:04.984938+00:00",
+  "targets": {
+    "TARGET_DEPTH_TO_WATER": {
+      "type": "continuous_interval",
+      "fields": {
+        "predicted_depth_min_m": "Lower bound of depth-to-water estimate (float)",
+        "predicted_depth_best_m": "Preferred depth-to-water estimate (float, nullable)",
+        "predicted_depth_max_m": "Upper bound of depth-to-water estimate (float)",
+        "uncertainty_description": "Qualitative uncertainty source (string)",
+        "evidence_supporting_prediction": "List[str] — features/contacts supporting estimate",
+        "evidence_contradicting_prediction": "List[str] — features/contacts inconsistent"
+      }
+    },
+    "TARGET_LITHOLOGY": {
+      "type": "interval_annotation",
+      "fields": {
+        "interpreted_intervals": [
+          {
+            "top_depth_m": "float",
+            "bottom_depth_m": "float",
+            "lithology_hypothesis": "string",
+            "confidence": "GREEN|YELLOW|RED"
+          }
+        ]
+      }
+    },
+    "TARGET_PRODUCTIVITY": {
+      "type": "categorical",
+      "fields": {
+        "productivity_class": "HIGH|MODERATE|LOW|INSUFFICIENT_EVIDENCE",
+        "basis": "string — structural/textural indicators supporting classification"
+      }
+    }
+  },
+  "confidence_gate": {
+    "GREEN": "Confident prediction — evidence supports quantitative estimate.",
+    "YELLOW": "Tentative prediction — evidence ambiguous but constrained.",
+    "RED": "Abstention — insufficient evidence for meaningful prediction. RED is a valid scientific outcome, not a failure."
+  },
+  "forbidden_answers": "Must NOT force a numerical answer when evidence is insufficient. RED abstention is superior to an arbitrary number."
+}

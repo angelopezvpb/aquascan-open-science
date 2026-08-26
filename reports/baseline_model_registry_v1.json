@@ -1,0 +1,1622 @@
+[
+  {
+    "model_id": "B0000",
+    "target": "TARGET_DEPTH_TO_WATER",
+    "model": "Dummy",
+    "regime": "REGIME_A_GROUPED",
+    "n_train": 450,
+    "n_test": 113,
+    "seed": 42
+  },
+  {
+    "model_id": "B0001",
+    "target": "TARGET_DEPTH_TO_WATER",
+    "model": "RandomForest",
+    "regime": "REGIME_A_GROUPED",
+    "n_train": 450,
+    "n_test": 113,
+    "seed": 42
+  },
+  {
+    "model_id": "B0002",
+    "target": "TARGET_DEPTH_TO_WATER",
+    "model": "ExtraTrees",
+    "regime": "REGIME_A_GROUPED",
+    "n_train": 450,
+    "n_test": 113,
+    "seed": 42
+  },
+  {
+    "model_id": "B0003",
+    "target": "TARGET_DEPTH_TO_WATER",
+    "model": "HistGB",
+    "regime": "REGIME_A_GROUPED",
+    "n_train": 450,
+    "n_test": 113,
+    "seed": 42
+  },
+  {
+    "model_id": "B0004",
+    "target": "TARGET_DEPTH_TO_WATER",
+    "model": "Dummy",
+    "regime": "REGIME_A_GROUPED",
+    "n_train": 450,
+    "n_test": 113,
+    "seed": 42
+  },
+  {
+    "model_id": "B0005",
+    "target": "TARGET_DEPTH_TO_WATER",
+    "model": "RandomForest",
+    "regime": "REGIME_A_GROUPED",
+    "n_train": 450,
+    "n_test": 113,
+    "seed": 42
+  },
+  {
+    "model_id": "B0006",
+    "target": "TARGET_DEPTH_TO_WATER",
+    "model": "ExtraTrees",
+    "regime": "REGIME_A_GROUPED",
+    "n_train": 450,
+    "n_test": 113,
+    "seed": 42
+  },
+  {
+    "model_id": "B0007",
+    "target": "TARGET_DEPTH_TO_WATER",
+    "model": "HistGB",
+    "regime": "REGIME_A_GROUPED",
+    "n_train": 450,
+    "n_test": 113,
+    "seed": 42
+  },
+  {
+    "model_id": "B0008",
+    "target": "TARGET_DEPTH_TO_WATER",
+    "model": "Dummy",
+    "regime": "REGIME_A_GROUPED",
+    "n_train": 450,
+    "n_test": 113,
+    "seed": 42
+  },
+  {
+    "model_id": "B0009",
+    "target": "TARGET_DEPTH_TO_WATER",
+    "model": "RandomForest",
+    "regime": "REGIME_A_GROUPED",
+    "n_train": 450,
+    "n_test": 113,
+    "seed": 42
+  },
+  {
+    "model_id": "B0010",
+    "target": "TARGET_DEPTH_TO_WATER",
+    "model": "ExtraTrees",
+    "regime": "REGIME_A_GROUPED",
+    "n_train": 450,
+    "n_test": 113,
+    "seed": 42
+  },
+  {
+    "model_id": "B0011",
+    "target": "TARGET_DEPTH_TO_WATER",
+    "model": "HistGB",
+    "regime": "REGIME_A_GROUPED",
+    "n_train": 450,
+    "n_test": 113,
+    "seed": 42
+  },
+  {
+    "model_id": "B0012",
+    "target": "TARGET_DEPTH_TO_WATER",
+    "model": "Dummy",
+    "regime": "REGIME_A_GROUPED",
+    "n_train": 451,
+    "n_test": 112,
+    "seed": 42
+  },
+  {
+    "model_id": "B0013",
+    "target": "TARGET_DEPTH_TO_WATER",
+    "model": "RandomForest",
+    "regime": "REGIME_A_GROUPED",
+    "n_train": 451,
+    "n_test": 112,
+    "seed": 42
+  },
+  {
+    "model_id": "B0014",
+    "target": "TARGET_DEPTH_TO_WATER",
+    "model": "ExtraTrees",
+    "regime": "REGIME_A_GROUPED",
+    "n_train": 451,
+    "n_test": 112,
+    "seed": 42
+  },
+  {
+    "model_id": "B0015",
+    "target": "TARGET_DEPTH_TO_WATER",
+    "model": "HistGB",
+    "regime": "REGIME_A_GROUPED",
+    "n_train": 451,
+    "n_test": 112,
+    "seed": 42
+  },
+  {
+    "model_id": "B0016",
+    "target": "TARGET_DEPTH_TO_WATER",
+    "model": "Dummy",
+    "regime": "REGIME_A_GROUPED",
+    "n_train": 451,
+    "n_test": 112,
+    "seed": 42
+  },
+  {
+    "model_id": "B0017",
+    "target": "TARGET_DEPTH_TO_WATER",
+    "model": "RandomForest",
+    "regime": "REGIME_A_GROUPED",
+    "n_train": 451,
+    "n_test": 112,
+    "seed": 42
+  },
+  {
+    "model_id": "B0018",
+    "target": "TARGET_DEPTH_TO_WATER",
+    "model": "ExtraTrees",
+    "regime": "REGIME_A_GROUPED",
+    "n_train": 451,
+    "n_test": 112,
+    "seed": 42
+  },
+  {
+    "model_id": "B0019",
+    "target": "TARGET_DEPTH_TO_WATER",
+    "model": "HistGB",
+    "regime": "REGIME_A_GROUPED",
+    "n_train": 451,
+    "n_test": 112,
+    "seed": 42
+  },
+  {
+    "model_id": "B0020",
+    "target": "TARGET_DEPTH_TO_WATER",
+    "model": "Dummy",
+    "regime": "REGIME_B_SPATIAL_BLOCK",
+    "n_train": 451,
+    "n_test": 112,
+    "seed": 42
+  },
+  {
+    "model_id": "B0021",
+    "target": "TARGET_DEPTH_TO_WATER",
+    "model": "RandomForest",
+    "regime": "REGIME_B_SPATIAL_BLOCK",
+    "n_train": 451,
+    "n_test": 112,
+    "seed": 42
+  },
+  {
+    "model_id": "B0022",
+    "target": "TARGET_DEPTH_TO_WATER",
+    "model": "ExtraTrees",
+    "regime": "REGIME_B_SPATIAL_BLOCK",
+    "n_train": 451,
+    "n_test": 112,
+    "seed": 42
+  },
+  {
+    "model_id": "B0023",
+    "target": "TARGET_DEPTH_TO_WATER",
+    "model": "HistGB",
+    "regime": "REGIME_B_SPATIAL_BLOCK",
+    "n_train": 451,
+    "n_test": 112,
+    "seed": 42
+  },
+  {
+    "model_id": "B0024",
+    "target": "TARGET_DEPTH_TO_WATER",
+    "model": "Dummy",
+    "regime": "REGIME_B_SPATIAL_BLOCK",
+    "n_train": 457,
+    "n_test": 106,
+    "seed": 42
+  },
+  {
+    "model_id": "B0025",
+    "target": "TARGET_DEPTH_TO_WATER",
+    "model": "RandomForest",
+    "regime": "REGIME_B_SPATIAL_BLOCK",
+    "n_train": 457,
+    "n_test": 106,
+    "seed": 42
+  },
+  {
+    "model_id": "B0026",
+    "target": "TARGET_DEPTH_TO_WATER",
+    "model": "ExtraTrees",
+    "regime": "REGIME_B_SPATIAL_BLOCK",
+    "n_train": 457,
+    "n_test": 106,
+    "seed": 42
+  },
+  {
+    "model_id": "B0027",
+    "target": "TARGET_DEPTH_TO_WATER",
+    "model": "HistGB",
+    "regime": "REGIME_B_SPATIAL_BLOCK",
+    "n_train": 457,
+    "n_test": 106,
+    "seed": 42
+  },
+  {
+    "model_id": "B0028",
+    "target": "TARGET_DEPTH_TO_WATER",
+    "model": "Dummy",
+    "regime": "REGIME_B_SPATIAL_BLOCK",
+    "n_train": 451,
+    "n_test": 112,
+    "seed": 42
+  },
+  {
+    "model_id": "B0029",
+    "target": "TARGET_DEPTH_TO_WATER",
+    "model": "RandomForest",
+    "regime": "REGIME_B_SPATIAL_BLOCK",
+    "n_train": 451,
+    "n_test": 112,
+    "seed": 42
+  },
+  {
+    "model_id": "B0030",
+    "target": "TARGET_DEPTH_TO_WATER",
+    "model": "ExtraTrees",
+    "regime": "REGIME_B_SPATIAL_BLOCK",
+    "n_train": 451,
+    "n_test": 112,
+    "seed": 42
+  },
+  {
+    "model_id": "B0031",
+    "target": "TARGET_DEPTH_TO_WATER",
+    "model": "HistGB",
+    "regime": "REGIME_B_SPATIAL_BLOCK",
+    "n_train": 451,
+    "n_test": 112,
+    "seed": 42
+  },
+  {
+    "model_id": "B0032",
+    "target": "TARGET_DEPTH_TO_WATER",
+    "model": "Dummy",
+    "regime": "REGIME_B_SPATIAL_BLOCK",
+    "n_train": 451,
+    "n_test": 112,
+    "seed": 42
+  },
+  {
+    "model_id": "B0033",
+    "target": "TARGET_DEPTH_TO_WATER",
+    "model": "RandomForest",
+    "regime": "REGIME_B_SPATIAL_BLOCK",
+    "n_train": 451,
+    "n_test": 112,
+    "seed": 42
+  },
+  {
+    "model_id": "B0034",
+    "target": "TARGET_DEPTH_TO_WATER",
+    "model": "ExtraTrees",
+    "regime": "REGIME_B_SPATIAL_BLOCK",
+    "n_train": 451,
+    "n_test": 112,
+    "seed": 42
+  },
+  {
+    "model_id": "B0035",
+    "target": "TARGET_DEPTH_TO_WATER",
+    "model": "HistGB",
+    "regime": "REGIME_B_SPATIAL_BLOCK",
+    "n_train": 451,
+    "n_test": 112,
+    "seed": 42
+  },
+  {
+    "model_id": "B0036",
+    "target": "TARGET_DEPTH_TO_WATER",
+    "model": "Dummy",
+    "regime": "REGIME_B_SPATIAL_BLOCK",
+    "n_train": 442,
+    "n_test": 121,
+    "seed": 42
+  },
+  {
+    "model_id": "B0037",
+    "target": "TARGET_DEPTH_TO_WATER",
+    "model": "RandomForest",
+    "regime": "REGIME_B_SPATIAL_BLOCK",
+    "n_train": 442,
+    "n_test": 121,
+    "seed": 42
+  },
+  {
+    "model_id": "B0038",
+    "target": "TARGET_DEPTH_TO_WATER",
+    "model": "ExtraTrees",
+    "regime": "REGIME_B_SPATIAL_BLOCK",
+    "n_train": 442,
+    "n_test": 121,
+    "seed": 42
+  },
+  {
+    "model_id": "B0039",
+    "target": "TARGET_DEPTH_TO_WATER",
+    "model": "HistGB",
+    "regime": "REGIME_B_SPATIAL_BLOCK",
+    "n_train": 442,
+    "n_test": 121,
+    "seed": 42
+  },
+  {
+    "model_id": "B0040",
+    "target": "TARGET_DEPTH_TO_WATER",
+    "model": "Dummy",
+    "regime": "REGIME_C",
+    "n_train": 529,
+    "n_test": 34,
+    "seed": 42
+  },
+  {
+    "model_id": "B0041",
+    "target": "TARGET_DEPTH_TO_WATER",
+    "model": "RandomForest",
+    "regime": "REGIME_C",
+    "n_train": 529,
+    "n_test": 34,
+    "seed": 42
+  },
+  {
+    "model_id": "B0042",
+    "target": "TARGET_DEPTH_TO_WATER",
+    "model": "ExtraTrees",
+    "regime": "REGIME_C",
+    "n_train": 529,
+    "n_test": 34,
+    "seed": 42
+  },
+  {
+    "model_id": "B0043",
+    "target": "TARGET_DEPTH_TO_WATER",
+    "model": "HistGB",
+    "regime": "REGIME_C",
+    "n_train": 529,
+    "n_test": 34,
+    "seed": 42
+  },
+  {
+    "model_id": "B0044",
+    "target": "TARGET_DEPTH_TO_WATER",
+    "model": "Dummy",
+    "regime": "REGIME_C",
+    "n_train": 520,
+    "n_test": 43,
+    "seed": 42
+  },
+  {
+    "model_id": "B0045",
+    "target": "TARGET_DEPTH_TO_WATER",
+    "model": "RandomForest",
+    "regime": "REGIME_C",
+    "n_train": 520,
+    "n_test": 43,
+    "seed": 42
+  },
+  {
+    "model_id": "B0046",
+    "target": "TARGET_DEPTH_TO_WATER",
+    "model": "ExtraTrees",
+    "regime": "REGIME_C",
+    "n_train": 520,
+    "n_test": 43,
+    "seed": 42
+  },
+  {
+    "model_id": "B0047",
+    "target": "TARGET_DEPTH_TO_WATER",
+    "model": "HistGB",
+    "regime": "REGIME_C",
+    "n_train": 520,
+    "n_test": 43,
+    "seed": 42
+  },
+  {
+    "model_id": "B0048",
+    "target": "TARGET_DEPTH_TO_WATER",
+    "model": "Dummy",
+    "regime": "REGIME_C",
+    "n_train": 399,
+    "n_test": 164,
+    "seed": 42
+  },
+  {
+    "model_id": "B0049",
+    "target": "TARGET_DEPTH_TO_WATER",
+    "model": "RandomForest",
+    "regime": "REGIME_C",
+    "n_train": 399,
+    "n_test": 164,
+    "seed": 42
+  },
+  {
+    "model_id": "B0050",
+    "target": "TARGET_DEPTH_TO_WATER",
+    "model": "ExtraTrees",
+    "regime": "REGIME_C",
+    "n_train": 399,
+    "n_test": 164,
+    "seed": 42
+  },
+  {
+    "model_id": "B0051",
+    "target": "TARGET_DEPTH_TO_WATER",
+    "model": "HistGB",
+    "regime": "REGIME_C",
+    "n_train": 399,
+    "n_test": 164,
+    "seed": 42
+  },
+  {
+    "model_id": "B0052",
+    "target": "TARGET_DEPTH_TO_WATER",
+    "model": "Dummy",
+    "regime": "REGIME_C",
+    "n_train": 547,
+    "n_test": 16,
+    "seed": 42
+  },
+  {
+    "model_id": "B0053",
+    "target": "TARGET_DEPTH_TO_WATER",
+    "model": "RandomForest",
+    "regime": "REGIME_C",
+    "n_train": 547,
+    "n_test": 16,
+    "seed": 42
+  },
+  {
+    "model_id": "B0054",
+    "target": "TARGET_DEPTH_TO_WATER",
+    "model": "ExtraTrees",
+    "regime": "REGIME_C",
+    "n_train": 547,
+    "n_test": 16,
+    "seed": 42
+  },
+  {
+    "model_id": "B0055",
+    "target": "TARGET_DEPTH_TO_WATER",
+    "model": "HistGB",
+    "regime": "REGIME_C",
+    "n_train": 547,
+    "n_test": 16,
+    "seed": 42
+  },
+  {
+    "model_id": "B0056",
+    "target": "TARGET_DEPTH_TO_WATER",
+    "model": "Dummy",
+    "regime": "REGIME_C",
+    "n_train": 257,
+    "n_test": 306,
+    "seed": 42
+  },
+  {
+    "model_id": "B0057",
+    "target": "TARGET_DEPTH_TO_WATER",
+    "model": "RandomForest",
+    "regime": "REGIME_C",
+    "n_train": 257,
+    "n_test": 306,
+    "seed": 42
+  },
+  {
+    "model_id": "B0058",
+    "target": "TARGET_DEPTH_TO_WATER",
+    "model": "ExtraTrees",
+    "regime": "REGIME_C",
+    "n_train": 257,
+    "n_test": 306,
+    "seed": 42
+  },
+  {
+    "model_id": "B0059",
+    "target": "TARGET_DEPTH_TO_WATER",
+    "model": "HistGB",
+    "regime": "REGIME_C",
+    "n_train": 257,
+    "n_test": 306,
+    "seed": 42
+  },
+  {
+    "model_id": "B0060",
+    "target": "TARGET_HYDRAULIC_HEAD_ELEVATION",
+    "model": "Dummy",
+    "regime": "REGIME_A_GROUPED",
+    "n_train": 450,
+    "n_test": 113,
+    "seed": 42
+  },
+  {
+    "model_id": "B0061",
+    "target": "TARGET_HYDRAULIC_HEAD_ELEVATION",
+    "model": "RandomForest",
+    "regime": "REGIME_A_GROUPED",
+    "n_train": 450,
+    "n_test": 113,
+    "seed": 42
+  },
+  {
+    "model_id": "B0062",
+    "target": "TARGET_HYDRAULIC_HEAD_ELEVATION",
+    "model": "ExtraTrees",
+    "regime": "REGIME_A_GROUPED",
+    "n_train": 450,
+    "n_test": 113,
+    "seed": 42
+  },
+  {
+    "model_id": "B0063",
+    "target": "TARGET_HYDRAULIC_HEAD_ELEVATION",
+    "model": "HistGB",
+    "regime": "REGIME_A_GROUPED",
+    "n_train": 450,
+    "n_test": 113,
+    "seed": 42
+  },
+  {
+    "model_id": "B0064",
+    "target": "TARGET_HYDRAULIC_HEAD_ELEVATION",
+    "model": "Dummy",
+    "regime": "REGIME_A_GROUPED",
+    "n_train": 450,
+    "n_test": 113,
+    "seed": 42
+  },
+  {
+    "model_id": "B0065",
+    "target": "TARGET_HYDRAULIC_HEAD_ELEVATION",
+    "model": "RandomForest",
+    "regime": "REGIME_A_GROUPED",
+    "n_train": 450,
+    "n_test": 113,
+    "seed": 42
+  },
+  {
+    "model_id": "B0066",
+    "target": "TARGET_HYDRAULIC_HEAD_ELEVATION",
+    "model": "ExtraTrees",
+    "regime": "REGIME_A_GROUPED",
+    "n_train": 450,
+    "n_test": 113,
+    "seed": 42
+  },
+  {
+    "model_id": "B0067",
+    "target": "TARGET_HYDRAULIC_HEAD_ELEVATION",
+    "model": "HistGB",
+    "regime": "REGIME_A_GROUPED",
+    "n_train": 450,
+    "n_test": 113,
+    "seed": 42
+  },
+  {
+    "model_id": "B0068",
+    "target": "TARGET_HYDRAULIC_HEAD_ELEVATION",
+    "model": "Dummy",
+    "regime": "REGIME_A_GROUPED",
+    "n_train": 450,
+    "n_test": 113,
+    "seed": 42
+  },
+  {
+    "model_id": "B0069",
+    "target": "TARGET_HYDRAULIC_HEAD_ELEVATION",
+    "model": "RandomForest",
+    "regime": "REGIME_A_GROUPED",
+    "n_train": 450,
+    "n_test": 113,
+    "seed": 42
+  },
+  {
+    "model_id": "B0070",
+    "target": "TARGET_HYDRAULIC_HEAD_ELEVATION",
+    "model": "ExtraTrees",
+    "regime": "REGIME_A_GROUPED",
+    "n_train": 450,
+    "n_test": 113,
+    "seed": 42
+  },
+  {
+    "model_id": "B0071",
+    "target": "TARGET_HYDRAULIC_HEAD_ELEVATION",
+    "model": "HistGB",
+    "regime": "REGIME_A_GROUPED",
+    "n_train": 450,
+    "n_test": 113,
+    "seed": 42
+  },
+  {
+    "model_id": "B0072",
+    "target": "TARGET_HYDRAULIC_HEAD_ELEVATION",
+    "model": "Dummy",
+    "regime": "REGIME_A_GROUPED",
+    "n_train": 451,
+    "n_test": 112,
+    "seed": 42
+  },
+  {
+    "model_id": "B0073",
+    "target": "TARGET_HYDRAULIC_HEAD_ELEVATION",
+    "model": "RandomForest",
+    "regime": "REGIME_A_GROUPED",
+    "n_train": 451,
+    "n_test": 112,
+    "seed": 42
+  },
+  {
+    "model_id": "B0074",
+    "target": "TARGET_HYDRAULIC_HEAD_ELEVATION",
+    "model": "ExtraTrees",
+    "regime": "REGIME_A_GROUPED",
+    "n_train": 451,
+    "n_test": 112,
+    "seed": 42
+  },
+  {
+    "model_id": "B0075",
+    "target": "TARGET_HYDRAULIC_HEAD_ELEVATION",
+    "model": "HistGB",
+    "regime": "REGIME_A_GROUPED",
+    "n_train": 451,
+    "n_test": 112,
+    "seed": 42
+  },
+  {
+    "model_id": "B0076",
+    "target": "TARGET_HYDRAULIC_HEAD_ELEVATION",
+    "model": "Dummy",
+    "regime": "REGIME_A_GROUPED",
+    "n_train": 451,
+    "n_test": 112,
+    "seed": 42
+  },
+  {
+    "model_id": "B0077",
+    "target": "TARGET_HYDRAULIC_HEAD_ELEVATION",
+    "model": "RandomForest",
+    "regime": "REGIME_A_GROUPED",
+    "n_train": 451,
+    "n_test": 112,
+    "seed": 42
+  },
+  {
+    "model_id": "B0078",
+    "target": "TARGET_HYDRAULIC_HEAD_ELEVATION",
+    "model": "ExtraTrees",
+    "regime": "REGIME_A_GROUPED",
+    "n_train": 451,
+    "n_test": 112,
+    "seed": 42
+  },
+  {
+    "model_id": "B0079",
+    "target": "TARGET_HYDRAULIC_HEAD_ELEVATION",
+    "model": "HistGB",
+    "regime": "REGIME_A_GROUPED",
+    "n_train": 451,
+    "n_test": 112,
+    "seed": 42
+  },
+  {
+    "model_id": "B0080",
+    "target": "TARGET_HYDRAULIC_HEAD_ELEVATION",
+    "model": "Dummy",
+    "regime": "REGIME_B_SPATIAL_BLOCK",
+    "n_train": 451,
+    "n_test": 112,
+    "seed": 42
+  },
+  {
+    "model_id": "B0081",
+    "target": "TARGET_HYDRAULIC_HEAD_ELEVATION",
+    "model": "RandomForest",
+    "regime": "REGIME_B_SPATIAL_BLOCK",
+    "n_train": 451,
+    "n_test": 112,
+    "seed": 42
+  },
+  {
+    "model_id": "B0082",
+    "target": "TARGET_HYDRAULIC_HEAD_ELEVATION",
+    "model": "ExtraTrees",
+    "regime": "REGIME_B_SPATIAL_BLOCK",
+    "n_train": 451,
+    "n_test": 112,
+    "seed": 42
+  },
+  {
+    "model_id": "B0083",
+    "target": "TARGET_HYDRAULIC_HEAD_ELEVATION",
+    "model": "HistGB",
+    "regime": "REGIME_B_SPATIAL_BLOCK",
+    "n_train": 451,
+    "n_test": 112,
+    "seed": 42
+  },
+  {
+    "model_id": "B0084",
+    "target": "TARGET_HYDRAULIC_HEAD_ELEVATION",
+    "model": "Dummy",
+    "regime": "REGIME_B_SPATIAL_BLOCK",
+    "n_train": 457,
+    "n_test": 106,
+    "seed": 42
+  },
+  {
+    "model_id": "B0085",
+    "target": "TARGET_HYDRAULIC_HEAD_ELEVATION",
+    "model": "RandomForest",
+    "regime": "REGIME_B_SPATIAL_BLOCK",
+    "n_train": 457,
+    "n_test": 106,
+    "seed": 42
+  },
+  {
+    "model_id": "B0086",
+    "target": "TARGET_HYDRAULIC_HEAD_ELEVATION",
+    "model": "ExtraTrees",
+    "regime": "REGIME_B_SPATIAL_BLOCK",
+    "n_train": 457,
+    "n_test": 106,
+    "seed": 42
+  },
+  {
+    "model_id": "B0087",
+    "target": "TARGET_HYDRAULIC_HEAD_ELEVATION",
+    "model": "HistGB",
+    "regime": "REGIME_B_SPATIAL_BLOCK",
+    "n_train": 457,
+    "n_test": 106,
+    "seed": 42
+  },
+  {
+    "model_id": "B0088",
+    "target": "TARGET_HYDRAULIC_HEAD_ELEVATION",
+    "model": "Dummy",
+    "regime": "REGIME_B_SPATIAL_BLOCK",
+    "n_train": 451,
+    "n_test": 112,
+    "seed": 42
+  },
+  {
+    "model_id": "B0089",
+    "target": "TARGET_HYDRAULIC_HEAD_ELEVATION",
+    "model": "RandomForest",
+    "regime": "REGIME_B_SPATIAL_BLOCK",
+    "n_train": 451,
+    "n_test": 112,
+    "seed": 42
+  },
+  {
+    "model_id": "B0090",
+    "target": "TARGET_HYDRAULIC_HEAD_ELEVATION",
+    "model": "ExtraTrees",
+    "regime": "REGIME_B_SPATIAL_BLOCK",
+    "n_train": 451,
+    "n_test": 112,
+    "seed": 42
+  },
+  {
+    "model_id": "B0091",
+    "target": "TARGET_HYDRAULIC_HEAD_ELEVATION",
+    "model": "HistGB",
+    "regime": "REGIME_B_SPATIAL_BLOCK",
+    "n_train": 451,
+    "n_test": 112,
+    "seed": 42
+  },
+  {
+    "model_id": "B0092",
+    "target": "TARGET_HYDRAULIC_HEAD_ELEVATION",
+    "model": "Dummy",
+    "regime": "REGIME_B_SPATIAL_BLOCK",
+    "n_train": 451,
+    "n_test": 112,
+    "seed": 42
+  },
+  {
+    "model_id": "B0093",
+    "target": "TARGET_HYDRAULIC_HEAD_ELEVATION",
+    "model": "RandomForest",
+    "regime": "REGIME_B_SPATIAL_BLOCK",
+    "n_train": 451,
+    "n_test": 112,
+    "seed": 42
+  },
+  {
+    "model_id": "B0094",
+    "target": "TARGET_HYDRAULIC_HEAD_ELEVATION",
+    "model": "ExtraTrees",
+    "regime": "REGIME_B_SPATIAL_BLOCK",
+    "n_train": 451,
+    "n_test": 112,
+    "seed": 42
+  },
+  {
+    "model_id": "B0095",
+    "target": "TARGET_HYDRAULIC_HEAD_ELEVATION",
+    "model": "HistGB",
+    "regime": "REGIME_B_SPATIAL_BLOCK",
+    "n_train": 451,
+    "n_test": 112,
+    "seed": 42
+  },
+  {
+    "model_id": "B0096",
+    "target": "TARGET_HYDRAULIC_HEAD_ELEVATION",
+    "model": "Dummy",
+    "regime": "REGIME_B_SPATIAL_BLOCK",
+    "n_train": 442,
+    "n_test": 121,
+    "seed": 42
+  },
+  {
+    "model_id": "B0097",
+    "target": "TARGET_HYDRAULIC_HEAD_ELEVATION",
+    "model": "RandomForest",
+    "regime": "REGIME_B_SPATIAL_BLOCK",
+    "n_train": 442,
+    "n_test": 121,
+    "seed": 42
+  },
+  {
+    "model_id": "B0098",
+    "target": "TARGET_HYDRAULIC_HEAD_ELEVATION",
+    "model": "ExtraTrees",
+    "regime": "REGIME_B_SPATIAL_BLOCK",
+    "n_train": 442,
+    "n_test": 121,
+    "seed": 42
+  },
+  {
+    "model_id": "B0099",
+    "target": "TARGET_HYDRAULIC_HEAD_ELEVATION",
+    "model": "HistGB",
+    "regime": "REGIME_B_SPATIAL_BLOCK",
+    "n_train": 442,
+    "n_test": 121,
+    "seed": 42
+  },
+  {
+    "model_id": "B0100",
+    "target": "TARGET_HYDRAULIC_HEAD_ELEVATION",
+    "model": "Dummy",
+    "regime": "REGIME_C",
+    "n_train": 529,
+    "n_test": 34,
+    "seed": 42
+  },
+  {
+    "model_id": "B0101",
+    "target": "TARGET_HYDRAULIC_HEAD_ELEVATION",
+    "model": "RandomForest",
+    "regime": "REGIME_C",
+    "n_train": 529,
+    "n_test": 34,
+    "seed": 42
+  },
+  {
+    "model_id": "B0102",
+    "target": "TARGET_HYDRAULIC_HEAD_ELEVATION",
+    "model": "ExtraTrees",
+    "regime": "REGIME_C",
+    "n_train": 529,
+    "n_test": 34,
+    "seed": 42
+  },
+  {
+    "model_id": "B0103",
+    "target": "TARGET_HYDRAULIC_HEAD_ELEVATION",
+    "model": "HistGB",
+    "regime": "REGIME_C",
+    "n_train": 529,
+    "n_test": 34,
+    "seed": 42
+  },
+  {
+    "model_id": "B0104",
+    "target": "TARGET_HYDRAULIC_HEAD_ELEVATION",
+    "model": "Dummy",
+    "regime": "REGIME_C",
+    "n_train": 520,
+    "n_test": 43,
+    "seed": 42
+  },
+  {
+    "model_id": "B0105",
+    "target": "TARGET_HYDRAULIC_HEAD_ELEVATION",
+    "model": "RandomForest",
+    "regime": "REGIME_C",
+    "n_train": 520,
+    "n_test": 43,
+    "seed": 42
+  },
+  {
+    "model_id": "B0106",
+    "target": "TARGET_HYDRAULIC_HEAD_ELEVATION",
+    "model": "ExtraTrees",
+    "regime": "REGIME_C",
+    "n_train": 520,
+    "n_test": 43,
+    "seed": 42
+  },
+  {
+    "model_id": "B0107",
+    "target": "TARGET_HYDRAULIC_HEAD_ELEVATION",
+    "model": "HistGB",
+    "regime": "REGIME_C",
+    "n_train": 520,
+    "n_test": 43,
+    "seed": 42
+  },
+  {
+    "model_id": "B0108",
+    "target": "TARGET_HYDRAULIC_HEAD_ELEVATION",
+    "model": "Dummy",
+    "regime": "REGIME_C",
+    "n_train": 399,
+    "n_test": 164,
+    "seed": 42
+  },
+  {
+    "model_id": "B0109",
+    "target": "TARGET_HYDRAULIC_HEAD_ELEVATION",
+    "model": "RandomForest",
+    "regime": "REGIME_C",
+    "n_train": 399,
+    "n_test": 164,
+    "seed": 42
+  },
+  {
+    "model_id": "B0110",
+    "target": "TARGET_HYDRAULIC_HEAD_ELEVATION",
+    "model": "ExtraTrees",
+    "regime": "REGIME_C",
+    "n_train": 399,
+    "n_test": 164,
+    "seed": 42
+  },
+  {
+    "model_id": "B0111",
+    "target": "TARGET_HYDRAULIC_HEAD_ELEVATION",
+    "model": "HistGB",
+    "regime": "REGIME_C",
+    "n_train": 399,
+    "n_test": 164,
+    "seed": 42
+  },
+  {
+    "model_id": "B0112",
+    "target": "TARGET_HYDRAULIC_HEAD_ELEVATION",
+    "model": "Dummy",
+    "regime": "REGIME_C",
+    "n_train": 547,
+    "n_test": 16,
+    "seed": 42
+  },
+  {
+    "model_id": "B0113",
+    "target": "TARGET_HYDRAULIC_HEAD_ELEVATION",
+    "model": "RandomForest",
+    "regime": "REGIME_C",
+    "n_train": 547,
+    "n_test": 16,
+    "seed": 42
+  },
+  {
+    "model_id": "B0114",
+    "target": "TARGET_HYDRAULIC_HEAD_ELEVATION",
+    "model": "ExtraTrees",
+    "regime": "REGIME_C",
+    "n_train": 547,
+    "n_test": 16,
+    "seed": 42
+  },
+  {
+    "model_id": "B0115",
+    "target": "TARGET_HYDRAULIC_HEAD_ELEVATION",
+    "model": "HistGB",
+    "regime": "REGIME_C",
+    "n_train": 547,
+    "n_test": 16,
+    "seed": 42
+  },
+  {
+    "model_id": "B0116",
+    "target": "TARGET_HYDRAULIC_HEAD_ELEVATION",
+    "model": "Dummy",
+    "regime": "REGIME_C",
+    "n_train": 257,
+    "n_test": 306,
+    "seed": 42
+  },
+  {
+    "model_id": "B0117",
+    "target": "TARGET_HYDRAULIC_HEAD_ELEVATION",
+    "model": "RandomForest",
+    "regime": "REGIME_C",
+    "n_train": 257,
+    "n_test": 306,
+    "seed": 42
+  },
+  {
+    "model_id": "B0118",
+    "target": "TARGET_HYDRAULIC_HEAD_ELEVATION",
+    "model": "ExtraTrees",
+    "regime": "REGIME_C",
+    "n_train": 257,
+    "n_test": 306,
+    "seed": 42
+  },
+  {
+    "model_id": "B0119",
+    "target": "TARGET_HYDRAULIC_HEAD_ELEVATION",
+    "model": "HistGB",
+    "regime": "REGIME_C",
+    "n_train": 257,
+    "n_test": 306,
+    "seed": 42
+  },
+  {
+    "model_id": "B0120",
+    "target": "TARGET_PRODUCTIVITY",
+    "model": "Dummy",
+    "regime": "REGIME_A_GROUPED",
+    "n_train": 668,
+    "n_test": 167,
+    "seed": 42
+  },
+  {
+    "model_id": "B0121",
+    "target": "TARGET_PRODUCTIVITY",
+    "model": "RandomForest",
+    "regime": "REGIME_A_GROUPED",
+    "n_train": 668,
+    "n_test": 167,
+    "seed": 42
+  },
+  {
+    "model_id": "B0122",
+    "target": "TARGET_PRODUCTIVITY",
+    "model": "ExtraTrees",
+    "regime": "REGIME_A_GROUPED",
+    "n_train": 668,
+    "n_test": 167,
+    "seed": 42
+  },
+  {
+    "model_id": "B0123",
+    "target": "TARGET_PRODUCTIVITY",
+    "model": "HistGB",
+    "regime": "REGIME_A_GROUPED",
+    "n_train": 668,
+    "n_test": 167,
+    "seed": 42
+  },
+  {
+    "model_id": "B0124",
+    "target": "TARGET_PRODUCTIVITY",
+    "model": "Dummy",
+    "regime": "REGIME_A_GROUPED",
+    "n_train": 668,
+    "n_test": 167,
+    "seed": 42
+  },
+  {
+    "model_id": "B0125",
+    "target": "TARGET_PRODUCTIVITY",
+    "model": "RandomForest",
+    "regime": "REGIME_A_GROUPED",
+    "n_train": 668,
+    "n_test": 167,
+    "seed": 42
+  },
+  {
+    "model_id": "B0126",
+    "target": "TARGET_PRODUCTIVITY",
+    "model": "ExtraTrees",
+    "regime": "REGIME_A_GROUPED",
+    "n_train": 668,
+    "n_test": 167,
+    "seed": 42
+  },
+  {
+    "model_id": "B0127",
+    "target": "TARGET_PRODUCTIVITY",
+    "model": "HistGB",
+    "regime": "REGIME_A_GROUPED",
+    "n_train": 668,
+    "n_test": 167,
+    "seed": 42
+  },
+  {
+    "model_id": "B0128",
+    "target": "TARGET_PRODUCTIVITY",
+    "model": "Dummy",
+    "regime": "REGIME_A_GROUPED",
+    "n_train": 668,
+    "n_test": 167,
+    "seed": 42
+  },
+  {
+    "model_id": "B0129",
+    "target": "TARGET_PRODUCTIVITY",
+    "model": "RandomForest",
+    "regime": "REGIME_A_GROUPED",
+    "n_train": 668,
+    "n_test": 167,
+    "seed": 42
+  },
+  {
+    "model_id": "B0130",
+    "target": "TARGET_PRODUCTIVITY",
+    "model": "ExtraTrees",
+    "regime": "REGIME_A_GROUPED",
+    "n_train": 668,
+    "n_test": 167,
+    "seed": 42
+  },
+  {
+    "model_id": "B0131",
+    "target": "TARGET_PRODUCTIVITY",
+    "model": "HistGB",
+    "regime": "REGIME_A_GROUPED",
+    "n_train": 668,
+    "n_test": 167,
+    "seed": 42
+  },
+  {
+    "model_id": "B0132",
+    "target": "TARGET_PRODUCTIVITY",
+    "model": "Dummy",
+    "regime": "REGIME_A_GROUPED",
+    "n_train": 668,
+    "n_test": 167,
+    "seed": 42
+  },
+  {
+    "model_id": "B0133",
+    "target": "TARGET_PRODUCTIVITY",
+    "model": "RandomForest",
+    "regime": "REGIME_A_GROUPED",
+    "n_train": 668,
+    "n_test": 167,
+    "seed": 42
+  },
+  {
+    "model_id": "B0134",
+    "target": "TARGET_PRODUCTIVITY",
+    "model": "ExtraTrees",
+    "regime": "REGIME_A_GROUPED",
+    "n_train": 668,
+    "n_test": 167,
+    "seed": 42
+  },
+  {
+    "model_id": "B0135",
+    "target": "TARGET_PRODUCTIVITY",
+    "model": "HistGB",
+    "regime": "REGIME_A_GROUPED",
+    "n_train": 668,
+    "n_test": 167,
+    "seed": 42
+  },
+  {
+    "model_id": "B0136",
+    "target": "TARGET_PRODUCTIVITY",
+    "model": "Dummy",
+    "regime": "REGIME_A_GROUPED",
+    "n_train": 668,
+    "n_test": 167,
+    "seed": 42
+  },
+  {
+    "model_id": "B0137",
+    "target": "TARGET_PRODUCTIVITY",
+    "model": "RandomForest",
+    "regime": "REGIME_A_GROUPED",
+    "n_train": 668,
+    "n_test": 167,
+    "seed": 42
+  },
+  {
+    "model_id": "B0138",
+    "target": "TARGET_PRODUCTIVITY",
+    "model": "ExtraTrees",
+    "regime": "REGIME_A_GROUPED",
+    "n_train": 668,
+    "n_test": 167,
+    "seed": 42
+  },
+  {
+    "model_id": "B0139",
+    "target": "TARGET_PRODUCTIVITY",
+    "model": "HistGB",
+    "regime": "REGIME_A_GROUPED",
+    "n_train": 668,
+    "n_test": 167,
+    "seed": 42
+  },
+  {
+    "model_id": "B0140",
+    "target": "TARGET_PRODUCTIVITY",
+    "model": "Dummy",
+    "regime": "REGIME_B_SPATIAL_BLOCK",
+    "n_train": 664,
+    "n_test": 171,
+    "seed": 42
+  },
+  {
+    "model_id": "B0141",
+    "target": "TARGET_PRODUCTIVITY",
+    "model": "RandomForest",
+    "regime": "REGIME_B_SPATIAL_BLOCK",
+    "n_train": 664,
+    "n_test": 171,
+    "seed": 42
+  },
+  {
+    "model_id": "B0142",
+    "target": "TARGET_PRODUCTIVITY",
+    "model": "ExtraTrees",
+    "regime": "REGIME_B_SPATIAL_BLOCK",
+    "n_train": 664,
+    "n_test": 171,
+    "seed": 42
+  },
+  {
+    "model_id": "B0143",
+    "target": "TARGET_PRODUCTIVITY",
+    "model": "HistGB",
+    "regime": "REGIME_B_SPATIAL_BLOCK",
+    "n_train": 664,
+    "n_test": 171,
+    "seed": 42
+  },
+  {
+    "model_id": "B0144",
+    "target": "TARGET_PRODUCTIVITY",
+    "model": "Dummy",
+    "regime": "REGIME_B_SPATIAL_BLOCK",
+    "n_train": 677,
+    "n_test": 158,
+    "seed": 42
+  },
+  {
+    "model_id": "B0145",
+    "target": "TARGET_PRODUCTIVITY",
+    "model": "RandomForest",
+    "regime": "REGIME_B_SPATIAL_BLOCK",
+    "n_train": 677,
+    "n_test": 158,
+    "seed": 42
+  },
+  {
+    "model_id": "B0146",
+    "target": "TARGET_PRODUCTIVITY",
+    "model": "ExtraTrees",
+    "regime": "REGIME_B_SPATIAL_BLOCK",
+    "n_train": 677,
+    "n_test": 158,
+    "seed": 42
+  },
+  {
+    "model_id": "B0147",
+    "target": "TARGET_PRODUCTIVITY",
+    "model": "HistGB",
+    "regime": "REGIME_B_SPATIAL_BLOCK",
+    "n_train": 677,
+    "n_test": 158,
+    "seed": 42
+  },
+  {
+    "model_id": "B0148",
+    "target": "TARGET_PRODUCTIVITY",
+    "model": "Dummy",
+    "regime": "REGIME_B_SPATIAL_BLOCK",
+    "n_train": 651,
+    "n_test": 184,
+    "seed": 42
+  },
+  {
+    "model_id": "B0149",
+    "target": "TARGET_PRODUCTIVITY",
+    "model": "RandomForest",
+    "regime": "REGIME_B_SPATIAL_BLOCK",
+    "n_train": 651,
+    "n_test": 184,
+    "seed": 42
+  },
+  {
+    "model_id": "B0150",
+    "target": "TARGET_PRODUCTIVITY",
+    "model": "ExtraTrees",
+    "regime": "REGIME_B_SPATIAL_BLOCK",
+    "n_train": 651,
+    "n_test": 184,
+    "seed": 42
+  },
+  {
+    "model_id": "B0151",
+    "target": "TARGET_PRODUCTIVITY",
+    "model": "HistGB",
+    "regime": "REGIME_B_SPATIAL_BLOCK",
+    "n_train": 651,
+    "n_test": 184,
+    "seed": 42
+  },
+  {
+    "model_id": "B0152",
+    "target": "TARGET_PRODUCTIVITY",
+    "model": "Dummy",
+    "regime": "REGIME_B_SPATIAL_BLOCK",
+    "n_train": 684,
+    "n_test": 151,
+    "seed": 42
+  },
+  {
+    "model_id": "B0153",
+    "target": "TARGET_PRODUCTIVITY",
+    "model": "RandomForest",
+    "regime": "REGIME_B_SPATIAL_BLOCK",
+    "n_train": 684,
+    "n_test": 151,
+    "seed": 42
+  },
+  {
+    "model_id": "B0154",
+    "target": "TARGET_PRODUCTIVITY",
+    "model": "ExtraTrees",
+    "regime": "REGIME_B_SPATIAL_BLOCK",
+    "n_train": 684,
+    "n_test": 151,
+    "seed": 42
+  },
+  {
+    "model_id": "B0155",
+    "target": "TARGET_PRODUCTIVITY",
+    "model": "HistGB",
+    "regime": "REGIME_B_SPATIAL_BLOCK",
+    "n_train": 684,
+    "n_test": 151,
+    "seed": 42
+  },
+  {
+    "model_id": "B0156",
+    "target": "TARGET_PRODUCTIVITY",
+    "model": "Dummy",
+    "regime": "REGIME_B_SPATIAL_BLOCK",
+    "n_train": 664,
+    "n_test": 171,
+    "seed": 42
+  },
+  {
+    "model_id": "B0157",
+    "target": "TARGET_PRODUCTIVITY",
+    "model": "RandomForest",
+    "regime": "REGIME_B_SPATIAL_BLOCK",
+    "n_train": 664,
+    "n_test": 171,
+    "seed": 42
+  },
+  {
+    "model_id": "B0158",
+    "target": "TARGET_PRODUCTIVITY",
+    "model": "ExtraTrees",
+    "regime": "REGIME_B_SPATIAL_BLOCK",
+    "n_train": 664,
+    "n_test": 171,
+    "seed": 42
+  },
+  {
+    "model_id": "B0159",
+    "target": "TARGET_PRODUCTIVITY",
+    "model": "HistGB",
+    "regime": "REGIME_B_SPATIAL_BLOCK",
+    "n_train": 664,
+    "n_test": 171,
+    "seed": 42
+  },
+  {
+    "model_id": "B0160",
+    "target": "TARGET_PRODUCTIVITY",
+    "model": "Dummy",
+    "regime": "REGIME_C",
+    "n_train": 743,
+    "n_test": 92,
+    "seed": 42
+  },
+  {
+    "model_id": "B0161",
+    "target": "TARGET_PRODUCTIVITY",
+    "model": "RandomForest",
+    "regime": "REGIME_C",
+    "n_train": 743,
+    "n_test": 92,
+    "seed": 42
+  },
+  {
+    "model_id": "B0162",
+    "target": "TARGET_PRODUCTIVITY",
+    "model": "ExtraTrees",
+    "regime": "REGIME_C",
+    "n_train": 743,
+    "n_test": 92,
+    "seed": 42
+  },
+  {
+    "model_id": "B0163",
+    "target": "TARGET_PRODUCTIVITY",
+    "model": "HistGB",
+    "regime": "REGIME_C",
+    "n_train": 743,
+    "n_test": 92,
+    "seed": 42
+  },
+  {
+    "model_id": "B0164",
+    "target": "TARGET_PRODUCTIVITY",
+    "model": "Dummy",
+    "regime": "REGIME_C",
+    "n_train": 667,
+    "n_test": 168,
+    "seed": 42
+  },
+  {
+    "model_id": "B0165",
+    "target": "TARGET_PRODUCTIVITY",
+    "model": "RandomForest",
+    "regime": "REGIME_C",
+    "n_train": 667,
+    "n_test": 168,
+    "seed": 42
+  },
+  {
+    "model_id": "B0166",
+    "target": "TARGET_PRODUCTIVITY",
+    "model": "ExtraTrees",
+    "regime": "REGIME_C",
+    "n_train": 667,
+    "n_test": 168,
+    "seed": 42
+  },
+  {
+    "model_id": "B0167",
+    "target": "TARGET_PRODUCTIVITY",
+    "model": "HistGB",
+    "regime": "REGIME_C",
+    "n_train": 667,
+    "n_test": 168,
+    "seed": 42
+  },
+  {
+    "model_id": "B0168",
+    "target": "TARGET_PRODUCTIVITY",
+    "model": "Dummy",
+    "regime": "REGIME_C",
+    "n_train": 618,
+    "n_test": 217,
+    "seed": 42
+  },
+  {
+    "model_id": "B0169",
+    "target": "TARGET_PRODUCTIVITY",
+    "model": "RandomForest",
+    "regime": "REGIME_C",
+    "n_train": 618,
+    "n_test": 217,
+    "seed": 42
+  },
+  {
+    "model_id": "B0170",
+    "target": "TARGET_PRODUCTIVITY",
+    "model": "ExtraTrees",
+    "regime": "REGIME_C",
+    "n_train": 618,
+    "n_test": 217,
+    "seed": 42
+  },
+  {
+    "model_id": "B0171",
+    "target": "TARGET_PRODUCTIVITY",
+    "model": "HistGB",
+    "regime": "REGIME_C",
+    "n_train": 618,
+    "n_test": 217,
+    "seed": 42
+  },
+  {
+    "model_id": "B0172",
+    "target": "TARGET_PRODUCTIVITY",
+    "model": "Dummy",
+    "regime": "REGIME_C",
+    "n_train": 711,
+    "n_test": 124,
+    "seed": 42
+  },
+  {
+    "model_id": "B0173",
+    "target": "TARGET_PRODUCTIVITY",
+    "model": "RandomForest",
+    "regime": "REGIME_C",
+    "n_train": 711,
+    "n_test": 124,
+    "seed": 42
+  },
+  {
+    "model_id": "B0174",
+    "target": "TARGET_PRODUCTIVITY",
+    "model": "ExtraTrees",
+    "regime": "REGIME_C",
+    "n_train": 711,
+    "n_test": 124,
+    "seed": 42
+  },
+  {
+    "model_id": "B0175",
+    "target": "TARGET_PRODUCTIVITY",
+    "model": "HistGB",
+    "regime": "REGIME_C",
+    "n_train": 711,
+    "n_test": 124,
+    "seed": 42
+  },
+  {
+    "model_id": "B0176",
+    "target": "TARGET_PRODUCTIVITY",
+    "model": "Dummy",
+    "regime": "REGIME_C",
+    "n_train": 601,
+    "n_test": 234,
+    "seed": 42
+  },
+  {
+    "model_id": "B0177",
+    "target": "TARGET_PRODUCTIVITY",
+    "model": "RandomForest",
+    "regime": "REGIME_C",
+    "n_train": 601,
+    "n_test": 234,
+    "seed": 42
+  },
+  {
+    "model_id": "B0178",
+    "target": "TARGET_PRODUCTIVITY",
+    "model": "ExtraTrees",
+    "regime": "REGIME_C",
+    "n_train": 601,
+    "n_test": 234,
+    "seed": 42
+  },
+  {
+    "model_id": "B0179",
+    "target": "TARGET_PRODUCTIVITY",
+    "model": "HistGB",
+    "regime": "REGIME_C",
+    "n_train": 601,
+    "n_test": 234,
+    "seed": 42
+  }
+]

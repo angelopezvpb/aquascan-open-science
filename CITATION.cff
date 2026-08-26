@@ -1,0 +1,28 @@
+# CITATION.cff for AquaScan Open Science
+
+cff-version: 1.2.0
+title: "AquaScan Open Science: Multimodal Hydrogeophysical Groundwater Prospecting Research Framework"
+message: "If you use this software in your research, please cite it as below."
+type: software
+authors:
+  - name: "AquaScan Research"
+url: "https://github.com/aquascan-research/aquascan-open-science"
+repository-code: "https://github.com/aquascan-research/aquascan-open-science"
+version: 0.1.0
+date-released: "2025-01-15"
+license: Apache-2.0
+keywords:
+  - groundwater
+  - hydrogeophysics
+  - ert
+  - seismic
+  - open-science
+  - machine-learning
+  - geophysics
+  - hydrology
+abstract: >
+  AquaScan Open Science is an open research framework for investigating
+  multimodal hydrogeophysical approaches to groundwater prospecting.
+  It integrates Electrical Resistivity Tomography (ERT), P-wave seismic,
+  GNSS RTK positioning, and geological metadata with machine learning
+  baselines for reproducible scientific experimentation.

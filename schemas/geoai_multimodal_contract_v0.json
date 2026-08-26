@@ -1,0 +1,75 @@
+{
+  "schema_version": "v0",
+  "model": "AquaScan GeoAI Context v0",
+  "description": "Interfaces for the future multimodal AquaScan model. ERT/seismic encoders are NOT implemented; no synthetic physical features exist.",
+  "GeoAIFusionInput": {
+    "type": "object",
+    "properties": {
+      "context_features": {
+        "type": "array",
+        "items": {
+          "type": "number"
+        },
+        "description": "Permitted contextual features (see feature_manifest.json)"
+      },
+      "ert_features": {
+        "type": [
+          "array",
+          "null"
+        ],
+        "items": {
+          "type": "number"
+        },
+        "description": "Future ERT encoder output. NOT IMPLEMENTED. Must be null."
+      },
+      "seismic_features": {
+        "type": [
+          "array",
+          "null"
+        ],
+        "items": {
+          "type": "number"
+        },
+        "description": "Future seismic encoder output. NOT IMPLEMENTED. Must be null."
+      }
+    },
+    "required": [
+      "context_features"
+    ],
+    "additionalProperties": false
+  },
+  "arms_supported": [
+    "CONTEXT",
+    "ERT",
+    "SEISMIC",
+    "ERT+SEISMIC",
+    "CONTEXT+ERT+SEISMIC"
+  ],
+  "constraints": [
+    "No synthetic ERT or seismic values may be used to claim performance.",
+    "ERT/seismic arms must be added only after real acquisition exists."
+  ],
+  "future_encoders": {
+    "ERTEncoder": {
+      "status": "NOT_IMPLEMENTED",
+      "inputs": [
+        "ERT_RAW"
+      ]
+    },
+    "SeismicEncoder": {
+      "status": "NOT_IMPLEMENTED",
+      "inputs": [
+        "SEISMIC_RAW"
+      ]
+    },
+    "FusionModel": {
+      "status": "NOT_IMPLEMENTED",
+      "inputs": [
+        "context",
+        "ert",
+        "seismic"
+      ]
+    }
+  },
+  "created_at": "2026-08-26T08:52:43+00:00"
+}

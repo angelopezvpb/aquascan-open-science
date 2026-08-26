@@ -1,0 +1,35 @@
+{
+  "model_id": "BASELINE_DEPTH_V2",
+  "model_family": "RandomForest",
+  "n_estimators": 100,
+  "max_depth": 15,
+  "random_seed": 42,
+  "evaluation": {
+    "IN_DOMAIN_CONTEXT_BASELINE": {
+      "regime": "REGIME_A_GROUPED",
+      "median_MAE_m": 10.003696991862531,
+      "median_MdAE_m": 6.9615166666666735,
+      "median_R2": 0.6704280461012073,
+      "dummy_median_MAE_m": 21.52310717797443
+    },
+    "SPATIAL_HOLDOUT_CONTEXT_BASELINE": {
+      "regime": "REGIME_B_SPATIAL_BLOCK",
+      "median_MAE_m": 9.44846929275648,
+      "median_MdAE_m": 5.696395616883121,
+      "median_R2": 0.7232720957450545
+    },
+    "CROSS_DOMAIN_CONTEXT_BASELINE": {
+      "regime": "REGIME_C",
+      "median_MAE_m": 15.672796311396866,
+      "median_MdAE_m": 13.8170875,
+      "median_R2": 0.6130029317972512,
+      "note": "Heterogeneous across held-out domains; catastrophic on Región de los arenales (see KNOWN_OOD_DOMAIN)."
+    }
+  },
+  "selection_notes": [
+    "Selected for spatial/generalization performance + robustness, not solely in-domain MAE.",
+    "Cross-domain improvement over Dummy survives for 3/5 domains; Región de los arenales is a documented OOD failure.",
+    "Frozen from Gate 8.1 validated leakage-free evaluation."
+  ],
+  "known_ood_domain": "Región de los arenales"
+}
