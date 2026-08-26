@@ -1,5 +1,9 @@
 # AquaScan Open Science
 
+<p align="center">
+  <img src="docs/assets/aquascan-banner.png" alt="AquaScan Open Science" width="100%">
+</p>
+
 Open-source research framework for investigating whether **multimodal
 hydrogeophysical measurements (ERT + P-wave seismic + GNSS RTK) combined with
 documentary context** can improve groundwater prospecting — with explicit
