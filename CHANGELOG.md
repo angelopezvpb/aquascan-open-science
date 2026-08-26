@@ -13,13 +13,13 @@ All notable changes to AquaScan Open Science are documented in this file.
 - Open-source context baseline (Baseline v2, leakage-free)
 - GeoAI Context v0 (open-source tabular context model)
 - Open-source physical encoder stack for ERT + P-wave seismic (canonical schemas, pipelines, encoders, registration, synthetic fixtures)
-- Blinded-validation protocols (Gate 6.1.x / 7) for future field experiments
+- Blinded-validation protocols (prediction freeze before Ground Truth reveal) for future field experiments
 - Comprehensive tests and CI
 
 ### Explicit limitations (not validated in v0.1)
 - No real ERT/seismic field validation has been performed
 - No dry-well detection has been validated (no confirmed negative Ground Truth)
-- Physical hardware acceptance: NOT YET PERFORMED (Gate 11 status)
+- Physical hardware acceptance: NOT YET PERFORMED (no hardware acquired)
 - Región de los arenales is a documented out-of-distribution generalization failure
 - GeoAI Context v0 does not meaningfully outperform Baseline v2
 

@@ -52,10 +52,10 @@ dev = [
 aquascan = "aquascan.cli:main"
 
 [project.urls]
-Homepage = "https://github.com/aquascan-research/aquascan-open-science"
-Documentation = "https://aquascan-research.github.io/aquascan-open-science"
-Repository = "https://github.com/aquascan-research/aquascan-open-science"
-Issues = "https://github.com/aquascan-research/aquascan-open-science/issues"
+Homepage = "https://github.com/angelopezvpb/aquascan-open-science"
+Documentation = "https://github.com/angelopezvpb/aquascan-open-science"
+Repository = "https://github.com/angelopezvpb/aquascan-open-science"
+Issues = "https://github.com/angelopezvpb/aquascan-open-science/issues"
 
 [tool.setuptools.packages.find]
 where = ["src"]

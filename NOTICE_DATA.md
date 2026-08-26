@@ -16,23 +16,23 @@ public water-point inventory (Inventario de Puntos de Agua / bdaguas API).
 - Original field names and units are preserved wherever possible; derived
   values are explicitly marked `DERIVED`.
 
-## What is NOT redistributed in v0.1
+## What is NOT redistributed
 This release does **not** include:
 - the complete national IGME dump,
-- the 4,744-record enriched Ground Truth dataset,
+- the enriched Ground Truth dataset,
 - API response caches,
-- any Phase 0 sealed site information.
+- any sealed site information for the blinded field-validation cohort.
 
 Only schemas, code, aggregated statistics, and clearly-labeled synthetic
 fixtures are published.
 
 ## License status
-The exact IGME reuse/license terms for the source data could not be fully
-verified within this repository.
+This repository is released under the Apache-2.0 license (see `LICENSE`).
+That license covers the code, schemas, documentation, and aggregated
+statistics in this repository.
 
-```json
-{"DATA_LICENSE_REVIEW_REQUIRED": true}
-```
-
-Human review of the current IGME data terms is required before any data
-redistribution beyond code and aggregated statistics.
+Original IGME source data is subject to IGME's own reuse terms, which are
+independent of this repository's license. This release redistributes **no
+original IGME records** — only code, schemas, aggregated statistics, and
+clearly-labeled synthetic fixtures. Anyone redistributing original IGME data
+must comply with IGME's terms directly.

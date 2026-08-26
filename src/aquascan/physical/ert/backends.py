@@ -1,4 +1,4 @@
-"""ERT inversion backend abstraction (Gate 10, section 5).
+"""ERT inversion backend abstraction.
 
 AquaScan must not be permanently bound to one ERT inversion library.
 This module defines the `ERTInversionBackend` interface and a registry

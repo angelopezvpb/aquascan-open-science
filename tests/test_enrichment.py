@@ -1,4 +1,4 @@
-"""Gate 4: Controlled Ground Truth Enrichment tests.
+"""Controlled Ground Truth enrichment tests.
 
 Covers:
 - cache reproducibility
@@ -500,7 +500,7 @@ def test_documentary_confidence_scales_with_families() -> None:
     assert c_many > c_none
 
 
-# ── Gate 5 Telemetry Tests ───────────────────────────────────────────
+# ── Telemetry Tests ───────────────────────────────────────────
 
 
 class FakeCache:
@@ -529,8 +529,8 @@ class FakeCache:
         return {"valid": True, "message": "ok"}
 
 
-class TestGate5Telemetry:
-    """Gate 5 telemetry correction tests.
+class TestTelemetry:
+    """Telemetry correction tests.
 
     Verifies the cache-hit / network-request distinction is exact.
     """

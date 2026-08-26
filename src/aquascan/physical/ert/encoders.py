@@ -1,4 +1,4 @@
-"""ERT encoders (Gate 10, section 8).
+"""ERT encoders.
 
 Two implementations:
 - ERTHandcraftedEncoder: scientifically interpretable summary features.

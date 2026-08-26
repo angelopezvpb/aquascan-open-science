@@ -1,4 +1,4 @@
-"""ERT deterministic pipeline (Gate 10, section 4).
+"""ERT deterministic pipeline.
 
 ERT_RAW -> ERT_CALIBRATED -> ERT_QC -> ERT_APPARENT_RESISTIVITY
         -> ERT_INVERSION_INPUT -> ERT_INVERTED_MODEL -> ERT_FEATURES
@@ -63,7 +63,7 @@ class ERTPipeline:
         """Apply deterministic linear calibration to current/voltage.
 
         gain/offset are public-domain AutoCal-style coefficients supplied
-        by the calibration artifact (Gate 7 AutoCal protocol). RAW values
+        by the calibration artifact. RAW values
         are preserved; calibrated copies are produced alongside.
         """
         quads: list[dict[str, object]] = []

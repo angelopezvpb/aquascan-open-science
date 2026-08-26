@@ -1,4 +1,4 @@
-"""Regression tests for Phase 0 Ranking Sanity Audit — Gate 2.1.
+"""Regression tests for the domain-ranking sanity audit.
 
 Tests:
 - Phase 0 CSV ranking is monotonic on phase0_score

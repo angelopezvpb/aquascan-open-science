@@ -1,4 +1,4 @@
-"""Synthetic engineering fixtures with analytic forward models (Gate 10, 24-25).
+"""Synthetic engineering fixtures with analytic forward models.
 
 Fixtures are labeled SYNTHETIC_ENGINEERING_FIXTURE. They may be used to:
 

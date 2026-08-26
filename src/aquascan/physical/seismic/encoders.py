@@ -1,4 +1,4 @@
-"""Seismic encoders (Gate 10, section 15).
+"""Seismic encoders.
 
 SEISMIC_HANDCRAFTED_ENCODER and SEISMIC_GRID_ENCODER (scaffold).
 No claimed groundwater performance without real paired data.

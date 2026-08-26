@@ -1,9 +1,0 @@
-{
-  "acceptance": "GNSS_ACCEPTANCE",
-  "status": "NOT_TESTED",
-  "reason": "No GNSS RTK receiver available.",
-  "rtk_fix": "NOT_TESTED",
-  "rtk_float": "NOT_TESTED",
-  "correction_loss_recovery": "NOT_TESTED",
-  "elevation_semantics": "Protocol requires explicit ELLIPSOIDAL/ORTHOMETRIC tracking; the software frame (Gate 10 coords.py) enforces this, but no physical observations exist to verify."
-}

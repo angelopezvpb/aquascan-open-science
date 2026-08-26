@@ -1,4 +1,4 @@
-"""Gate 3.1 tests: semantic validation of Ground Truth evidence.
+"""Semantic validation of Ground Truth evidence tests.
 
 Tests covering:
 - aquifer_flagged interval != water_entry observation

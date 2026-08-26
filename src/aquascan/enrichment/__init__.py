@@ -1,4 +1,4 @@
-"""Gate 4: Controlled Ground Truth Enrichment pipeline."""
+"""Controlled Ground Truth Enrichment pipeline."""
 
 from aquascan.enrichment.api import EnrichmentAPIClient
 from aquascan.enrichment.cache import ResponseCache

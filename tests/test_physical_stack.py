@@ -1,6 +1,6 @@
-"""Gate 10: Open-Source Physical Encoder Stack v0 tests.
+"""Open-source physical encoder stack tests.
 
-Covers (Gate 10 section 31):
+Covers:
 - RAW immutability
 - ERT schema
 - seismic schema

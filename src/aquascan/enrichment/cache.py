@@ -1,4 +1,4 @@
-"""Gate 4: Immutable evidence cache (step 4).
+"""Immutable evidence cache (step 4).
 
 The cache maps: IGME ID -> endpoint -> raw response -> hash -> normalized evidence.
 

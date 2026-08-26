@@ -18,7 +18,7 @@ from typing import Any
 
 
 class ProcessingStage(StrEnum):
-    """Deterministic processing stages (Gate 10, sections 4 and 11)."""
+    """Deterministic processing stages."""
 
     # ERT stages
     ERT_RAW = "ERT_RAW"

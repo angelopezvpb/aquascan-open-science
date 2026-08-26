@@ -1,4 +1,4 @@
-"""Gate 4: Deterministic cohort selection (step 2).
+"""Deterministic cohort selection.
 
 Select exactly 500 IGME records (100 per domain), stratified across:
 - Candidate P1/P2/P3/P4 tiers
@@ -267,7 +267,7 @@ TOTAL_TARGET = 5_000
 
 
 def select_cohort_5000(df: pd.DataFrame) -> pd.DataFrame:
-    """Select exactly 5,000 records for Gate 5 scale-up.
+    """Select exactly 5,000 records for cohort scale-up.
 
     Strategy:
     - Take ALL available records from the 4 priority domains

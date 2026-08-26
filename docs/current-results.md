@@ -24,7 +24,7 @@ averaged away.
 
 ## What is NOT reported
 - **No ERT/seismic groundwater accuracy exists.** Physical acquisition has
-  not been performed; Gate 11 hardware acceptance is NOT READY.
+  not been performed; hardware acceptance is NOT READY (no hardware acquired).
 - **No dry-well detection accuracy exists.** Confirmed negatives = 0.
 - No Phase 0 sealed Ground Truth has been revealed.
 

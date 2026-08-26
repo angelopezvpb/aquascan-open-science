@@ -1,4 +1,4 @@
-"""Cross-modal registration and shared physical representation (Gate 10, 20-21).
+"""Cross-modal registration and shared physical representation.
 
 Maps ERT cells and seismic velocity cells into a shared physical
 coordinate representation (depth bins x lateral bins + modality masks).

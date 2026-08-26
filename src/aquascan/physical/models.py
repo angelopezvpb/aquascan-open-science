@@ -1,4 +1,4 @@
-"""Canonical data models for the physical encoder stack (Gate 10).
+"""Canonical data models for the physical encoder stack.
 
 Every model preserves RAW measurements and carries full provenance.
 null != 0 — missing values must never be silently converted to zeros.

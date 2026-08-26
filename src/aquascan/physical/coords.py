@@ -1,4 +1,4 @@
-"""Common physical coordinate frame (Gate 10, section 19).
+"""Common physical coordinate frame.
 
 Defines the transformation from GNSS coordinates to local survey
 coordinates so ERT and seismic observations are alignable via:

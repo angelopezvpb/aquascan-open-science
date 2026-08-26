@@ -1,4 +1,4 @@
-"""AquaScan Physical Encoder Stack v0 (Gate 10).
+"""AquaScan Physical Encoder Stack v0.
 
 Software architecture for ERT + P-wave seismic physical modalities.
 

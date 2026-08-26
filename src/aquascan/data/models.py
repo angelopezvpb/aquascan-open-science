@@ -32,7 +32,7 @@ class DatasetLevel(StrEnum):
     L4 = "L4"  # GROUND TRUTH — independent borehole verification
 
 
-# GroundTruthClass is now defined below with GroundTruthEvidenceRecord (Gate 3).
+# GroundTruthClass is now defined below with GroundTruthEvidenceRecord.
 # Uses GT_A, GT_B, GT_C, GT_D for explicit naming.
 
 
@@ -694,7 +694,7 @@ class SyntheticProfile(BaseModel):
 
 
 # ---------------------------------------------------------------------------
-# Ground Truth Evidence Models (Gate 3)
+# Ground Truth Evidence Models
 # ---------------------------------------------------------------------------
 
 
@@ -722,7 +722,7 @@ class GroundTruthClass(StrEnum):
 
 
 # ---------------------------------------------------------------------------
-# Gate 4: Enrichment enums
+# Enrichment enums
 # ---------------------------------------------------------------------------
 
 
@@ -983,14 +983,14 @@ class GroundTruthEvidenceRecord(BaseModel):
 
 
 # ---------------------------------------------------------------------------
-# Gate 4: Controlled Ground Truth Enrichment models
+# Controlled Ground Truth Enrichment models
 # ---------------------------------------------------------------------------
 
 
 class WaterLevelObservation(BaseModel):
     """A single piezometric water-level observation.
 
-    CRITICAL semantic separation (Gate 4, step 1):
+    CRITICAL semantic separation:
     - TARGET_DEPTH_TO_WATER: Nivel — vertical depth below ground reference (m).
     - TARGET_HYDRAULIC_HEAD_ELEVATION: Valor — water elevation/head in the
       source vertical reference (m).
@@ -1157,7 +1157,7 @@ class WaterPresenceDetermination(BaseModel):
 
 
 class NormalizedGroundTruthRecord(BaseModel):
-    """One normalized Ground Truth evidence record per IGME point (Gate 4, step 5).
+    """One normalized Ground Truth evidence record per IGME point.
 
     Maintains independent evidence dimensions and preserves raw observations as
     repeated/time-indexed measurements. Time series are never summarized away.

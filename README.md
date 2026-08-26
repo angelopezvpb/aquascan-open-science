@@ -32,7 +32,7 @@ Context (public hydrogeological records)
 - [x] Open-source context baseline v2 (leakage-free, frozen)
 - [x] GeoAI Context v0 (documentary context model)
 - [x] ERT / seismic processing architecture (canonical schemas + pipelines)
-- [x] Physical hardware acceptance: **NOT YET PERFORMED**
+- [ ] Physical hardware acceptance: **NOT YET PERFORMED** (no hardware acquired)
 - [ ] Real groundwater validation with ERT/seismic: **NOT YET PERFORMED**
 - [ ] Dry-well detection: **NOT VALIDATED**
 
@@ -45,14 +45,16 @@ See [docs/architecture.md](docs/architecture.md).
 
 ## Ground Truth methodology
 
-See [docs/methodology.md](docs/methodology.md).
+See [docs/methodology.md](docs/methodology.md) and
+[docs/scientific-integrity.md](docs/scientific-integrity.md).
 
 ## Leakage-safe validation
 
 - No naive random splits. Grouped folds, spatial-block holdout, and
   cross-domain holdout are enforced with tests.
-- **Historical note:** Gate 8 v1 contained target leakage and is marked
-  invalid; see [docs/baseline-leakage-postmortem.md](docs/baseline-leakage-postmortem.md).
+- **Historical note:** the first baseline release contained target leakage
+  and was marked invalid; see
+  [docs/baseline-leakage-postmortem.md](docs/baseline-leakage-postmortem.md).
 - All published results are the leakage-free Baseline v2 / forensic numbers;
   see [docs/current-results.md](docs/current-results.md).
 
@@ -73,7 +75,7 @@ engineering fixtures live in `src/aquascan/physical/`. It is tested on
 
 - Real ERT/seismic groundwater accuracy (no field data)
 - Dry-well discrimination (no confirmed negative Ground Truth)
-- Physical hardware acceptance (Gate 11 status: NOT READY — no hardware)
+- Physical hardware acceptance (not yet performed — no hardware acquired)
 - Generalization to Región de los arenales (documented OOD failure)
 
 ## Reproducibility
@@ -89,7 +91,7 @@ python -m ruff format --check .
 Synthetic demonstrations (no data required):
 
 ```bash
-python -c "from aquascan.physical.synthetic.fixtures import make_homogeneous_halfspace; print('ok')"
+python -c "from aquascan.physical.synthetic.fixtures import ErtHalfspaceFixture; print(ErtHalfspaceFixture(rho=250).forward().mean())"
 ```
 
 The IGME downloader and enrichment scripts require network access and are
@@ -124,5 +126,4 @@ See [CITATION.cff](CITATION.cff).
 
 ## License
 
-Apache-2.0 (see [LICENSE](LICENSE)). License selection is still under human
-review — see [LICENSE_REVIEW.md](LICENSE_REVIEW.md).
+Apache-2.0 (see [LICENSE](LICENSE)).

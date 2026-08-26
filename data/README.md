@@ -27,9 +27,8 @@ The following file types are excluded from Git:
 
 ## Future Data Distribution
 
-Public AquaScan datasets (AquaScan-25, AquaScan-100) will be published
-on Hugging Face Datasets or similar object storage. See
-[docs/huggingface-roadmap.md](../docs/huggingface-roadmap.md).
+Public AquaScan datasets (AquaScan-25, AquaScan-100) may be published
+in the future on Hugging Face Datasets or similar object storage.
 
 ## Local Setup
 

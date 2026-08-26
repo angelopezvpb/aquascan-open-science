@@ -1,4 +1,4 @@
-"""Seismic deterministic pipeline (Gate 10, section 11).
+"""Seismic deterministic pipeline.
 
 SEISMIC_RAW -> SEISMIC_CALIBRATED -> SEISMIC_QC -> SEISMIC_FILTERED_VIEW
         -> SEISMIC_FIRST_ARRIVAL_PICKS -> SEISMIC_TRAVEL_TIMES
