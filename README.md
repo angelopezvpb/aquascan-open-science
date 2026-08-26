@@ -133,6 +133,10 @@ records; AquaScan is independent and not endorsed by IGME.
 
 See [docs/roadmap.md](docs/roadmap.md).
 
+## Author
+
+**Angel López Morales** — [angel.lopez@voicepowered.ai](mailto:angel.lopez@voicepowered.ai)
+
 ## Citation
 
 See [CITATION.cff](CITATION.cff).
