@@ -71,6 +71,15 @@ handcrafted + grid encoders, cross-modal registration, and synthetic
 engineering fixtures live in `src/aquascan/physical/`. It is tested on
 **synthetic** data only; no real field performance is claimed.
 
+## Field hardware
+
+Phase 0 requires a geophysical field stack: a 48-electrode ERT system
+(5 m spacing), a 24-channel P-wave seismic system (14 Hz geophones, 2 m
+spacing), GNSS RTK positioning, an in-house calibration box (AutoCal), field
+power (LiFePO4), and rugged compute/storage. **No hardware has been acquired
+yet** — acceptance is not performed. See [docs/hardware.md](docs/hardware.md)
+for the full bill of materials, specifications, and budget scenarios.
+
 ## What is NOT yet validated
 
 - Real ERT/seismic groundwater accuracy (no field data)
