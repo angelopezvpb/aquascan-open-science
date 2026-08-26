@@ -1,0 +1,14 @@
+{
+  "acceptance": "POWER_ACCEPTANCE",
+  "status": "NOT_TESTED",
+  "reason": "No field power stack available.",
+  "idle_consumption": "NOT_TESTED",
+  "ert_load": "NOT_TESTED",
+  "seismic_load": "NOT_TESTED",
+  "compute_load": "NOT_TESTED",
+  "peak_demand": "NOT_TESTED",
+  "battery_runtime_estimate": "NOT_TESTED",
+  "voltage_stability": "NOT_TESTED",
+  "power_loss_test": "NOT_TESTED",
+  "raw_corruption_check": "NOT_TESTED (no power hardware)"
+}

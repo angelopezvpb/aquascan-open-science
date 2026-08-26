@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://github.com/angelopezvpb/aquascan-open-science/schemas/aquascan_dataset.schema.json",
+  "$id": "https://aquascan-research.github.io/aquascan-open-science/schemas/aquascan_dataset.schema.json",
   "title": "AquaScan Dataset Schema",
   "description": "Canonical schema for AquaScan campaign records. All fields use explicit types, documented units, and nullable semantics. null != 0.",
   "type": "object",

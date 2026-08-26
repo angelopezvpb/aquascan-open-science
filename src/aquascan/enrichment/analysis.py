@@ -1,4 +1,4 @@
-"""Coverage analysis, Phase 0 v2, and manual audit."""
+"""Gate 4: Coverage analysis, Phase 0 v2, and manual audit."""
 
 from __future__ import annotations
 
@@ -24,7 +24,7 @@ def wilson_ci(k: int, n: int, z: float = 1.96) -> tuple[float, float]:
 
 
 def compute_coverage(records: list[NormalizedGroundTruthRecord]) -> pd.DataFrame:
-    """Compute record-level coverage."""
+    """Compute record-level coverage (Gate 4, step 11)."""
     rows: list[dict[str, Any]] = []
     for rec in records:
         has_lith = len(rec.geological_evidence) > 0

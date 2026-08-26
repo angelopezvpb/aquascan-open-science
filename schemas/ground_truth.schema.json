@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://github.com/angelopezvpb/aquascan-open-science/schemas/ground_truth.schema.json",
+  "$id": "https://aquascan-research.github.io/aquascan-open-science/schemas/ground_truth.schema.json",
   "title": "AquaScan Ground Truth Schema",
   "description": "Schema for ground truth data used to validate water prospecting predictions.",
   "type": "object",

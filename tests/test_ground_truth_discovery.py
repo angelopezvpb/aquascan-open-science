@@ -1,4 +1,4 @@
-"""GroundTruthEvidenceRecord, semantic separation, and provenance tests.
+"""Gate 3 tests: GroundTruthEvidenceRecord, semantic separation, provenance.
 
 Tests:
 - GroundTruthEvidenceRecord serialization / deserialization

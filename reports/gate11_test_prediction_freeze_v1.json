@@ -1,0 +1,22 @@
+{
+  "blinded_site_id": "AQ-TEST-001",
+  "analysis_arm": "ARM_ES",
+  "raw_ert_sha256": "SYNTHETIC-NO-REAL-ERT",
+  "raw_seismic_sha256": "SYNTHETIC-NO-REAL-SEISMIC",
+  "autocal_version": "NOT_RUN (no hardware)",
+  "processing_version": "0.1.0",
+  "processing_config_sha256": "SYNTHETIC-CONFIG",
+  "predicted_target": "NONE",
+  "point_estimate": null,
+  "interval_estimate_min": null,
+  "interval_estimate_max": null,
+  "uncertainty": "INSUFFICIENT_EVIDENCE",
+  "confidence_gate": "RED",
+  "interpreter_notes": {
+    "note": "Software freeze-lifecycle proof. No real measurements."
+  },
+  "view_used": "STRICT_BLIND",
+  "prediction_timestamp_utc": "2026-08-26T09:22:25+00:00",
+  "ground_truth_status": "NO_SCIENTIFIC_GT_AVAILABLE",
+  "prediction_artifact_sha256": "1bb8c4b9935b7717036cdbeb48fdbdaf3372c3d77ca3bf5d8621b953018f6035"
+}

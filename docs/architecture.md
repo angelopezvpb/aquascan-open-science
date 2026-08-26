@@ -41,4 +41,4 @@ Seismic RAW -> Seismic Pipeline -> Seismic Encoder
 | Cross-modal registration | IMPLEMENTED (derived interpolation only) |
 | AutoCal | INTERFACE ONLY — proprietary implementation out of scope |
 | Multimodal fusion | FUTURE |
-| Physical hardware stack | NOT YET ACQUIRED (no hardware) |
+| Physical hardware stack | NOT YET ACQUIRED (Gate 11: NOT READY) |

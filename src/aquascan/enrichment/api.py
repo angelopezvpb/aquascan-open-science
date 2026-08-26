@@ -1,4 +1,4 @@
-"""IGME bdaguas enrichment API client.
+"""Gate 4: IGME bdaguas enrichment API client.
 
 Implements resilient HTTP calls with:
 - timeout
@@ -59,7 +59,7 @@ def sha256_json(obj: Any) -> str:
 
 @dataclass
 class APIRequestMetrics:
-    """Per-call metrics for operational measurement."""
+    """Per-call metrics for operational measurement (Gate 4, step 13)."""
 
     endpoint: str = ""
     igme_id: str = ""
@@ -331,7 +331,7 @@ class EnrichmentAPIClient:
         }
 
     def get_metrics_summary(self) -> dict[str, Any]:
-        """Generate API operational metrics.
+        """Generate API operational metrics (Gate 5 corrected telemetry).
 
         Distinguishes:
         - logical_endpoint_queries: total endpoint lookups attempted

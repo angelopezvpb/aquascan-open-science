@@ -73,16 +73,16 @@ class TestRankingMonotonicity:
         if phase0_csv is None:
             pytest.skip("Phase 0 v1.1 CSV not found")
         names = phase0_csv["hydrogeological_unit"].str.lower().values
-        assert "unidades aisladas" not in names, (
-            "Unidades aisladas must be excluded from Phase 0 ranking"
-        )
+        assert (
+            "unidades aisladas" not in names
+        ), "Unidades aisladas must be excluded from Phase 0 ranking"
 
     def test_minimum_size_filter_applied(self, phase0_csv: pd.DataFrame) -> None:
         if phase0_csv is None:
             pytest.skip("Phase 0 v1.1 CSV not found")
-        assert (phase0_csv["total_records"] >= 50).all(), (
-            "Minimum size filter of 50 records not applied"
-        )
+        assert (
+            phase0_csv["total_records"] >= 50
+        ).all(), "Minimum size filter of 50 records not applied"
 
 
 class TestGeographicDerivation:
@@ -93,9 +93,9 @@ class TestGeographicDerivation:
         subset = candidates_df[candidates_df["hydrogeological_unit"] == "Región de los arenales"]
         provinces = subset["province"].unique()
         # The primary province should be Ávila/Valladolid (Duero basin), NOT Illes Balears
-        assert "Illes Balears" not in provinces, (
-            f"Región de los arenales is NOT in Illes Balears. Actual provinces: {sorted(provinces)}"
-        )
+        assert (
+            "Illes Balears" not in provinces
+        ), f"Región de los arenales is NOT in Illes Balears. Actual provinces: {sorted(provinces)}"
         primary = subset["province"].value_counts().index[0]
         assert primary in [
             "Ávila",
@@ -127,9 +127,9 @@ class TestGeographicDerivation:
             if len(subset) == 0:
                 continue
             provinces = subset["province"].unique()
-            assert any("Illes Balears" == p for p in provinces), (
-                f"{hgu}: expected Illes Balears in provinces, got {sorted(provinces)}"
-            )
+            assert any(
+                "Illes Balears" == p for p in provinces
+            ), f"{hgu}: expected Illes Balears in provinces, got {sorted(provinces)}"
 
     def test_geographic_claims_derivable_from_data(self, candidates_df: pd.DataFrame) -> None:
         """For top-5 HGUs, verify that province and watershed are derivable."""
@@ -200,6 +200,6 @@ class TestSensitivityAnalysis:
         assert len(SCENARIOS) >= 3, "Need at least 3 scenarios for sensitivity analysis"
         for name, weights in SCENARIOS.items():
             total_weight = sum(weights.values())
-            assert abs(total_weight - 1.0) < 0.01, (
-                f"Scenario '{name}' weights sum to {total_weight}, expected 1.0"
-            )
+            assert (
+                abs(total_weight - 1.0) < 0.01
+            ), f"Scenario '{name}' weights sum to {total_weight}, expected 1.0"

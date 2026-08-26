@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://github.com/angelopezvpb/aquascan-open-science/schemas/prediction.schema.json",
+  "$id": "https://aquascan-research.github.io/aquascan-open-science/schemas/prediction.schema.json",
   "title": "AquaScan Prediction Schema",
   "description": "Schema for water prospecting predictions output by AquaScan models.",
   "type": "object",

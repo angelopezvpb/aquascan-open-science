@@ -1,3 +1,5 @@
+
+
 <p align="center">
   <img src="docs/assets/aquascan-banner.png" alt="AquaScan Open Science" width="100%">
 </p>
@@ -36,7 +38,7 @@ Context (public hydrogeological records)
 - [x] Open-source context baseline v2 (leakage-free, frozen)
 - [x] GeoAI Context v0 (documentary context model)
 - [x] ERT / seismic processing architecture (canonical schemas + pipelines)
-- [ ] Physical hardware acceptance: **NOT YET PERFORMED** (no hardware acquired)
+- [x] Physical hardware acceptance: **NOT YET PERFORMED**
 - [ ] Real groundwater validation with ERT/seismic: **NOT YET PERFORMED**
 - [ ] Dry-well detection: **NOT VALIDATED**
 
@@ -49,16 +51,14 @@ See [docs/architecture.md](docs/architecture.md).
 
 ## Ground Truth methodology
 
-See [docs/methodology.md](docs/methodology.md) and
-[docs/scientific-integrity.md](docs/scientific-integrity.md).
+See [docs/methodology.md](docs/methodology.md).
 
 ## Leakage-safe validation
 
 - No naive random splits. Grouped folds, spatial-block holdout, and
   cross-domain holdout are enforced with tests.
-- **Historical note:** the first baseline release contained target leakage
-  and was marked invalid; see
-  [docs/baseline-leakage-postmortem.md](docs/baseline-leakage-postmortem.md).
+- **Historical note:** Gate 8 v1 contained target leakage and is marked
+  invalid; see [docs/baseline-leakage-postmortem.md](docs/baseline-leakage-postmortem.md).
 - All published results are the leakage-free Baseline v2 / forensic numbers;
   see [docs/current-results.md](docs/current-results.md).
 
@@ -75,20 +75,11 @@ handcrafted + grid encoders, cross-modal registration, and synthetic
 engineering fixtures live in `src/aquascan/physical/`. It is tested on
 **synthetic** data only; no real field performance is claimed.
 
-## Field hardware
-
-Phase 0 requires a geophysical field stack: a 48-electrode ERT system
-(5 m spacing), a 24-channel P-wave seismic system (14 Hz geophones, 2 m
-spacing), GNSS RTK positioning, an in-house calibration box (AutoCal), field
-power (LiFePO4), and rugged compute/storage. **No hardware has been acquired
-yet** — acceptance is not performed. See [docs/hardware.md](docs/hardware.md)
-for the full bill of materials, specifications, and budget scenarios.
-
 ## What is NOT yet validated
 
 - Real ERT/seismic groundwater accuracy (no field data)
 - Dry-well discrimination (no confirmed negative Ground Truth)
-- Physical hardware acceptance (not yet performed — no hardware acquired)
+- Physical hardware acceptance (Gate 11 status: NOT READY — no hardware)
 - Generalization to Región de los arenales (documented OOD failure)
 
 ## Reproducibility
@@ -104,7 +95,7 @@ python -m ruff format --check .
 Synthetic demonstrations (no data required):
 
 ```bash
-python -c "from aquascan.physical.synthetic.fixtures import ErtHalfspaceFixture; print(ErtHalfspaceFixture(rho=250).forward().mean())"
+python -c "from aquascan.physical.synthetic.fixtures import make_homogeneous_halfspace; print('ok')"
 ```
 
 The IGME downloader and enrichment scripts require network access and are
@@ -133,14 +124,11 @@ records; AquaScan is independent and not endorsed by IGME.
 
 See [docs/roadmap.md](docs/roadmap.md).
 
-## Author
-
-**Angel López Morales** — [github.com/angelopezvpb](https://github.com/angelopezvpb)
-
 ## Citation
 
 See [CITATION.cff](CITATION.cff).
 
 ## License
 
-Apache-2.0 (see [LICENSE](LICENSE)).
+Apache-2.0 (see [LICENSE](LICENSE)). License selection is still under human
+review — see [LICENSE_REVIEW.md](LICENSE_REVIEW.md).

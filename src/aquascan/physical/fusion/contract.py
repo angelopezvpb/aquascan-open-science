@@ -1,4 +1,4 @@
-"""Multimodal fusion contract.
+"""Multimodal fusion contract (Gate 10, section 17).
 
 GeoAIFusionInput supports optional modalities:
 
@@ -22,7 +22,7 @@ from typing import Any
 
 
 class FusionArm(StrEnum):
-    """Supported analysis arms."""
+    """Supported analysis arms (Gate 7 + Gate 10 section 17)."""
 
     ARM_CONTEXT = "ARM_CONTEXT"
     ARM_E = "ARM_E"

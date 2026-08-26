@@ -1,4 +1,4 @@
-"""Cohort selection."""
+"""Gate 4: Cohort selection."""
 
 from aquascan.cohort.selection import (
     DOMAINS,

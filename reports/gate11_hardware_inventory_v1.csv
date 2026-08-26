@@ -1,0 +1,17 @@
+component,description,status,model_version,serial,firmware_version,ranges,evidence
+ERT current source,"Multi-electrode resistivity meter, 48 channels",MISSING,N/A (not acquired),N/A,N/A,N/A,No hardware present in the repository environment at Gate 11 execution time.
+ERT voltage measurement,Resistivity meter voltage channels (48),MISSING,N/A (not acquired),N/A,N/A,N/A,No hardware present in the repository environment at Gate 11 execution time.
+Multiplexer,48-electrode takeout switch matrix,MISSING,N/A (not acquired),N/A,N/A,N/A,No hardware present in the repository environment at Gate 11 execution time.
+ERT electrodes,"Stainless steel stakes, 48 + spares",MISSING,N/A (not acquired),N/A,N/A,N/A,No hardware present in the repository environment at Gate 11 execution time.
+ERT cables,"48-takeout multi-core cable, 5 m spacing",MISSING,N/A (not acquired),N/A,N/A,N/A,No hardware present in the repository environment at Gate 11 execution time.
+CAL-BOX,AutoCal reference box (known loads / switch matrix),MISSING,N/A (not acquired),N/A,N/A,N/A,No hardware present in the repository environment at Gate 11 execution time.
+Seismic acquisition,24-channel seismograph,MISSING,N/A (not acquired),N/A,N/A,N/A,No hardware present in the repository environment at Gate 11 execution time.
+Geophones,"14 Hz vertical component, 24 + spares",MISSING,N/A (not acquired),N/A,N/A,N/A,No hardware present in the repository environment at Gate 11 execution time.
+Seismic cable,"24-channel geophone cable, 2 m spacing",MISSING,N/A (not acquired),N/A,N/A,N/A,No hardware present in the repository environment at Gate 11 execution time.
+Seismic source,8 kg sledgehammer + steel plate,MISSING,N/A (not acquired),N/A,N/A,N/A,No hardware present in the repository environment at Gate 11 execution time.
+Trigger,Hammer switch + contact geophone,MISSING,N/A (not acquired),N/A,N/A,N/A,No hardware present in the repository environment at Gate 11 execution time.
+GNSS RTK,RTK rover + base station,MISSING,N/A (not acquired),N/A,N/A,N/A,No hardware present in the repository environment at Gate 11 execution time.
+Compute,Ruggedized field laptop,MISSING,N/A (not acquired),N/A,N/A,N/A,No hardware present in the repository environment at Gate 11 execution time.
+Storage,NVMe SSD 1 TB x2,MISSING,N/A (not acquired),N/A,N/A,N/A,No hardware present in the repository environment at Gate 11 execution time.
+Power,12V deep-cycle LiFePO4 batteries + spares,MISSING,N/A (not acquired),N/A,N/A,N/A,No hardware present in the repository environment at Gate 11 execution time.
+Contact gel/water,Electrode contact improvement,MISSING,N/A (not acquired),N/A,N/A,N/A,No hardware present in the repository environment at Gate 11 execution time.

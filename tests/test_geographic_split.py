@@ -136,9 +136,9 @@ class TestLeakageDetection:
         )
 
         result = check_geographic_leakage(train, test, max_distance_m=50.0)
-        assert result["geographic_overlap"] is True, (
-            f"Should detect nearby points: {result['issues']}"
-        )
+        assert (
+            result["geographic_overlap"] is True
+        ), f"Should detect nearby points: {result['issues']}"
 
     def test_distant_points_no_geo_leak(self) -> None:
         """Far apart points should not trigger leakage."""

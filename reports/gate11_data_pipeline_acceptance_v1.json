@@ -1,0 +1,32 @@
+{
+  "acceptance": "DATA_PIPELINE_ACCEPTANCE",
+  "status": "PASS_WITH_LIMITATIONS",
+  "note": "Software pipeline exercised on synthetic engineering fixtures only. This is NOT physical acceptance and NOT field data.",
+  "warning": "SYNTHETIC_ENGINEERING_FIXTURE",
+  "ert_stages": [
+    "raw",
+    "calibrated",
+    "qc",
+    "apparent",
+    "inversion_input",
+    "inverted",
+    "features"
+  ],
+  "seismic_stages": [
+    "raw",
+    "calibrated",
+    "qc",
+    "filtered",
+    "picks",
+    "travel_times",
+    "velocity",
+    "features"
+  ],
+  "fusion_executes": true,
+  "real_data_import": "NOT_TESTED — no real instrument file format available; canonical schemas accept the software representation without change.",
+  "limitations": [
+    "Physical acceptance NOT performed (no hardware).",
+    "Real instrument file formats (proprietary) unverified.",
+    "No real contact resistance / noise / first-arrival statistics."
+  ]
+}

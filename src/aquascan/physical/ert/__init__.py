@@ -1,4 +1,4 @@
-"""ERT encoder stack: backends, pipeline, encoders."""
+"""ERT encoder stack: backends, pipeline, encoders (Gate 10)."""
 
 from aquascan.physical.ert.backends import (
     ERTInversionBackend,

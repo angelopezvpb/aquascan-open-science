@@ -23,12 +23,12 @@ AquaScan is an **Open Science** project. All contributions to this public reposi
 
 ## What Cannot Be Contributed
 
-In short, contributions must not include:
+See [IP Boundary](docs/ip-boundary.md) for details. In short:
 
-- Proprietary model weights
-- Private Ground Truth data
-- Client-specific data or configurations
-- Anything not covered by the project's open-source license
+- No proprietary model weights
+- No private Ground Truth data
+- No production GeoAI algorithms
+- No client-specific data or configurations
 
 ## Development Setup
 
@@ -76,4 +76,4 @@ If your contribution involves scientific claims or methodology:
 
 ## Questions?
 
-Open a [GitHub Discussion](https://github.com/angelopezvpb/aquascan-open-science/discussions).
+Open a [GitHub Discussion](https://github.com/aquascan-research/aquascan-open-science/discussions).

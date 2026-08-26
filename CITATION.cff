@@ -5,12 +5,11 @@ title: "AquaScan Open Science: Multimodal Hydrogeophysical Groundwater Prospecti
 message: "If you use this software in your research, please cite it as below."
 type: software
 authors:
-  - family-names: "López Morales"
-    given-names: "Angel"
-url: "https://github.com/angelopezvpb/aquascan-open-science"
-repository-code: "https://github.com/angelopezvpb/aquascan-open-science"
+  - name: "AquaScan Research"
+url: "https://github.com/aquascan-research/aquascan-open-science"
+repository-code: "https://github.com/aquascan-research/aquascan-open-science"
 version: 0.1.0
-date-released: "2026-08-26"
+date-released: "2025-01-15"
 license: Apache-2.0
 keywords:
   - groundwater

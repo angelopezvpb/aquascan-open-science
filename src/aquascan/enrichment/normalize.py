@@ -1,4 +1,4 @@
-"""Normalization of raw API responses into normalized evidence.
+"""Gate 4: Normalization of raw API responses into normalized evidence.
 
 Covers steps 1, 5, 6, 7, 8, 9, 10.
 """

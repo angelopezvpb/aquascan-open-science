@@ -1,4 +1,4 @@
-"""Seismic encoder stack: backends, pipeline, encoders."""
+"""Seismic encoder stack: backends, pipeline, encoders (Gate 10)."""
 
 from aquascan.physical.seismic.backends import (
     SeismicInversionBackend,

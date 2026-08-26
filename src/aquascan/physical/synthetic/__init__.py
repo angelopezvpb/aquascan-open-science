@@ -1,4 +1,4 @@
-"""Synthetic engineering fixtures.
+"""Synthetic engineering fixtures (Gate 10, section 24).
 
 All fixtures are labeled SYNTHETIC_ENGINEERING_FIXTURE. They are for
 software tests only, NOT Ground Truth for AquaScan groundwater performance.

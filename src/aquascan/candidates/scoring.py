@@ -11,7 +11,7 @@ It MUST NOT represent:
 - Ground Truth quality
 - AquaScan prediction
 
-See the project specification for full requirements.
+See Gate 2 specification for full requirements.
 """
 
 from __future__ import annotations

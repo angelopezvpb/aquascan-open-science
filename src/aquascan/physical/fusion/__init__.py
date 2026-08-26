@@ -1,4 +1,4 @@
-"""Fusion contract and cross-modal registration."""
+"""Fusion contract and cross-modal registration (Gate 10, sections 17-21)."""
 
 from aquascan.physical.fusion.contract import (
     FusionArm,

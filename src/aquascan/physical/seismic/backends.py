@@ -1,4 +1,4 @@
-"""Seismic inversion backend abstraction.
+"""Seismic inversion backend abstraction (Gate 10, section 13).
 
 Similar to the ERT backend abstraction. Optional open-source backends
 (obspy-based workflows, pyGIMLi refraction) may be integrated later.
