@@ -1,4 +1,4 @@
-# Current Canonical Results (v0.1)
+# Current Canonical Results (v0.2)
 
 Only leakage-free, canonical results are reported here. The leaked Gate 8 v1
 numbers appear **only** in the postmortem that explains the failure mode.

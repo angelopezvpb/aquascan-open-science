@@ -222,9 +222,9 @@ class TestIGMENormalizeCount:
         records = ingester.normalize(tmp_raw_dir)
         assert isinstance(records, list)
         for r in records:
-            assert isinstance(
-                r, IGMEWaterPointRecord
-            ), f"Got {type(r)} instead of IGMEWaterPointRecord"
+            assert isinstance(r, IGMEWaterPointRecord), (
+                f"Got {type(r)} instead of IGMEWaterPointRecord"
+            )
 
 
 class TestIGMEFieldPreservation:

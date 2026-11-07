@@ -9,6 +9,7 @@ from pathlib import Path
 import click
 
 from aquascan import __version__
+from aquascan.national.cli import national as national_group
 
 
 @click.group()
@@ -16,6 +17,9 @@ from aquascan import __version__
 def main() -> None:
     """AquaScan Open Science — hydrogeophysical groundwater prospecting research."""
     pass
+
+
+main.add_command(national_group)
 
 
 # ---------------------------------------------------------------------------

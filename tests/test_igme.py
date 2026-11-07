@@ -275,17 +275,17 @@ class TestIGMENormalizeCount:
     def test_return_type_is_igme_water_point_record(self, normalized_records) -> None:
         assert isinstance(normalized_records, list)
         for r in normalized_records:
-            assert isinstance(
-                r, IGMEWaterPointRecord
-            ), f"Got {type(r)} instead of IGMEWaterPointRecord"
+            assert isinstance(r, IGMEWaterPointRecord), (
+                f"Got {type(r)} instead of IGMEWaterPointRecord"
+            )
 
     def test_not_campaign_record(self, normalized_records) -> None:
         from aquascan.data.models import CampaignRecord
 
         for r in normalized_records:
-            assert not isinstance(
-                r, CampaignRecord
-            ), "IGMEWaterPointRecord should NOT be CampaignRecord"
+            assert not isinstance(r, CampaignRecord), (
+                "IGMEWaterPointRecord should NOT be CampaignRecord"
+            )
 
     def test_empty_page_produces_zero_records(self, tmp_path: Path) -> None:
         raw_dir = tmp_path / "empty_raw"
@@ -332,9 +332,9 @@ class TestFlowSemantics:
     def test_pump_test_flow_not_in_field_map(self) -> None:
         """Confirm pump_test_flow is NOT in the IGME_FIELD_MAP."""
         for canonical in IGME_FIELD_MAP.values():
-            assert (
-                canonical != "pump_test_flow"
-            ), f"pump_test_flow leaked into IGME_FIELD_MAP via '{canonical}'"
+            assert canonical != "pump_test_flow", (
+                f"pump_test_flow leaked into IGME_FIELD_MAP via '{canonical}'"
+            )
 
     def test_flow_zero_not_dry_well(self, normalized_records) -> None:
         """reference_flow_l_s = 0 must NOT be interpreted as a dry well."""

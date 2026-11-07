@@ -1,0 +1,45 @@
+{
+  "dataset": "aquascan_national_dataset_v1",
+  "engine": "national_enrichment_engine",
+  "engine_version": "1.0.0",
+  "schema_version": "1",
+  "created_at": "2026-09-18T06:44:40.044698+00:00",
+  "record_count": 139697,
+  "source_record_count": 139697,
+  "record_status_counts": {
+    "COMPLETE": 139492,
+    "PARTIAL": 205
+  },
+  "qa_counts": {
+    "WARNING": 2477,
+    "CRITICAL": 0
+  },
+  "verification": {
+    "missing_ids": true,
+    "partition_hashes_valid": true,
+    "uniqueness": true,
+    "duplicate_ids": 0
+  },
+  "endpoint_coverage": {
+    "no_lithology": 75169,
+    "no_piezometry": 89008,
+    "no_pumping_test": 10107,
+    "no_chemistry": 25276,
+    "no_hydrometry": 50243,
+    "no_technical": 2900,
+    "no_documents": 0
+  },
+  "partitions": 280,
+  "elapsed_runtime_seconds": 4419.5,
+  "network_requests": 1074216,
+  "failed_network_requests": 1052,
+  "canary": {
+    "total": 4744,
+    "compared": 4744,
+    "valid": true,
+    "mismatches": 0
+  },
+  "dataset_sha256": "8c69621e05178d2f97ea01a27623c43e759271b7afae74c625ff4f2b33d18fbc",
+  "source_sha256": "8a8d8b66a6c31d743d9f38854f6e5e9bdc51b1aa379708550a045e5a84c622fd",
+  "note": "Aggregate summary only. The dataset, raw API payloads and Phase 0 sealed mapping are not redistributed."
+}

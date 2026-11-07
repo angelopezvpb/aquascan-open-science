@@ -1,8 +1,0 @@
-component,gate7_requirement,detail,actual_capability,classification,note
-ERT electrodes,48 electrodes,48 x 5 m profile,NOT_VERIFIED (hardware absent),UNVERIFIED,Cannot be classified SUPPORTED without physical hardware evidence. No silent protocol amendment.
-ERT spacing,5 m nominal electrode spacing,235 m profile,NOT_VERIFIED (hardware absent),UNVERIFIED,Cannot be classified SUPPORTED without physical hardware evidence. No silent protocol amendment.
-ERT arrays,Wenner-Schlumberger + Dipole-Dipole,Gate 7 arrays,NOT_VERIFIED (hardware absent),UNVERIFIED,Cannot be classified SUPPORTED without physical hardware evidence. No silent protocol amendment.
-Seismic channels,24 channels,24-channel spread,NOT_VERIFIED (hardware absent),UNVERIFIED,Cannot be classified SUPPORTED without physical hardware evidence. No silent protocol amendment.
-Seismic geophones,14 Hz vertical,2 m spacing,NOT_VERIFIED (hardware absent),UNVERIFIED,Cannot be classified SUPPORTED without physical hardware evidence. No silent protocol amendment.
-Seismic source,"8 shot positions, hammer",5 stacks per shot,NOT_VERIFIED (hardware absent),UNVERIFIED,Cannot be classified SUPPORTED without physical hardware evidence. No silent protocol amendment.
-GNSS,RTK per electrode/geophone,±0.1 m target,NOT_VERIFIED (hardware absent),UNVERIFIED,Cannot be classified SUPPORTED without physical hardware evidence. No silent protocol amendment.

@@ -52,9 +52,9 @@ def test_public_docs_have_no_unsupported_claims() -> None:
     for path in targets:
         text = path.read_text().lower()
         for pattern in FORBIDDEN_PATTERNS:
-            assert not pattern.search(
-                text
-            ), f"{path} contains unsupported numeric claim: {pattern.pattern}"
+            assert not pattern.search(text), (
+                f"{path} contains unsupported numeric claim: {pattern.pattern}"
+            )
 
 
 def test_required_disclaimers_present() -> None:
