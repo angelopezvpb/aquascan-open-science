@@ -53,7 +53,7 @@ Context (public hydrogeological records)
 - [x] Open-source context baseline v2 (leakage-free, frozen)
 - [x] GeoAI Context v0 (documentary context model)
 - [x] ERT / seismic processing architecture (canonical schemas + pipelines)
-- [x] Physical hardware acceptance: **NOT YET PERFORMED**
+- [ ] Physical hardware acceptance: **NOT YET PERFORMED** (no hardware acquired)
 - [ ] Real groundwater validation with ERT/seismic: **NOT YET PERFORMED**
 - [ ] Dry-well detection: **NOT VALIDATED**
 
@@ -120,6 +120,18 @@ Canonical ERT/seismic observation schemas, deterministic pipelines,
 handcrafted + grid encoders, cross-modal registration, and synthetic
 engineering fixtures live in `src/aquascan/physical/`. It is tested on
 **synthetic** data only; no real field performance is claimed.
+
+## Field hardware
+
+Phase 0 requires a geophysical field stack: a 48-electrode ERT system (5 m
+spacing), a 24-channel P-wave seismic system (14 Hz geophones, 2 m spacing),
+GNSS RTK positioning, a calibration reference box, field power (LiFePO4), and
+rugged compute/storage. **No hardware has been acquired yet**; Gate 11
+acceptance is **NOT READY**.
+
+See [docs/hardware.md](docs/hardware.md) for the bill of materials, data
+contracts, bench-acceptance checklist, budget scenarios and the rent-vs-buy
+plan for the pilot. The model itself runs on CPU; no GPU is required.
 
 ## What is NOT yet validated
 

@@ -13,6 +13,8 @@ High-level milestones only. No sealed field-site identities are disclosed.
 ## Next
 1. **Hardware acquisition / integration** — bench acceptance, AutoCal fault
    injection, GNSS/power/EMC tests (Gate 11 remains NOT READY without hardware).
+   See [hardware.md](hardware.md) for the BOM, data contracts and acceptance
+   checklist.
 2. **Non-cohort engineering dry run** — AQ-TEST-001 style acquisition at a
    non-cohort site to prove the real-data import path.
 3. **Blinded retrospective physical validation** — ERT + seismic at
