@@ -87,7 +87,7 @@ See `reports/` (curated aggregate reports) and
 
 GeoAI Context v0 is published as a Hugging Face model repo:
 
-**[`angellopez/aquascan-geoai-context-v0`](https://huggingface.co/angellopez/aquascan-geoai-context-v0)**
+**[`angellopez/aquascan-open-science-model`](https://huggingface.co/angellopez/aquascan-open-science-model)**
 
 It contains the model card, fitted weights, preprocessor, feature manifest,
 split-conformal calibration and confidence/OOD policies. The model was trained
