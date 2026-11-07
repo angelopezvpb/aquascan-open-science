@@ -83,6 +83,22 @@ Baseline v2 is the canonical comparator for future physical experiments.
 See `reports/` (curated aggregate reports) and
 [docs/current-results.md](docs/current-results.md).
 
+## Model on Hugging Face
+
+GeoAI Context v0 is published as a Hugging Face model repo:
+
+**[`angellopez/aquascan-geoai-context-v0`](https://huggingface.co/angellopez/aquascan-geoai-context-v0)**
+
+It contains the model card, fitted weights, preprocessor, feature manifest,
+split-conformal calibration and confidence/OOD policies. The model was trained
+on **Spanish IGME records** (Balearic Islands) and is **not validated outside
+Spain**.
+
+The **record-level training dataset is not published** on Hugging Face or
+GitHub (IGME license review pending; record-level privacy). The weights are a
+research baseline: no field validation, no dry-well Ground Truth, and no
+meaningful improvement over Baseline v2.
+
 ## National enrichment engine
 
 The national engine enriches the normalized IGME snapshot against documentary
