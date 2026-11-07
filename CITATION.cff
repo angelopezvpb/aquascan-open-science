@@ -5,11 +5,12 @@ title: "AquaScan Open Science: Multimodal Hydrogeophysical Groundwater Prospecti
 message: "If you use this software in your research, please cite it as below."
 type: software
 authors:
-  - name: "AquaScan Research"
-url: "https://github.com/aquascan-research/aquascan-open-science"
-repository-code: "https://github.com/aquascan-research/aquascan-open-science"
-version: 0.1.0
-date-released: "2025-01-15"
+  - family-names: "López Morales"
+    given-names: "Ángel"
+url: "https://github.com/angelopezvpb/aquascan-open-science"
+repository-code: "https://github.com/angelopezvpb/aquascan-open-science"
+version: 0.2.0
+date-released: "2026-11-07"
 license: Apache-2.0
 keywords:
   - groundwater
@@ -25,4 +26,7 @@ abstract: >
   multimodal hydrogeophysical approaches to groundwater prospecting.
   It integrates Electrical Resistivity Tomography (ERT), P-wave seismic,
   GNSS RTK positioning, and geological metadata with machine learning
-  baselines for reproducible scientific experimentation.
+  baselines for reproducible scientific experimentation. v0.2 adds a
+  resumable, crash-safe national enrichment engine and an aggregate
+  data-quality summary; the record-level dataset and model weights are
+  not redistributed.

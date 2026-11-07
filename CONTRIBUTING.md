@@ -23,7 +23,8 @@ AquaScan is an **Open Science** project. All contributions to this public reposi
 
 ## What Cannot Be Contributed
 
-See [IP Boundary](docs/ip-boundary.md) for details. In short:
+See [Scientific Integrity](docs/scientific-integrity.md) for the project
+principles. In short:
 
 - No proprietary model weights
 - No private Ground Truth data
@@ -76,4 +77,4 @@ If your contribution involves scientific claims or methodology:
 
 ## Questions?
 
-Open a [GitHub Discussion](https://github.com/aquascan-research/aquascan-open-science/discussions).
+Open a [GitHub Discussion](https://github.com/angelopezvpb/aquascan-open-science/discussions).

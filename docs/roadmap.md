@@ -20,7 +20,7 @@ High-level milestones only. No sealed field-site identities are disclosed.
 4. **Prospective blind drilling validation** — predictions frozen before
    drilling reveals outcomes (this is the scientific objective of Phase 0+).
 
-## Out of scope (never claimed in v0.1)
+## Out of scope (never claimed in v0.2)
 - Real groundwater detection accuracy from ERT/seismic (not yet measured)
 - Dry-well detection (no confirmed negative Ground Truth exists)
 - Commercial claims of any kind

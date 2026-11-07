@@ -12,7 +12,21 @@ documentary context** can improve groundwater prospecting — with explicit
 uncertainty, blinding, and leakage-safe validation.
 
 > **Status: research software.** AquaScan does **not** "detect groundwater" in
-> v0.1. No real ERT/seismic groundwater validation has been performed.
+> v0.2. No real ERT/seismic groundwater validation has been performed.
+
+## What's new in v0.2
+
+- **National Enrichment Engine v1**: resumable, interruptible, crash-safe
+  builder for the 139,697-record normalized IGME snapshot. See
+  [docs/national-enrichment.md](docs/national-enrichment.md).
+- Aggregate data-quality summary:
+  [`reports/national_enrichment_summary_v1.json`](reports/national_enrichment_summary_v1.json).
+- Public cleanup: internal notes, hardware-acceptance bookkeeping and
+  superseded reports removed.
+- Citation, repository URLs and license metadata corrected.
+
+The record-level dataset, raw API payloads and model weights are **not**
+redistributed. See [NOTICE_DATA.md](NOTICE_DATA.md).
 
 ## Why AquaScan
 
@@ -33,6 +47,7 @@ Context (public hydrogeological records)
 ## Current status
 
 - [x] IGME documentary ingestion / normalization / provenance (RAW immutable)
+- [x] National enrichment engine v1 (139,697 records; resumable, crash-safe)
 - [x] Ground Truth evidence methodology (independent targets, A/B/C/D quality)
 - [x] Leakage-safe validation (grouped / spatial-block / cross-domain)
 - [x] Open-source context baseline v2 (leakage-free, frozen)
@@ -68,6 +83,21 @@ Baseline v2 is the canonical comparator for future physical experiments.
 See `reports/` (curated aggregate reports) and
 [docs/current-results.md](docs/current-results.md).
 
+## National enrichment engine
+
+The national engine enriches the normalized IGME snapshot against documentary
+endpoints and writes a partitioned Parquet dataset. Final execution:
+
+- **139,697** records: 139,492 `COMPLETE`, 205 `PARTIAL`.
+- **0** duplicate IDs, **0** missing IDs.
+- **2,477** QA warnings, **0** critical.
+- **280** partitions; 1,074,216 network requests; 4,419.5 s runtime.
+- 4,744-record regression canary: 4,744 / 4,744, no mismatches.
+
+The dataset itself is not redistributed (IGME license review and record-level
+privacy). The aggregate summary and the engine code are public. See
+[docs/national-enrichment.md](docs/national-enrichment.md).
+
 ## Physical processing stack
 
 Canonical ERT/seismic observation schemas, deterministic pipelines,
@@ -90,6 +120,8 @@ pip install -e ".[dev]"
 python -m pytest
 python -m ruff check .
 python -m ruff format --check .
+aquascan --help
+aquascan national --help
 ```
 
 Synthetic demonstrations (no data required):
@@ -105,8 +137,8 @@ offline.
 ## Project structure
 
 ```
-src/aquascan/        # package: data, enrichment, ground_truth, evaluation,
-                     #   baselines, features, physical (ert/seismic/fusion)
+src/aquascan/        # package: data, national, enrichment, ground_truth,
+                     #   evaluation, baselines, features, physical
 schemas/             # canonical JSON Schemas
 protocols/           # public experimental protocols
 examples/synthetic/  # clearly-labeled synthetic fixtures
@@ -130,5 +162,8 @@ See [CITATION.cff](CITATION.cff).
 
 ## License
 
-Apache-2.0 (see [LICENSE](LICENSE)). License selection is still under human
-review — see [LICENSE_REVIEW.md](LICENSE_REVIEW.md).
+Apache-2.0 (see [LICENSE](LICENSE)).
+
+## Author
+
+Ángel López Morales — [GitHub](https://github.com/angelopezvpb)
