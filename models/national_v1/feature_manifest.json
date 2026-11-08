@@ -1,0 +1,58 @@
+{
+  "features": [
+    "aquifer_system",
+    "construction_date",
+    "drilling_method",
+    "elevation_m",
+    "group_aquifer",
+    "group_domain",
+    "group_watershed",
+    "latitude",
+    "longitude",
+    "municipality",
+    "point_nature",
+    "province",
+    "pump_type",
+    "qa_coordinate_outlier",
+    "qa_depth_outlier",
+    "qa_duplicate_coordinate",
+    "qa_elevation_outlier",
+    "qa_flag_count",
+    "total_depth_m",
+    "water_use",
+    "watershed"
+  ],
+  "n_features": 21,
+  "numeric_features": [
+    "elevation_m",
+    "latitude",
+    "longitude",
+    "qa_coordinate_outlier",
+    "qa_depth_outlier",
+    "qa_duplicate_coordinate",
+    "qa_elevation_outlier",
+    "qa_flag_count",
+    "total_depth_m"
+  ],
+  "categorical_features": [
+    "aquifer_system",
+    "construction_date",
+    "drilling_method",
+    "group_aquifer",
+    "group_domain",
+    "group_watershed",
+    "municipality",
+    "point_nature",
+    "province",
+    "pump_type",
+    "water_use",
+    "watershed"
+  ],
+  "target": "_target_depth_to_water_m",
+  "target_source": "temporal_summary_json.median_depth_to_water_m",
+  "fold_grouping_columns": [
+    "group_proximity_500m",
+    "group_spatial_cell"
+  ],
+  "fold_grouping_note": "Not model inputs. Used only for leakage-safe evaluation."
+}

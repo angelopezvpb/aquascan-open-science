@@ -1,0 +1,1493 @@
+{
+  "version": "national_v1",
+  "description": "Pre-prediction domain/province support assessment for the national depth-to-water model. Support is computed from training feature counts only; it never uses target errors of the new sample.",
+  "classes": {
+    "IN_DISTRIBUTION": ">= 30 training records",
+    "WEAK_SUPPORT": "1-29 training records",
+    "OUT_OF_DISTRIBUTION": "0 training records (unseen category)"
+  },
+  "thresholds": {
+    "n_min_in_domain": 30,
+    "n_min_in_province": 30
+  },
+  "summary": {
+    "n_domains": 323,
+    "n_domains_in_distribution": 122,
+    "n_domains_weak_support": 201,
+    "n_domains_out_of_distribution": 0,
+    "n_provinces": 44
+  },
+  "per_domain": {
+    "Campo de Dalías": {
+      "n_training_records": 972,
+      "support": "IN_DISTRIBUTION"
+    },
+    "Unidades aisladas": {
+      "n_training_records": 818,
+      "support": "IN_DISTRIBUTION"
+    },
+    "Andarax - Almería": {
+      "n_training_records": 657,
+      "support": "IN_DISTRIBUTION"
+    },
+    "Mancha oriental": {
+      "n_training_records": 632,
+      "support": "IN_DISTRIBUTION"
+    },
+    "Mancha Occidental": {
+      "n_training_records": 632,
+      "support": "IN_DISTRIBUTION"
+    },
+    "Almonte - Marismas": {
+      "n_training_records": 547,
+      "support": "IN_DISTRIBUTION"
+    },
+    "Vega Media y Baja del Segura": {
+      "n_training_records": 418,
+      "support": "IN_DISTRIBUTION"
+    },
+    "Depresión de Granada": {
+      "n_training_records": 359,
+      "support": "IN_DISTRIBUTION"
+    },
+    "Sevilla - Carmona": {
+      "n_training_records": 327,
+      "support": "IN_DISTRIBUTION"
+    },
+    "Camp de Tarragona": {
+      "n_training_records": 324,
+      "support": "IN_DISTRIBUTION"
+    },
+    "Región de los arenales": {
+      "n_training_records": 262,
+      "support": "IN_DISTRIBUTION"
+    },
+    "Región del Esla- Valderaduey": {
+      "n_training_records": 260,
+      "support": "IN_DISTRIBUTION"
+    },
+    "Campo de Cartagena": {
+      "n_training_records": 243,
+      "support": "IN_DISTRIBUTION"
+    },
+    "Plana de Castellón": {
+      "n_training_records": 239,
+      "support": "IN_DISTRIBUTION"
+    },
+    "Campos de Níjar": {
+      "n_training_records": 204,
+      "support": "IN_DISTRIBUTION"
+    },
+    "Aluviales del Ebro": {
+      "n_training_records": 194,
+      "support": "IN_DISTRIBUTION"
+    },
+    "Bajo Guadalhorce": {
+      "n_training_records": 190,
+      "support": "IN_DISTRIBUTION"
+    },
+    "Bloque de Gaià": {
+      "n_training_records": 188,
+      "support": "IN_DISTRIBUTION"
+    },
+    "Madrid- Talavera": {
+      "n_training_records": 174,
+      "support": "IN_DISTRIBUTION"
+    },
+    "Peñón- Montgó- Bernia": {
+      "n_training_records": 164,
+      "support": "IN_DISTRIBUTION"
+    },
+    "Cresta del Gallo": {
+      "n_training_records": 150,
+      "support": "IN_DISTRIBUTION"
+    },
+    "Plana Gandía- Denia": {
+      "n_training_records": 149,
+      "support": "IN_DISTRIBUTION"
+    },
+    "Plana de Sagunto": {
+      "n_training_records": 145,
+      "support": "IN_DISTRIBUTION"
+    },
+    "Plana de Valencia Sur": {
+      "n_training_records": 141,
+      "support": "IN_DISTRIBUTION"
+    },
+    "Jalón- Aguas Vivas- Alfamén": {
+      "n_training_records": 133,
+      "support": "IN_DISTRIBUTION"
+    },
+    "Llano de Palma": {
+      "n_training_records": 128,
+      "support": "IN_DISTRIBUTION"
+    },
+    "Buñol- Cheste": {
+      "n_training_records": 125,
+      "support": "IN_DISTRIBUTION"
+    },
+    "Liria- Casinos": {
+      "n_training_records": 124,
+      "support": "IN_DISTRIBUTION"
+    },
+    "Plana de Vinaroz- Peñíscola": {
+      "n_training_records": 122,
+      "support": "IN_DISTRIBUTION"
+    },
+    "Plana de Valencia Norte": {
+      "n_training_records": 118,
+      "support": "IN_DISTRIBUTION"
+    },
+    "nan": {
+      "n_training_records": 116,
+      "support": "IN_DISTRIBUTION"
+    },
+    "Medio Palancia": {
+      "n_training_records": 114,
+      "support": "IN_DISTRIBUTION"
+    },
+    "Motril - Salobreña": {
+      "n_training_records": 113,
+      "support": "IN_DISTRIBUTION"
+    },
+    "Vegas Bajas": {
+      "n_training_records": 110,
+      "support": "IN_DISTRIBUTION"
+    },
+    "Valle del Jiloca": {
+      "n_training_records": 106,
+      "support": "IN_DISTRIBUTION"
+    },
+    "Llanos de Antequera - Archidona": {
+      "n_training_records": 105,
+      "support": "IN_DISTRIBUTION"
+    },
+    "Ayamonte- Huelva": {
+      "n_training_records": 104,
+      "support": "IN_DISTRIBUTION"
+    },
+    "Ascoy - Sopalmo": {
+      "n_training_records": 100,
+      "support": "IN_DISTRIBUTION"
+    },
+    "Sierra Morena": {
+      "n_training_records": 100,
+      "support": "IN_DISTRIBUTION"
+    },
+    "Sierra Blanca - Sierra de Mijas": {
+      "n_training_records": 100,
+      "support": "IN_DISTRIBUTION"
+    },
+    "Valle del Guadalentín": {
+      "n_training_records": 96,
+      "support": "IN_DISTRIBUTION"
+    },
+    "Depresión Guadix - Marquesado": {
+      "n_training_records": 96,
+      "support": "IN_DISTRIBUTION"
+    },
+    "Alt Camp": {
+      "n_training_records": 93,
+      "support": "IN_DISTRIBUTION"
+    },
+    "Fuente Piedra": {
+      "n_training_records": 93,
+      "support": "IN_DISTRIBUTION"
+    },
+    "Baix Muga i Fluvià": {
+      "n_training_records": 92,
+      "support": "IN_DISTRIBUTION"
+    },
+    "Aljarafe": {
+      "n_training_records": 90,
+      "support": "IN_DISTRIBUTION"
+    },
+    "Marbella - Estepona": {
+      "n_training_records": 90,
+      "support": "IN_DISTRIBUTION"
+    },
+    "Migjorn": {
+      "n_training_records": 88,
+      "support": "IN_DISTRIBUTION"
+    },
+    "Aguilas": {
+      "n_training_records": 87,
+      "support": "IN_DISTRIBUTION"
+    },
+    "Río Verde": {
+      "n_training_records": 85,
+      "support": "IN_DISTRIBUTION"
+    },
+    "Llano de Inca - Sa Pobla": {
+      "n_training_records": 84,
+      "support": "IN_DISTRIBUTION"
+    },
+    "Caroch Norte": {
+      "n_training_records": 81,
+      "support": "IN_DISTRIBUTION"
+    },
+    "Vélez": {
+      "n_training_records": 81,
+      "support": "IN_DISTRIBUTION"
+    },
+    "Yecla- Villena- Benejama": {
+      "n_training_records": 79,
+      "support": "IN_DISTRIBUTION"
+    },
+    "Vega Alta del Segura": {
+      "n_training_records": 78,
+      "support": "IN_DISTRIBUTION"
+    },
+    "Almudaina- Alfaro- Segaria": {
+      "n_training_records": 77,
+      "support": "IN_DISTRIBUTION"
+    },
+    "Garraf": {
+      "n_training_records": 76,
+      "support": "IN_DISTRIBUTION"
+    },
+    "Cuenca del río Nacimiento": {
+      "n_training_records": 73,
+      "support": "IN_DISTRIBUTION"
+    },
+    "Sierra de Altomira": {
+      "n_training_records": 71,
+      "support": "IN_DISTRIBUTION"
+    },
+    "Jumilla - Villena (08.35)": {
+      "n_training_records": 68,
+      "support": "IN_DISTRIBUTION"
+    },
+    "Sierra Gorda": {
+      "n_training_records": 68,
+      "support": "IN_DISTRIBUTION"
+    },
+    "Véjer - Barbate": {
+      "n_training_records": 65,
+      "support": "IN_DISTRIBUTION"
+    },
+    "Ciudad Real": {
+      "n_training_records": 65,
+      "support": "IN_DISTRIBUTION"
+    },
+    "Fuengirola": {
+      "n_training_records": 62,
+      "support": "IN_DISTRIBUTION"
+    },
+    "Mazarrón": {
+      "n_training_records": 61,
+      "support": "IN_DISTRIBUTION"
+    },
+    "Maestrazgo": {
+      "n_training_records": 60,
+      "support": "IN_DISTRIBUTION"
+    },
+    "Baix Maresme": {
+      "n_training_records": 60,
+      "support": "IN_DISTRIBUTION"
+    },
+    "Altiplanos de Ecija": {
+      "n_training_records": 60,
+      "support": "IN_DISTRIBUTION"
+    },
+    "Serranía de Cuenca": {
+      "n_training_records": 59,
+      "support": "IN_DISTRIBUTION"
+    },
+    "Curso Bajo y delta Ebro": {
+      "n_training_records": 58,
+      "support": "IN_DISTRIBUTION"
+    },
+    "Ciudad Rodrigo- Salamanca": {
+      "n_training_records": 58,
+      "support": "IN_DISTRIBUTION"
+    },
+    "Depresión de Baza - Caniles": {
+      "n_training_records": 58,
+      "support": "IN_DISTRIBUTION"
+    },
+    "Sierra de Gádor": {
+      "n_training_records": 57,
+      "support": "IN_DISTRIBUTION"
+    },
+    "La Selva": {
+      "n_training_records": 57,
+      "support": "IN_DISTRIBUTION"
+    },
+    "Alcadozo": {
+      "n_training_records": 56,
+      "support": "IN_DISTRIBUTION"
+    },
+    "Sima": {
+      "n_training_records": 56,
+      "support": "IN_DISTRIBUTION"
+    },
+    "Sierra Grosa": {
+      "n_training_records": 56,
+      "support": "IN_DISTRIBUTION"
+    },
+    "Rota - Sanlúcar - Chipiona": {
+      "n_training_records": 55,
+      "support": "IN_DISTRIBUTION"
+    },
+    "Queiles- Jalón": {
+      "n_training_records": 53,
+      "support": "IN_DISTRIBUTION"
+    },
+    "Plana de Oropesa- Torreblanca": {
+      "n_training_records": 53,
+      "support": "IN_DISTRIBUTION"
+    },
+    "Sierra Mariola": {
+      "n_training_records": 52,
+      "support": "IN_DISTRIBUTION"
+    },
+    "Alt Maresme": {
+      "n_training_records": 52,
+      "support": "IN_DISTRIBUTION"
+    },
+    "Arcos - Bornos - Estepa": {
+      "n_training_records": 52,
+      "support": "IN_DISTRIBUTION"
+    },
+    "Niebla - Posadas": {
+      "n_training_records": 51,
+      "support": "IN_DISTRIBUTION"
+    },
+    "Puerto Real - Conil de la Frontera": {
+      "n_training_records": 51,
+      "support": "IN_DISTRIBUTION"
+    },
+    "Campos de Montiel": {
+      "n_training_records": 50,
+      "support": "IN_DISTRIBUTION"
+    },
+    "Sierra de las Estancias": {
+      "n_training_records": 49,
+      "support": "IN_DISTRIBUTION"
+    },
+    "Almirante- Mustalla": {
+      "n_training_records": 48,
+      "support": "IN_DISTRIBUTION"
+    },
+    "Jumilla- Villena": {
+      "n_training_records": 46,
+      "support": "IN_DISTRIBUTION"
+    },
+    "El Saltador": {
+      "n_training_records": 45,
+      "support": "IN_DISTRIBUTION"
+    },
+    "Orcheta": {
+      "n_training_records": 44,
+      "support": "IN_DISTRIBUTION"
+    },
+    "Burgos- Aranda": {
+      "n_training_records": 44,
+      "support": "IN_DISTRIBUTION"
+    },
+    "Lluchmajor- Campos": {
+      "n_training_records": 43,
+      "support": "IN_DISTRIBUTION"
+    },
+    "Sierra de Estepa": {
+      "n_training_records": 43,
+      "support": "IN_DISTRIBUTION"
+    },
+    "Santa Eulalia": {
+      "n_training_records": 42,
+      "support": "IN_DISTRIBUTION"
+    },
+    "Baix Ter": {
+      "n_training_records": 42,
+      "support": "IN_DISTRIBUTION"
+    },
+    "Empordà": {
+      "n_training_records": 41,
+      "support": "IN_DISTRIBUTION"
+    },
+    "Tejeda - Almijara - Los Guájares": {
+      "n_training_records": 41,
+      "support": "IN_DISTRIBUTION"
+    },
+    "Revolcadores - Serrata": {
+      "n_training_records": 40,
+      "support": "IN_DISTRIBUTION"
+    },
+    "Niebla- Posadas (Guadalq. 05.49)": {
+      "n_training_records": 40,
+      "support": "IN_DISTRIBUTION"
+    },
+    "Aluvial del Guadalquivir (Sevilla)": {
+      "n_training_records": 40,
+      "support": "IN_DISTRIBUTION"
+    },
+    "Penedés": {
+      "n_training_records": 38,
+      "support": "IN_DISTRIBUTION"
+    },
+    "Arahal- Coronil- Morón-Puebla de Cazalla": {
+      "n_training_records": 38,
+      "support": "IN_DISTRIBUTION"
+    },
+    "Perelló": {
+      "n_training_records": 37,
+      "support": "IN_DISTRIBUTION"
+    },
+    "Acuífero desconocido ???": {
+      "n_training_records": 36,
+      "support": "IN_DISTRIBUTION"
+    },
+    "Ter Mig": {
+      "n_training_records": 36,
+      "support": "IN_DISTRIBUTION"
+    },
+    "Caroch Sur": {
+      "n_training_records": 35,
+      "support": "IN_DISTRIBUTION"
+    },
+    "Quibas (08.51)": {
+      "n_training_records": 35,
+      "support": "IN_DISTRIBUTION"
+    },
+    "Ibiza": {
+      "n_training_records": 35,
+      "support": "IN_DISTRIBUTION"
+    },
+    "San Antonio": {
+      "n_training_records": 34,
+      "support": "IN_DISTRIBUTION"
+    },
+    "Carchuna - Castell de Ferro": {
+      "n_training_records": 34,
+      "support": "IN_DISTRIBUTION"
+    },
+    "Jardín- Lezuza": {
+      "n_training_records": 33,
+      "support": "IN_DISTRIBUTION"
+    },
+    "Montes Universales": {
+      "n_training_records": 33,
+      "support": "IN_DISTRIBUTION"
+    },
+    "Glera": {
+      "n_training_records": 33,
+      "support": "IN_DISTRIBUTION"
+    },
+    "El Molar": {
+      "n_training_records": 32,
+      "support": "IN_DISTRIBUTION"
+    },
+    "Utiel- Requena": {
+      "n_training_records": 32,
+      "support": "IN_DISTRIBUTION"
+    },
+    "Terciario de Torrevieja": {
+      "n_training_records": 32,
+      "support": "IN_DISTRIBUTION"
+    },
+    "Guadarranque - Palmones": {
+      "n_training_records": 32,
+      "support": "IN_DISTRIBUTION"
+    },
+    "Páramo de Cuéllar": {
+      "n_training_records": 32,
+      "support": "IN_DISTRIBUTION"
+    },
+    "Bajo Almanzora": {
+      "n_training_records": 31,
+      "support": "IN_DISTRIBUTION"
+    },
+    "Bullaque": {
+      "n_training_records": 30,
+      "support": "IN_DISTRIBUTION"
+    },
+    "Guadalajara": {
+      "n_training_records": 30,
+      "support": "IN_DISTRIBUTION"
+    },
+    "Rañas del Orbigo- Esla": {
+      "n_training_records": 29,
+      "support": "WEAK_SUPPORT"
+    },
+    "Segovia": {
+      "n_training_records": 29,
+      "support": "WEAK_SUPPORT"
+    },
+    "Escamas y diapiros": {
+      "n_training_records": 28,
+      "support": "WEAK_SUPPORT"
+    },
+    "Sinclinal de Calasparra": {
+      "n_training_records": 27,
+      "support": "WEAK_SUPPORT"
+    },
+    "Barrancones- Carrasqueta": {
+      "n_training_records": 27,
+      "support": "WEAK_SUPPORT"
+    },
+    "Central del Duero": {
+      "n_training_records": 27,
+      "support": "WEAK_SUPPORT"
+    },
+    "Bailén - Guarromán": {
+      "n_training_records": 27,
+      "support": "WEAK_SUPPORT"
+    },
+    "Hellín - Tobarra": {
+      "n_training_records": 26,
+      "support": "WEAK_SUPPORT"
+    },
+    "Sierra de Cazorla": {
+      "n_training_records": 26,
+      "support": "WEAK_SUPPORT"
+    },
+    "Huéscar - Puebla de D. Fadrique": {
+      "n_training_records": 25,
+      "support": "WEAK_SUPPORT"
+    },
+    "Ballabona - Sierra Lisbona": {
+      "n_training_records": 25,
+      "support": "WEAK_SUPPORT"
+    },
+    "Carche- Salinas": {
+      "n_training_records": 25,
+      "support": "WEAK_SUPPORT"
+    },
+    "Portalrrubio-Calanda": {
+      "n_training_records": 25,
+      "support": "WEAK_SUPPORT"
+    },
+    "Sierra de las Agujas": {
+      "n_training_records": 25,
+      "support": "WEAK_SUPPORT"
+    },
+    "Aledo": {
+      "n_training_records": 24,
+      "support": "WEAK_SUPPORT"
+    },
+    "Olot": {
+      "n_training_records": 24,
+      "support": "WEAK_SUPPORT"
+    },
+    "Consuegra- Villacañas": {
+      "n_training_records": 23,
+      "support": "WEAK_SUPPORT"
+    },
+    "La Alcarria": {
+      "n_training_records": 23,
+      "support": "WEAK_SUPPORT"
+    },
+    "Piedra- Gallocanta": {
+      "n_training_records": 22,
+      "support": "WEAK_SUPPORT"
+    },
+    "Cuchillos - Cabras": {
+      "n_training_records": 22,
+      "support": "WEAK_SUPPORT"
+    },
+    "Valle de Ambles": {
+      "n_training_records": 22,
+      "support": "WEAK_SUPPORT"
+    },
+    "Orce - María": {
+      "n_training_records": 21,
+      "support": "WEAK_SUPPORT"
+    },
+    "Ontur": {
+      "n_training_records": 21,
+      "support": "WEAK_SUPPORT"
+    },
+    "Carche - Salinas (08.42)": {
+      "n_training_records": 21,
+      "support": "WEAK_SUPPORT"
+    },
+    "Serella- Aixorta- Algar": {
+      "n_training_records": 21,
+      "support": "WEAK_SUPPORT"
+    },
+    "Banyoles": {
+      "n_training_records": 21,
+      "support": "WEAK_SUPPORT"
+    },
+    "Villaviciosa": {
+      "n_training_records": 21,
+      "support": "WEAK_SUPPORT"
+    },
+    "Torrelaguna- Jadraque": {
+      "n_training_records": 21,
+      "support": "WEAK_SUPPORT"
+    },
+    "Arbas": {
+      "n_training_records": 20,
+      "support": "WEAK_SUPPORT"
+    },
+    "Montes Orientales (Sector Norte)": {
+      "n_training_records": 20,
+      "support": "WEAK_SUPPORT"
+    },
+    "Bullas": {
+      "n_training_records": 19,
+      "support": "WEAK_SUPPORT"
+    },
+    "Quibas": {
+      "n_training_records": 19,
+      "support": "WEAK_SUPPORT"
+    },
+    "Rañas del Esla- Cea": {
+      "n_training_records": 19,
+      "support": "WEAK_SUPPORT"
+    },
+    "Pliegues jurásicos": {
+      "n_training_records": 18,
+      "support": "WEAK_SUPPORT"
+    },
+    "Calatayud- Montalbán": {
+      "n_training_records": 18,
+      "support": "WEAK_SUPPORT"
+    },
+    "Calviá": {
+      "n_training_records": 18,
+      "support": "WEAK_SUPPORT"
+    },
+    "Tordera Baix": {
+      "n_training_records": 18,
+      "support": "WEAK_SUPPORT"
+    },
+    "Na Burguesa": {
+      "n_training_records": 18,
+      "support": "WEAK_SUPPORT"
+    },
+    "Betlem": {
+      "n_training_records": 18,
+      "support": "WEAK_SUPPORT"
+    },
+    "Depresión Setenil - Ronda": {
+      "n_training_records": 18,
+      "support": "WEAK_SUPPORT"
+    },
+    "Lillo- Quintanar": {
+      "n_training_records": 18,
+      "support": "WEAK_SUPPORT"
+    },
+    "Argos": {
+      "n_training_records": 17,
+      "support": "WEAK_SUPPORT"
+    },
+    "Sierra Espuña": {
+      "n_training_records": 17,
+      "support": "WEAK_SUPPORT"
+    },
+    "Sierra Aitana": {
+      "n_training_records": 17,
+      "support": "WEAK_SUPPORT"
+    },
+    "Puerto de Beceite": {
+      "n_training_records": 17,
+      "support": "WEAK_SUPPORT"
+    },
+    "Aluvial del Segre": {
+      "n_training_records": 17,
+      "support": "WEAK_SUPPORT"
+    },
+    "Lebrija": {
+      "n_training_records": 17,
+      "support": "WEAK_SUPPORT"
+    },
+    "Rañas del Cea- Carrión": {
+      "n_training_records": 17,
+      "support": "WEAK_SUPPORT"
+    },
+    "San Carlos": {
+      "n_training_records": 16,
+      "support": "WEAK_SUPPORT"
+    },
+    "Esera- Oliana": {
+      "n_training_records": 16,
+      "support": "WEAK_SUPPORT"
+    },
+    "Alto Aguas": {
+      "n_training_records": 15,
+      "support": "WEAK_SUPPORT"
+    },
+    "Montsec": {
+      "n_training_records": 15,
+      "support": "WEAK_SUPPORT"
+    },
+    "Alto Almanzora": {
+      "n_training_records": 14,
+      "support": "WEAK_SUPPORT"
+    },
+    "Anticlinal de Socovos": {
+      "n_training_records": 14,
+      "support": "WEAK_SUPPORT"
+    },
+    "Sierra de Carrascoy": {
+      "n_training_records": 14,
+      "support": "WEAK_SUPPORT"
+    },
+    "Cordillera Prelitoral": {
+      "n_training_records": 14,
+      "support": "WEAK_SUPPORT"
+    },
+    "Puerto de Santa María": {
+      "n_training_records": 14,
+      "support": "WEAK_SUPPORT"
+    },
+    "Oviedo- Cangas de Onís": {
+      "n_training_records": 14,
+      "support": "WEAK_SUPPORT"
+    },
+    "Úbeda": {
+      "n_training_records": 14,
+      "support": "WEAK_SUPPORT"
+    },
+    "Delta del Adra": {
+      "n_training_records": 14,
+      "support": "WEAK_SUPPORT"
+    },
+    "Aluvial del Gállego": {
+      "n_training_records": 13,
+      "support": "WEAK_SUPPORT"
+    },
+    "Aluvial del Guadalquivir (Córdoba-Jaén)": {
+      "n_training_records": 13,
+      "support": "WEAK_SUPPORT"
+    },
+    "Pedroso - Arcas": {
+      "n_training_records": 13,
+      "support": "WEAK_SUPPORT"
+    },
+    "Treviño": {
+      "n_training_records": 13,
+      "support": "WEAK_SUPPORT"
+    },
+    "Sierra de Solorio": {
+      "n_training_records": 12,
+      "support": "WEAK_SUPPORT"
+    },
+    "Corral Rubio": {
+      "n_training_records": 12,
+      "support": "WEAK_SUPPORT"
+    },
+    "Tordera Mig i Alt": {
+      "n_training_records": 12,
+      "support": "WEAK_SUPPORT"
+    },
+    "Aluvial de Barbate": {
+      "n_training_records": 12,
+      "support": "WEAK_SUPPORT"
+    },
+    "Sierra de las Cabras": {
+      "n_training_records": 12,
+      "support": "WEAK_SUPPORT"
+    },
+    "Setenil - Ronda": {
+      "n_training_records": 12,
+      "support": "WEAK_SUPPORT"
+    },
+    "S. Blanquilla - Merinos - Borbolla": {
+      "n_training_records": 12,
+      "support": "WEAK_SUPPORT"
+    },
+    "Quesada - Castril": {
+      "n_training_records": 12,
+      "support": "WEAK_SUPPORT"
+    },
+    "Albuñol": {
+      "n_training_records": 12,
+      "support": "WEAK_SUPPORT"
+    },
+    "Cubeta de Almazán": {
+      "n_training_records": 11,
+      "support": "WEAK_SUPPORT"
+    },
+    "Argueña- Maigmo": {
+      "n_training_records": 11,
+      "support": "WEAK_SUPPORT"
+    },
+    "Sierra del Cid": {
+      "n_training_records": 11,
+      "support": "WEAK_SUPPORT"
+    },
+    "Algayarens": {
+      "n_training_records": 11,
+      "support": "WEAK_SUPPORT"
+    },
+    "Jerez de la Frontera": {
+      "n_training_records": 11,
+      "support": "WEAK_SUPPORT"
+    },
+    "Depresión de Padúl": {
+      "n_training_records": 11,
+      "support": "WEAK_SUPPORT"
+    },
+    "Campo de Tabernas - Gérgal": {
+      "n_training_records": 10,
+      "support": "WEAK_SUPPORT"
+    },
+    "Yechar": {
+      "n_training_records": 10,
+      "support": "WEAK_SUPPORT"
+    },
+    "Las Serranías": {
+      "n_training_records": 10,
+      "support": "WEAK_SUPPORT"
+    },
+    "Alcublas": {
+      "n_training_records": 10,
+      "support": "WEAK_SUPPORT"
+    },
+    "San Miguel - Costa Norte": {
+      "n_training_records": 10,
+      "support": "WEAK_SUPPORT"
+    },
+    "Alaro": {
+      "n_training_records": 10,
+      "support": "WEAK_SUPPORT"
+    },
+    "Almadrava": {
+      "n_training_records": 10,
+      "support": "WEAK_SUPPORT"
+    },
+    "S. Lorenzo": {
+      "n_training_records": 10,
+      "support": "WEAK_SUPPORT"
+    },
+    "Puerto del Escudo": {
+      "n_training_records": 10,
+      "support": "WEAK_SUPPORT"
+    },
+    "Huércal - Overa": {
+      "n_training_records": 9,
+      "support": "WEAK_SUPPORT"
+    },
+    "Bedar - Alcornia": {
+      "n_training_records": 9,
+      "support": "WEAK_SUPPORT"
+    },
+    "Vallanca": {
+      "n_training_records": 9,
+      "support": "WEAK_SUPPORT"
+    },
+    "Conejeros - Albatana": {
+      "n_training_records": 9,
+      "support": "WEAK_SUPPORT"
+    },
+    "Alpuente": {
+      "n_training_records": 9,
+      "support": "WEAK_SUPPORT"
+    },
+    "Sierras Interiores": {
+      "n_training_records": 9,
+      "support": "WEAK_SUPPORT"
+    },
+    "S'Estremera": {
+      "n_training_records": 9,
+      "support": "WEAK_SUPPORT"
+    },
+    "Llantones": {
+      "n_training_records": 9,
+      "support": "WEAK_SUPPORT"
+    },
+    "Tiétar": {
+      "n_training_records": 9,
+      "support": "WEAK_SUPPORT"
+    },
+    "Muel- Belchite": {
+      "n_training_records": 8,
+      "support": "WEAK_SUPPORT"
+    },
+    "Cubeta de Oliete": {
+      "n_training_records": 8,
+      "support": "WEAK_SUPPORT"
+    },
+    "Sierra Oliva": {
+      "n_training_records": 8,
+      "support": "WEAK_SUPPORT"
+    },
+    "Onda": {
+      "n_training_records": 8,
+      "support": "WEAK_SUPPORT"
+    },
+    "Plana de Cenia": {
+      "n_training_records": 8,
+      "support": "WEAK_SUPPORT"
+    },
+    "Vandellós- Llaberia": {
+      "n_training_records": 8,
+      "support": "WEAK_SUPPORT"
+    },
+    "Artá": {
+      "n_training_records": 8,
+      "support": "WEAK_SUPPORT"
+    },
+    "Cella- Molina de Aragón": {
+      "n_training_records": 7,
+      "support": "WEAK_SUPPORT"
+    },
+    "Formentor": {
+      "n_training_records": 7,
+      "support": "WEAK_SUPPORT"
+    },
+    "La Marineta": {
+      "n_training_records": 7,
+      "support": "WEAK_SUPPORT"
+    },
+    "Vegas Altas": {
+      "n_training_records": 7,
+      "support": "WEAK_SUPPORT"
+    },
+    "Llanos de Villamartín": {
+      "n_training_records": 7,
+      "support": "WEAK_SUPPORT"
+    },
+    "El Torcal de Antequera": {
+      "n_training_records": 7,
+      "support": "WEAK_SUPPORT"
+    },
+    "Almadén - Carluca": {
+      "n_training_records": 7,
+      "support": "WEAK_SUPPORT"
+    },
+    "Sierra Elvira": {
+      "n_training_records": 7,
+      "support": "WEAK_SUPPORT"
+    },
+    "Valdegutur": {
+      "n_training_records": 6,
+      "support": "WEAK_SUPPORT"
+    },
+    "Moncayo - Soria": {
+      "n_training_records": 6,
+      "support": "WEAK_SUPPORT"
+    },
+    "Puentes": {
+      "n_training_records": 6,
+      "support": "WEAK_SUPPORT"
+    },
+    "Baños de Fortuna": {
+      "n_training_records": 6,
+      "support": "WEAK_SUPPORT"
+    },
+    "Crevillente": {
+      "n_training_records": 6,
+      "support": "WEAK_SUPPORT"
+    },
+    "Agost- Monegre": {
+      "n_training_records": 6,
+      "support": "WEAK_SUPPORT"
+    },
+    "Aluvial del Cinca": {
+      "n_training_records": 6,
+      "support": "WEAK_SUPPORT"
+    },
+    "Manacor": {
+      "n_training_records": 6,
+      "support": "WEAK_SUPPORT"
+    },
+    "Sierra de Grazalema": {
+      "n_training_records": 6,
+      "support": "WEAK_SUPPORT"
+    },
+    "Guadiaro y Hozgarganta": {
+      "n_training_records": 6,
+      "support": "WEAK_SUPPORT"
+    },
+    "Mancha Real - Pegalajar": {
+      "n_training_records": 6,
+      "support": "WEAK_SUPPORT"
+    },
+    "San José": {
+      "n_training_records": 5,
+      "support": "WEAK_SUPPORT"
+    },
+    "Tierra de Barros": {
+      "n_training_records": 5,
+      "support": "WEAK_SUPPORT"
+    },
+    "Santander- Camargo": {
+      "n_training_records": 5,
+      "support": "WEAK_SUPPORT"
+    },
+    "Sierra Colomera": {
+      "n_training_records": 5,
+      "support": "WEAK_SUPPORT"
+    },
+    "Bédmar - Jódar": {
+      "n_training_records": 5,
+      "support": "WEAK_SUPPORT"
+    },
+    "Sierra de Baza": {
+      "n_training_records": 5,
+      "support": "WEAK_SUPPORT"
+    },
+    "Sierra de Cantabria": {
+      "n_training_records": 5,
+      "support": "WEAK_SUPPORT"
+    },
+    "Arana": {
+      "n_training_records": 5,
+      "support": "WEAK_SUPPORT"
+    },
+    "Sierra de la Zarza": {
+      "n_training_records": 4,
+      "support": "WEAK_SUPPORT"
+    },
+    "Sierra de Oliva (08.34)": {
+      "n_training_records": 4,
+      "support": "WEAK_SUPPORT"
+    },
+    "Alto Palancia": {
+      "n_training_records": 4,
+      "support": "WEAK_SUPPORT"
+    },
+    "Mosqueruela": {
+      "n_training_records": 4,
+      "support": "WEAK_SUPPORT"
+    },
+    "Vicfred-Guisona": {
+      "n_training_records": 4,
+      "support": "WEAK_SUPPORT"
+    },
+    "Fonts": {
+      "n_training_records": 4,
+      "support": "WEAK_SUPPORT"
+    },
+    "Almonte- Marismas (Guadalq. 05.51)": {
+      "n_training_records": 4,
+      "support": "WEAK_SUPPORT"
+    },
+    "Aluvial del Guadalete": {
+      "n_training_records": 4,
+      "support": "WEAK_SUPPORT"
+    },
+    "Páramo de Torozos": {
+      "n_training_records": 4,
+      "support": "WEAK_SUPPORT"
+    },
+    "Sierra de Cañete": {
+      "n_training_records": 4,
+      "support": "WEAK_SUPPORT"
+    },
+    "Rumblar": {
+      "n_training_records": 4,
+      "support": "WEAK_SUPPORT"
+    },
+    "Lújar": {
+      "n_training_records": 4,
+      "support": "WEAK_SUPPORT"
+    },
+    "Mencal": {
+      "n_training_records": 4,
+      "support": "WEAK_SUPPORT"
+    },
+    "Duda - La Sagra": {
+      "n_training_records": 4,
+      "support": "WEAK_SUPPORT"
+    },
+    "Mendavia- Olite- Cortes": {
+      "n_training_records": 3,
+      "support": "WEAK_SUPPORT"
+    },
+    "Gavilán": {
+      "n_training_records": 3,
+      "support": "WEAK_SUPPORT"
+    },
+    "Bajo Quipar": {
+      "n_training_records": 3,
+      "support": "WEAK_SUPPORT"
+    },
+    "Sto Domingo- Sª de Guara": {
+      "n_training_records": 3,
+      "support": "WEAK_SUPPORT"
+    },
+    "Peña Rubia": {
+      "n_training_records": 3,
+      "support": "WEAK_SUPPORT"
+    },
+    "La Línea": {
+      "n_training_records": 3,
+      "support": "WEAK_SUPPORT"
+    },
+    "Llanes- Ribadesella": {
+      "n_training_records": 3,
+      "support": "WEAK_SUPPORT"
+    },
+    "Valle de Abdalajís": {
+      "n_training_records": 3,
+      "support": "WEAK_SUPPORT"
+    },
+    "Gibalto": {
+      "n_training_records": 3,
+      "support": "WEAK_SUPPORT"
+    },
+    "Castro Urdiales- Ajo": {
+      "n_training_records": 3,
+      "support": "WEAK_SUPPORT"
+    },
+    "Ezcaray- Prado Luengo": {
+      "n_training_records": 3,
+      "support": "WEAK_SUPPORT"
+    },
+    "Ocaña": {
+      "n_training_records": 3,
+      "support": "WEAK_SUPPORT"
+    },
+    "Subijana- Nanclares": {
+      "n_training_records": 3,
+      "support": "WEAK_SUPPORT"
+    },
+    "Montes Obarenses- Sobrón": {
+      "n_training_records": 3,
+      "support": "WEAK_SUPPORT"
+    },
+    "Juberra- Anguiano": {
+      "n_training_records": 3,
+      "support": "WEAK_SUPPORT"
+    },
+    "Sª de Cazorla - Segura": {
+      "n_training_records": 3,
+      "support": "WEAK_SUPPORT"
+    },
+    "Itzarraitz": {
+      "n_training_records": 3,
+      "support": "WEAK_SUPPORT"
+    },
+    "Tolosa": {
+      "n_training_records": 2,
+      "support": "WEAK_SUPPORT"
+    },
+    "Moratilla": {
+      "n_training_records": 2,
+      "support": "WEAK_SUPPORT"
+    },
+    "Fontibre": {
+      "n_training_records": 2,
+      "support": "WEAK_SUPPORT"
+    },
+    "Almansa": {
+      "n_training_records": 2,
+      "support": "WEAK_SUPPORT"
+    },
+    "Javalambre": {
+      "n_training_records": 2,
+      "support": "WEAK_SUPPORT"
+    },
+    "Puertos de Beceite": {
+      "n_training_records": 2,
+      "support": "WEAK_SUPPORT"
+    },
+    "Valldemosa-Sóller": {
+      "n_training_records": 2,
+      "support": "WEAK_SUPPORT"
+    },
+    "Ridaura": {
+      "n_training_records": 2,
+      "support": "WEAK_SUPPORT"
+    },
+    "Ufanes": {
+      "n_training_records": 2,
+      "support": "WEAK_SUPPORT"
+    },
+    "Sierras Centrales": {
+      "n_training_records": 2,
+      "support": "WEAK_SUPPORT"
+    },
+    "Junquera - Las Nieves": {
+      "n_training_records": 2,
+      "support": "WEAK_SUPPORT"
+    },
+    "Las Cabras - Camarolos - S. Jorge": {
+      "n_training_records": 2,
+      "support": "WEAK_SUPPORT"
+    },
+    "Alfarnate": {
+      "n_training_records": 2,
+      "support": "WEAK_SUPPORT"
+    },
+    "Torres - Jimena": {
+      "n_training_records": 2,
+      "support": "WEAK_SUPPORT"
+    },
+    "Sierra Arana": {
+      "n_training_records": 2,
+      "support": "WEAK_SUPPORT"
+    },
+    "S. Escalate": {
+      "n_training_records": 2,
+      "support": "WEAK_SUPPORT"
+    },
+    "Sierra Mágina": {
+      "n_training_records": 2,
+      "support": "WEAK_SUPPORT"
+    },
+    "Ebro y afluentes": {
+      "n_training_records": 2,
+      "support": "WEAK_SUPPORT"
+    },
+    "Almazán Sur": {
+      "n_training_records": 2,
+      "support": "WEAK_SUPPORT"
+    },
+    "Entrepeñas": {
+      "n_training_records": 2,
+      "support": "WEAK_SUPPORT"
+    },
+    "Jabalcón": {
+      "n_training_records": 2,
+      "support": "WEAK_SUPPORT"
+    },
+    "Cúllar - Baza": {
+      "n_training_records": 2,
+      "support": "WEAK_SUPPORT"
+    },
+    "Cajal - Mula": {
+      "n_training_records": 2,
+      "support": "WEAK_SUPPORT"
+    },
+    "Alhama-Gomara": {
+      "n_training_records": 1,
+      "support": "WEAK_SUPPORT"
+    },
+    "Ricote": {
+      "n_training_records": 1,
+      "support": "WEAK_SUPPORT"
+    },
+    "Sierra de Cartagena": {
+      "n_training_records": 1,
+      "support": "WEAK_SUPPORT"
+    },
+    "La Musara": {
+      "n_training_records": 1,
+      "support": "WEAK_SUPPORT"
+    },
+    "Baix Llobregat": {
+      "n_training_records": 1,
+      "support": "WEAK_SUPPORT"
+    },
+    "Andraitx": {
+      "n_training_records": 1,
+      "support": "WEAK_SUPPORT"
+    },
+    "Somiedo- Trubia- Pravia": {
+      "n_training_records": 1,
+      "support": "WEAK_SUPPORT"
+    },
+    "Sierra de Líbar": {
+      "n_training_records": 1,
+      "support": "WEAK_SUPPORT"
+    },
+    "Picos de Europa- Panes": {
+      "n_training_records": 1,
+      "support": "WEAK_SUPPORT"
+    },
+    "Sierra Teba": {
+      "n_training_records": 1,
+      "support": "WEAK_SUPPORT"
+    },
+    "Jabalcuz - La Grana": {
+      "n_training_records": 1,
+      "support": "WEAK_SUPPORT"
+    },
+    "Quintanilla- Peña Horadada- Atapuerca": {
+      "n_training_records": 1,
+      "support": "WEAK_SUPPORT"
+    },
+    "Arlanza- Ucero- Avión": {
+      "n_training_records": 1,
+      "support": "WEAK_SUPPORT"
+    },
+    "Jaén": {
+      "n_training_records": 1,
+      "support": "WEAK_SUPPORT"
+    },
+    "Entzia- Montes de Vitoria": {
+      "n_training_records": 1,
+      "support": "WEAK_SUPPORT"
+    },
+    "Lóquiz": {
+      "n_training_records": 1,
+      "support": "WEAK_SUPPORT"
+    }
+  },
+  "per_province": {
+    "Almería": {
+      "n_training_records": 2237,
+      "support": "IN_DISTRIBUTION"
+    },
+    "Murcia": {
+      "n_training_records": 1345,
+      "support": "IN_DISTRIBUTION"
+    },
+    "Alacant/Alicante": {
+      "n_training_records": 1112,
+      "support": "IN_DISTRIBUTION"
+    },
+    "València/Valencia": {
+      "n_training_records": 1062,
+      "support": "IN_DISTRIBUTION"
+    },
+    "Granada": {
+      "n_training_records": 1008,
+      "support": "IN_DISTRIBUTION"
+    },
+    "Albacete": {
+      "n_training_records": 990,
+      "support": "IN_DISTRIBUTION"
+    },
+    "Sevilla": {
+      "n_training_records": 910,
+      "support": "IN_DISTRIBUTION"
+    },
+    "Málaga": {
+      "n_training_records": 856,
+      "support": "IN_DISTRIBUTION"
+    },
+    "Tarragona": {
+      "n_training_records": 852,
+      "support": "IN_DISTRIBUTION"
+    },
+    "Ciudad Real": {
+      "n_training_records": 681,
+      "support": "IN_DISTRIBUTION"
+    },
+    "Illes Balears": {
+      "n_training_records": 628,
+      "support": "IN_DISTRIBUTION"
+    },
+    "Huelva": {
+      "n_training_records": 626,
+      "support": "IN_DISTRIBUTION"
+    },
+    "Castelló/Castellón": {
+      "n_training_records": 558,
+      "support": "IN_DISTRIBUTION"
+    },
+    "Zaragoza": {
+      "n_training_records": 512,
+      "support": "IN_DISTRIBUTION"
+    },
+    "Girona": {
+      "n_training_records": 374,
+      "support": "IN_DISTRIBUTION"
+    },
+    "Cádiz": {
+      "n_training_records": 365,
+      "support": "IN_DISTRIBUTION"
+    },
+    "Cuenca": {
+      "n_training_records": 283,
+      "support": "IN_DISTRIBUTION"
+    },
+    "Barcelona": {
+      "n_training_records": 254,
+      "support": "IN_DISTRIBUTION"
+    },
+    "Madrid": {
+      "n_training_records": 217,
+      "support": "IN_DISTRIBUTION"
+    },
+    "Teruel": {
+      "n_training_records": 186,
+      "support": "IN_DISTRIBUTION"
+    },
+    "Zamora": {
+      "n_training_records": 174,
+      "support": "IN_DISTRIBUTION"
+    },
+    "Jaén": {
+      "n_training_records": 174,
+      "support": "IN_DISTRIBUTION"
+    },
+    "Valladolid": {
+      "n_training_records": 156,
+      "support": "IN_DISTRIBUTION"
+    },
+    "León": {
+      "n_training_records": 142,
+      "support": "IN_DISTRIBUTION"
+    },
+    "Badajoz": {
+      "n_training_records": 139,
+      "support": "IN_DISTRIBUTION"
+    },
+    "Toledo": {
+      "n_training_records": 123,
+      "support": "IN_DISTRIBUTION"
+    },
+    "Salamanca": {
+      "n_training_records": 107,
+      "support": "IN_DISTRIBUTION"
+    },
+    "Ávila": {
+      "n_training_records": 104,
+      "support": "IN_DISTRIBUTION"
+    },
+    "Córdoba": {
+      "n_training_records": 65,
+      "support": "IN_DISTRIBUTION"
+    },
+    "Segovia": {
+      "n_training_records": 65,
+      "support": "IN_DISTRIBUTION"
+    },
+    "Huesca": {
+      "n_training_records": 50,
+      "support": "IN_DISTRIBUTION"
+    },
+    "Asturias": {
+      "n_training_records": 49,
+      "support": "IN_DISTRIBUTION"
+    },
+    "La Rioja": {
+      "n_training_records": 47,
+      "support": "IN_DISTRIBUTION"
+    },
+    "Burgos": {
+      "n_training_records": 45,
+      "support": "IN_DISTRIBUTION"
+    },
+    "Palencia": {
+      "n_training_records": 42,
+      "support": "IN_DISTRIBUTION"
+    },
+    "Lleida": {
+      "n_training_records": 40,
+      "support": "IN_DISTRIBUTION"
+    },
+    "Araba/Álava": {
+      "n_training_records": 29,
+      "support": "WEAK_SUPPORT"
+    },
+    "Guadalajara": {
+      "n_training_records": 27,
+      "support": "WEAK_SUPPORT"
+    },
+    "Soria": {
+      "n_training_records": 23,
+      "support": "WEAK_SUPPORT"
+    },
+    "Cáceres": {
+      "n_training_records": 23,
+      "support": "WEAK_SUPPORT"
+    },
+    "Cantabria": {
+      "n_training_records": 18,
+      "support": "WEAK_SUPPORT"
+    },
+    "Navarra": {
+      "n_training_records": 16,
+      "support": "WEAK_SUPPORT"
+    },
+    "Gipuzkoa": {
+      "n_training_records": 6,
+      "support": "WEAK_SUPPORT"
+    },
+    "Pontevedra": {
+      "n_training_records": 2,
+      "support": "WEAK_SUPPORT"
+    }
+  },
+  "note": "Domain support is not the same as validated performance. The domain-holdout evaluation only covers domains with >= 150 records; weak-support domains have no domain-level validation."
+}

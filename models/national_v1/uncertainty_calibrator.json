@@ -1,0 +1,11 @@
+{
+  "method": "split_conformal_absolute_residual",
+  "alpha": 0.1,
+  "calibration_set": "out-of-fold predictions from 5-fold GroupKFold by 500 m proximity",
+  "n_calibration": 16722,
+  "calibration_quantile_abs_residual_m": 31.62478897278646,
+  "interval_half_width_m": 31.62478897278646,
+  "interval_width_m": 63.24957794557292,
+  "empirical_coverage": 0.9000119602918312,
+  "note": "Marginal interval over the national modeling population; not per-site."
+}

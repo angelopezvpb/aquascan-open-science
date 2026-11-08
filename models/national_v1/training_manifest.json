@@ -1,0 +1,144 @@
+{
+  "experiment_id": "aquascan-national-depth-v1",
+  "created_at": "2026-11-08T08:56:18+00:00",
+  "git_commit": null,
+  "git_commit_note": "The working tree is not a git repository; source-file hashes below identify the exact code used.",
+  "software": {
+    "python": "3.12.3",
+    "scikit-learn": "1.9.0",
+    "pandas": "3.0.5",
+    "numpy": "2.5.2",
+    "scipy": "1.18.1",
+    "joblib": "1.5.3"
+  },
+  "random_seed": 42,
+  "dataset": {
+    "path": "aquascan_national_dataset_v1.parquet",
+    "sha256": "8c69621e05178d2f97ea01a27623c43e759271b7afae74c625ff4f2b33d18fbc",
+    "snapshot_records": 139697,
+    "snapshot_provinces": 48,
+    "snapshot_domains": 401
+  },
+  "phase0_firewall": {
+    "status": "active",
+    "source": "phase0_cohort_A_v1.csv",
+    "source_sha256": "482d7b4f2221fe402cf3b9d1edf6c2224bbc2d618f4a3929e564b78471d1bf90",
+    "n_ids": 10,
+    "n_ready_excluded": 10
+  },
+  "modeling_population": {
+    "records": 16722,
+    "provinces": 44,
+    "domains": 323,
+    "proximity_groups": 10776,
+    "spatial_cells": 11144,
+    "ready_records_before_firewall": 16732,
+    "firewalled_ready_records": 10,
+    "missing_target_records": 0
+  },
+  "feature_contract": {
+    "n_features": 21,
+    "features": [
+      "aquifer_system",
+      "construction_date",
+      "drilling_method",
+      "elevation_m",
+      "group_aquifer",
+      "group_domain",
+      "group_watershed",
+      "latitude",
+      "longitude",
+      "municipality",
+      "point_nature",
+      "province",
+      "pump_type",
+      "qa_coordinate_outlier",
+      "qa_depth_outlier",
+      "qa_duplicate_coordinate",
+      "qa_elevation_outlier",
+      "qa_flag_count",
+      "total_depth_m",
+      "water_use",
+      "watershed"
+    ],
+    "fold_grouping_columns": [
+      "group_proximity_500m",
+      "group_spatial_cell"
+    ]
+  },
+  "training": {
+    "model_class": "sklearn.ensemble.RandomForestRegressor",
+    "hyperparameters": {
+      "n_estimators": 150,
+      "max_depth": 20,
+      "min_samples_leaf": 5,
+      "random_state": 42,
+      "n_jobs": -1
+    },
+    "n_training_records": 16722,
+    "target": "_target_depth_to_water_m"
+  },
+  "evaluation_protocol": {
+    "grouped_cv": {
+      "group_column": "group_proximity_500m",
+      "n_splits": 5,
+      "models": [
+        "Dummy",
+        "Ridge",
+        "RandomForest",
+        "ExtraTrees"
+      ]
+    },
+    "province_holdout": {
+      "group_column": "province",
+      "n_splits": 5
+    },
+    "domain_holdout": {
+      "min_records": 150,
+      "n_domains_scored": 21
+    },
+    "conformal": {
+      "alpha": 0.1,
+      "calibration": "out-of-fold GroupKFold by 500 m proximity"
+    }
+  },
+  "provenance": {
+    "source_record_id": "not_applicable: aggregate model artifact; no record-level identifiers",
+    "source_uri": "IGME bdaguas national snapshot via AquaScan national enrichment v1",
+    "source_hash": "8c69621e05178d2f97ea01a27623c43e759271b7afae74c625ff4f2b33d18fbc",
+    "processing_step": "national depth-to-water model training",
+    "processing_version": "national_v1",
+    "timestamp": "2026-11-08T08:56:18+00:00",
+    "parent_artifact": "data/processed/aquascan_national_dataset_v1.parquet"
+  },
+  "source_files": {
+    "scripts/train_national_model.py": "4e09dab1f69476512723620f05b438f0972866c612e3117e9b0cf1f1c66e9b7b",
+    "src/aquascan/modeling/national_depth.py": "f55560a508995a1b38ac5d11210b29d41185c660839f21eb041c009744ddb968",
+    "data/processed/aquascan_national_dataset_v1.parquet": "8c69621e05178d2f97ea01a27623c43e759271b7afae74c625ff4f2b33d18fbc",
+    "reports/phase0_cohort_A_v1.csv": "482d7b4f2221fe402cf3b9d1edf6c2224bbc2d618f4a3929e564b78471d1bf90",
+    "reports/national_model_v1_cv.csv": "d44bd3e0c8772878a6ad83d33ee468c314ff3341619f8386f057b5f2267f1991",
+    "reports/national_model_v1_domain_holdout.json": "dabdec3477c9cd5259bf04b791ffef5b720d966a3280fc742be1616d04ebde53",
+    "reports/national_model_v1_oof.npz": "03d03814422e4331058d9646e521c257095526c303b585fee6f805d3b39199e4",
+    "reports/national_enrichment_manifest_v1.json": "341f72d1c5fa2b2f5f3281153383ff327a968f522f6a82ab19ae7251d126672d"
+  },
+  "reports": {
+    "reports/national_model_v1_cv.csv": "d44bd3e0c8772878a6ad83d33ee468c314ff3341619f8386f057b5f2267f1991",
+    "reports/national_model_v1_domain_holdout.json": "dabdec3477c9cd5259bf04b791ffef5b720d966a3280fc742be1616d04ebde53",
+    "reports/national_model_v1_oof.npz": "03d03814422e4331058d9646e521c257095526c303b585fee6f805d3b39199e4"
+  },
+  "model_artifacts": {
+    "model.joblib": "7c536ca4836ad5d497c5e2b8e5238e0b8bab568f3f695c17b1d146e6b5434563",
+    "preprocessor.joblib": "2774f3c06aaeab7b451cd9d985f15b7787490fafc8d0f287e9dcce7220d3a2a9",
+    "feature_manifest.json": "5d9e7e1dce081e2e7dade6abb30d2b05e2a1d9bac6f1ea464ad7c93dacce3fb7",
+    "uncertainty_calibrator.json": "b097e50c7dd3f6b11ea7d05d380f304783f29cde5364e00b04294237f1809e15",
+    "ood_policy_reference.json": "0e76201a492a659e1998f561ad743cdbbdf1bbf8516694c490a1d9bad4314b5c",
+    "confidence_policy.json": "186fac29c5083b963f7c6acb23eba00957a9aef78adb536dc5b8d8496a46d9bf",
+    "metrics.json": "7f2085f3a89a38f1cb8bcc2f52c1097ec6b6c2d7596a1bd5bfe4b1c5ff6b9e81",
+    "example.py": "2761af6841436bb7d890836525ca5c2cb95ca03aa6656ee82662e21afcaffab7",
+    "requirements.txt": "59955a85724453d217cca0e077eb3a9a09f15fcd47fea854d9064d32a080686a",
+    "README.md": "8e88553c8656c07b4391b503bf208b6a8fdcde7650e5d5a50ce043575568aa8e",
+    ".gitattributes": "5e5f0ba601dd2f930688a4b8de991c1fa404a7a59c8760ed1e08096c25888b46",
+    "LICENSE": "56ac9fcdd983bdccb31c5063362c0a6c3f6fab178d6be1003bcb7bf16cf6c461"
+  },
+  "record_level_data_published": false
+}

@@ -1,0 +1,33 @@
+{
+  "version": "national_v1",
+  "method": "OOD support + training-range extrapolation guard + split-conformal interval",
+  "gate": {
+    "GREEN": "domain support IN_DISTRIBUTION, province support IN_DISTRIBUTION, and prediction inside the training target range",
+    "YELLOW": "domain WEAK_SUPPORT or prediction outside the training target range",
+    "RED": "domain or province OUT_OF_DISTRIBUTION (ABSTAIN)"
+  },
+  "conformal": {
+    "method": "split_conformal_absolute_residual",
+    "alpha": 0.1,
+    "calibration_set": "out-of-fold predictions from 5-fold GroupKFold by 500 m proximity",
+    "n_calibration": 16722,
+    "calibration_quantile_abs_residual_m": 31.62478897278646,
+    "interval_half_width_m": 31.62478897278646,
+    "interval_width_m": 63.24957794557292,
+    "empirical_coverage": 0.9000119602918312,
+    "oof_mae_m": 11.815584580355548,
+    "oof_median_abs_error_m": 4.19101917396611,
+    "oof_rmse_m": 23.31099461070095,
+    "oof_r2": 0.7120921280362207,
+    "note": "Marginal interval over the national modeling population; not per-site."
+  },
+  "thresholds": {
+    "n_min_in_domain": 30,
+    "n_min_in_province": 30
+  },
+  "training_target_range_m": [
+    0.0,
+    542.5
+  ],
+  "note": "The gate never uses observed target errors of the new sample. It is a support triage rule, not a calibrated probability. The conformal interval is marginal (global), not per-site."
+}

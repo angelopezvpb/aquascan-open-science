@@ -19,14 +19,18 @@ uncertainty, blinding, and leakage-safe validation.
 - **National Enrichment Engine v1**: resumable, interruptible, crash-safe
   builder for the 139,697-record normalized IGME snapshot. See
   [docs/national-enrichment.md](docs/national-enrichment.md).
+- **National depth-to-water model v1** published on Hugging Face: 16,722 READY
+  records, 44 provinces and 323 domains, with the Phase 0 firewall active. See
+  [docs/national-model.md](docs/national-model.md).
 - Aggregate data-quality summary:
   [`reports/national_enrichment_summary_v1.json`](reports/national_enrichment_summary_v1.json).
 - Public cleanup: internal notes, hardware-acceptance bookkeeping and
   superseded reports removed.
 - Citation, repository URLs and license metadata corrected.
 
-The record-level dataset, raw API payloads and model weights are **not**
-redistributed. See [NOTICE_DATA.md](NOTICE_DATA.md).
+The record-level dataset and raw API payloads are **not** redistributed. Model
+weights are published on Hugging Face, not stored in this Git repository. See
+[NOTICE_DATA.md](NOTICE_DATA.md).
 
 ## Why AquaScan
 
@@ -85,19 +89,29 @@ See `reports/` (curated aggregate reports) and
 
 ## Model on Hugging Face
 
-GeoAI Context v0 is published as a Hugging Face model repo:
-
 **[`angellopez/aquascan-open-science-model`](https://huggingface.co/angellopez/aquascan-open-science-model)**
 
-It contains the model card, fitted weights, preprocessor, feature manifest,
-split-conformal calibration and confidence/OOD policies. The model was trained
-on **Spanish IGME records** (Balearic Islands) and is **not validated outside
-Spain**.
+The canonical model is **AquaScan National Groundwater Depth Model v1**, trained
+on 16,722 READY depth records from 44 provinces and 323 domains, with the 10
+sealed Phase 0 San Antonio sites excluded. It contains the model card, fitted
+weights, preprocessor, feature manifest, split-conformal calibration and
+confidence/OOD policies. It is a national-coverage research baseline, **not** a
+uniformly validated model: only 21 domains have a dedicated holdout evaluation
+and 201 have fewer than 30 training records. See
+[docs/national-model.md](docs/national-model.md) for metrics, support and
+limitations.
+
+The previous five-domain GeoAI Context v0 baseline (563 records from five
+domains in the Balearic Islands and Castilla y León / Duero basin) is preserved
+at the
+[`v0-5domain` tag](https://huggingface.co/angellopez/aquascan-open-science-model/tree/v0-5domain).
+It is not the national model and is not validated outside those domains.
 
 The **record-level training dataset is not published** on Hugging Face or
-GitHub (IGME license review pending; record-level privacy). The weights are a
-research baseline: no field validation, no dry-well Ground Truth, and no
-meaningful improvement over Baseline v2.
+GitHub (IGME license review pending; record-level privacy). Model weights are
+not stored in this Git repository; they are in the Hugging Face repo above.
+Both models are research baselines: no field validation, no dry-well Ground
+Truth, and no groundwater-detection capability.
 
 ## National enrichment engine
 
@@ -166,7 +180,7 @@ offline.
 
 ```
 src/aquascan/        # package: data, national, enrichment, ground_truth,
-                     #   evaluation, baselines, features, physical
+                     #   evaluation, baselines, features, modeling, physical
 schemas/             # canonical JSON Schemas
 protocols/           # public experimental protocols
 examples/synthetic/  # clearly-labeled synthetic fixtures
